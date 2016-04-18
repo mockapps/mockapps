@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-cache,no-store,must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <link rel="stylesheet" href="boot.css">
+</head>
+
+<body>
+    <script src="boot.js"></script>
+    <div ms-visible="loaded" ms-controller="order">
+        <div class="wx_wrap">
+            <a class="send_address" ms-click="editAddress()" ms-if="!showPhoneNumber">
+                <div id="sendTo">
+                    <div class="address address_defalut" ms-visible="addressInfo.addressID>0">
+                        <h3><b class="send_margin">送至</b><br></h3>
+                        <ul>
+                            <li><strong>{{addressInfo.receiver}}</strong>&nbsp;&nbsp;{{addressInfo.mobile}}</li>
+                            <li>{{addressInfo.address}}</li>
+                        </ul>
+
+                    </div>
+                    <div class="address_bottom"><img src="assets/img/checkout_address-630fa38b90.png"></div>
+                </div>
+            </a>
+            <div id="modify_personal_info" ms-if="info_Modification" ms-click="modify_id_info"><span class="personalInfoExits">您已填写海关查验所需身份信息</span><span class="personalInfoModify">点此修改</span></div>
+            <div class="personalInfo_detail" ms-if="personalInfoVisible">
+                <div class="wx_bar_modifyInfo">
+                     <span id="quitSavinginfo" ms-click="quit_save_personalInfo"><img id="quitSaving_back" src="assets/img/back_quitsave-dd0d80b863.png"></span>
+                     <span id="modifyInfo_tit">完善个人信息</span>
+                     <span id="finishModifyInfo" ms-click="savePersonalInfo">完成</span>
+                </div>
+                <div class="info_detailto_fill">
+                <p><label><span class="info_detail_tit">*真实姓名</span>
+                    <input placeholder="真实姓名" type="text" ms-duplex="real_name" data-duplex-event="change" data-duplex-changed="onReal_nameEdited">
+                    <span style="color:red;" ms-if="!isReal_nameValid">请填写真实姓名</span></label></p>
+                <p><label><span class="info_detail_tit">*身份证号</span>
+                    <input placeholder="身份证号" type="text" ms-duplex="id_number" data-duplex-event="change" data-duplex-changed="onId_numberEdited">
+                    <span style="color:red;" ms-if="!isId_numberValid">请填写正确的身份证号</span></label></p>
+                </div>
+                <div id="haiguaninfo_bg">
+                   <div class="haitaoBuy_detailInfo">
+                      <img id="idinfo_pic" src="">
+                      <div id="pdd_haitao_alert">
+                     *昊幺哥海外购提醒您填写真实身份证号码
+                      </div>
+                      <div class="haiguan_info">
+                     1.海关需对海外购物查验身份信息，错误信息可能导致无法正常通关。
+                      </div>
+                      <div class="haiguan_info">
+                     2.身份证信息将加密报关，昊幺哥将保证您的信息安全。
+                      </div>
+                   </div>
+                </div>
+            </div>
+
+            <div id="recharge_info" ms-if="showPhoneNumber" style="overflow:hidden;">
+                <span class="recharge-hint" style="float:left; margin-right:10px;">充值手机号码</span>
+                <span class="recharge-hint" style="float:right; margin-left:10px; color:red;">
+                    <font style="position:relative; top:2px;">*</font>必填
+                </span>
+                <span style="display: block; overflow:hidden;">
+                    <input type="tel" class="recharge-phone-number-input" ms-duplex="phoneNumber" maxlength="11" autofocus="autofocus" />
+                </span>
+            </div>
+
+            <div class="order_modified">
+                <div class="order_goods">
+                    <div class="order_goods_img">
+                        <img alt="" ms-src="goodsInfo.thumbnailURL">
+                    </div>
+                    <div class="order_goods_info">
+                        <div class="order_goods_name">{{goodsInfo.name}}</div>
+                        <div class="order_goods_attr">
+                            <div class="order_goods_attr_item">
+                                <span class="order_goods_attr_tit" ms-if="!showGoodsNumber">数量：</span>
+                                <div class="order_goods_num" ms-if="!showGoodsNumber">1</div>
+                                <div class="order_goods_price">{{goodsInfo.price.toFixed(2)}}<i>/件</i></div>
+                            </div>
+                            <p class="order_goods_attr_item"><span id="skuLast"></span><i>{{skuStyleStr}}</i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sku-amount" style="border-bottom: 0;" ms-if="showGoodsNumber">
+                <div class="sku-text">
+                    <a style="margin-left:10px;">购买数量</a>
+                    <div class="sku-buy-amount-increase" ms-click="updateGoodsNumber(1)" style="margin-right:10px;">
+                        <span ms-class="button-disabled:!canIncrease">&plus;</span>
+                    </div>
+                    <div id="skuNum" class="sku-input-text" ms-text="goodsNumber"></div>
+                    <div class="sku-buy-amount-reduce"  ms-click="updateGoodsNumber(-1)">
+                        <span ms-class="button-disabled:!canReduce">&minus;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="free-amount" ms-if="showFreeNumber">
+                <div class="order_goods_free_info">本产品享受买2赠1</div>
+                <a ms-if="freeNumber > 0">赠送：<span style="color:black;">{{freeNumber}}</span>，总计：<span style="color:black;">{{freeNumber + goodsNumber}}</span></a>
+            </div>
+            <div>
+                <div class="total">快递：¥0.00 总价：<span id="totalPrice" class="total_price">{{(goodsInfo.price*goodsNumber-selectedCoupon.discount).toFixed(2)}}</span></div>
+                <div class="pay2">
+                    <div class="pay2_hd">请选择支付方式</div>
+                    <div class="pay2_list bordertop" ms-click="selectPaymentType(2)" ms-if="weChatPayVisible">
+                        <div class="pay2_item pay2_wx pay2_selected">
+                            <span class="pay2_item_state_default" ms-class="pay2_item_state:paymentType==2"></span>
+                            <span class="pay2_item_ico"></span>
+                            <span class="pay2_item_tit">微信支付</span>
+                            <!--<span class="xiaomi-ad" ms-if="showXiaomiAd">每日抽取5名用户赠送小米手环</span>-->
+                            <span class="wechat-recommend">推荐</span>
+                        </div>
+                    </div>
+                    <div class="pay2_list" ms-click="selectPaymentType(1)" ms-if="aliPayVisible">
+                        <div class="pay2_item pay2_wx pay2_selected">
+                            <span class="pay2_item_state_default" ms-class="pay2_item_state:paymentType==1"></span>
+                            <span class="pay2_item_ico_ali"></span>
+                            <span class="pay2_item_tit">支付宝支付</span>
+                        </div>
+                    </div>
+                    <div class="pay3_list" ms-click="deselectCoupon()" ms-if="couponInfos.length>0">
+                        <div class="pay3_item pay2_wx pay2_selected">
+                            <span ms-class-1="chosed:selectedCoupon.couponID<=0" ms-class-2="pay2_item_state:selectedCoupon.couponID>0"></span>
+                            <span class="pay3_item_ico"></span>
+                            <span class="pay3_item_tit">优惠券</span>
+                            <span class="pay3_display" ms-click="showCouponList">
+                                <img src="assets/img/display-5a2b19a58d.jpg" class="basic" ms-class="rotates:couponListVisible">
+                            </span>
+                            <span class="pay3_item_price" ms-if="selectedCoupon!=null"><b>{{selectedCoupon.description}}</b></span>
+                        </div>
+                    </div>
+                    <div class="error_coup" ms-if="errorMessage.length>0">{{errorMessage}}</div>
+                   <!--  <div class="animate_set" ms-if="couponInfos.length>0">
+                        <div class="line_coupon"><img src="assets/img/line-836fc0900f.png"></div>
+                        <div class="coupons" ms-repeat-coupon="couponInfos" ms-click="selectCoupon($index)">
+                            <div class="one_coupon"  ms-class="{{coupon.coupon_style.color}}">
+                                <div ms-if="coupon.type == 7">
+                                    <div>
+                                    <img src="assets/img/cp_bg_gray_selected-9f5b1ac252.png" ms-attr-src="coupon.coupon_style.bg" class="oc_coupons_bg" />
+                                    </div>
+                                    <div class="oc_tuanzhang_free_img" >
+                                        <img ms-src="coupon.thumb_url">
+                                    </div>
+                                    <div class="oc_tuanzhang_text_left1" >
+                                        <span>团长免单券</span>
+                                        <div class="oc_tuanzhang_text_catname">仅限于团购此商品,未成团不退还</div>
+                                        <div class="oc_tuanzhang_copus_desc1">{{coupon.startTime * 1000|date("yy-MM-dd")}} ~ {{coupon.endTime * 1000|date("yy-MM-dd")}}</div>
+                                    </div>
+                                    <div class="oc_tuanzhang_time_right1" ms-class="{{coupon.coupon_style.color_selected}}:coupon.couponID==selectedCoupon.couponID">
+                                        <div class="oc_tuanzhang_price">{{coupon.discount}}元</div>
+                                        <b>立即使用</b><br>
+                                    </div>
+                                </div>
+                                <div ms-if="coupon.type !=7">
+                                    <div>
+                                        <img src="assets/img/cp_bg_gray_selected-9f5b1ac252.png"
+                                    ms-attr-src="coupon.coupon_style.bg"
+                                    class="oc_coupons_bg" />
+                                    </div>
+                                    <div>
+                                        <b class="oc_pin1">￥</b>
+                                    </div>
+                                    <div>
+                                        <b class="oc_pin2" ms-class="oc_pin2-small:coupon.discount>=100">{{coupon.discount}}</b>
+                                    </div>
+                                    <div class="oc_coup_text_left1">
+                                        <b>{{coupon.description}}</b>
+                                        <div class="oc_coup_text_catname">{{coupon.cat_name}}</div>
+                                        <div class="oc_text_copus_desc1">{{coupon.startTime * 1000|date("yy-MM-dd")}}到 {{coupon.endTime * 1000|date("yy-MM-dd")}}</div>
+                                    </div>
+                                    <div class="oc_coup_time_right1"  ms-class="{{coupon.coupon_style.color_selected}}:coupon.couponID==selectedCoupon.couponID">
+                                        <b>{{coupon.coupon_style.type}}</b><br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <input type="button" ms-click="pay" ms-attr-value="{{payButtonText}}" class="pay2_btn" id="btn_order_done"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step_hd">拼团玩法<a class="step_more" ms-click="showGroupRule()">查看详情</a></div>
+            <div id="footItem" class="step_list">
+                <div class="step_item">
+                    <div class="step_num">1</div>
+                    <div class="step_detail">
+                        <p class="step_tit">选择<br>心仪商品</p>
+                    </div>
+                </div>
+                <div class="step_item step_item_on">
+                    <div class="step_num">2</div>
+                    <div class="step_detail">
+                        <p class="step_tit">支付开团<br>或参团</p>
+                    </div>
+                </div>
+                <div class="step_item">
+                    <div class="step_num">3</div>
+                    <div class="step_detail">
+                        <p class="step_tit">等待好友<br>参团支付</p>
+                    </div>
+                </div>
+                <div class="step_item">
+                    <div class="step_num">4</div>
+                    <div class="step_detail">
+                        <p class="step_tit">达到人数<br>团购成功</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="order_couponselector" ms-visible="couponVisible" ms-class="coupon-slide-up:isUp">
+            <div class="order_coupon_header">优惠券</div>
+            <div class="order_coupon_wrapper">
+                <div class="order_coupon_list">
+                    <div class="order_coupon_one" ms-repeat-coupon="couponInfos" ms-click="selectCoupon($index)">
+                        <div class="order_coupon_one_icon" ms-class="order_coupon_selected:coupon.couponID==selectedCoupon.couponID"></div>
+                        <div class="order_coupon_one_title" ms-if="coupon.type != 7">{{coupon.description}}</div>
+                        <div class="order_coupon_one_title" ms-if="coupon.type == 7">{{coupon.description}}</div>
+                        <div class="order_coupon_one_time">{{coupon.startTime * 1000|date("yy-MM-dd")}}到 {{coupon.endTime * 1000|date("yy-MM-dd")}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="order_coupon_button" ms-click="hideCouponList">确认</div>
+        </div>
+        <div id="coupon-hidden" ms-click="hideCouponList" ms-if="couponVisible"></div>
+    </div>
+
+    <script src="vender.js"></script>
+    <script src="common.js"></script>
+    <script src="order_checkout.js"></script>
+</body>
+</html>

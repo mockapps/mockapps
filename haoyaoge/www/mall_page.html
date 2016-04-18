@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta property="og:title" content="昊幺哥"/>
+    <meta property="og:description" content="风靡全国的拼团商城，优质商品新鲜直供，快来一起昊幺哥吧"/>
+    <meta property="og:image" content="http://pinduoduo.b0.upaiyun.com/base/share_logo.jpg"/>
+    <link rel="stylesheet" href="boot.css">
+    <link rel="stylesheet" href="mall_page.css">
+</head>
+
+<body id="main">
+    <script src="boot.js"></script>
+    <div id="index-content" class="container mall_page_padding" ms-controller="root" ms-css-visibility="show">
+        <div class="mall_page">
+            <div class="mall_page_head">
+                <img ms-src="{{mall.imgUrl}}">
+                <div class="mall_detail_info">
+                    <div class="mall_name" ms-text="mall.mallName"></div>
+                    <ul class="mall_detail_icons">
+                        <li class="mall_detail_sales">销量：{{mall.mallSales}}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mall_desc" ms-if="!!mall.mallDescription">
+                <div class="mall_desc_detail" ms-visible="showMallDesc">
+                    <span ms-text="mall.mallDescription"></span>
+                </div>
+            </div>
+        </div>
+        <div id="mall-coupon-entrance" ms-if="showCouponEntrance">
+            <div class="entrance-label" ms-click="gotoMallCoupons()">
+                <img ms-src="mallCouponsIcon" />
+                <span>海量优惠券等你来拿 ></span>
+            </div>
+        </div>
+        <div id="banner" ms-css-height="bannerHeight" ms-if="banners.length > 0"></div>
+        <div class="main-view tuan" id="goods_list"></div>
+    </div>
+    <script src="vender.js"></script>
+    <script src="common.js"></script>
+    <script src="mall_page.js"></script>
+</body>
+</html>

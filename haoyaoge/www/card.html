@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	    <meta name="format-detection" content="telephone=no">
+	    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+	    <meta http-equiv="Pragma" content="no-cache"/>
+	    <meta http-equiv="Expires" content="0"/>
+	    <link rel="stylesheet" href="boot.css">
+	</head>
+	<body>
+	    <script src="boot.js"></script>
+		<section class="card_section">
+			<div class="card_container" ms-controller="card" >
+				<div ms-if="isFission">
+					<div class="card_top">
+						<img id="card_logo" class="card_logo" src="assets/img/card_logo-a93bbfb272.png"/>
+						<div class="shop_desc">
+							
+							<div class="shop_desc_2">{{brand_name}}</div>
+						</div>
+					</div>
+					
+					<div class="card_middle" id="card_middle">
+						<img id="card_middle_bg" class="card_middle_bg" src="http://pinduoduo.b0.upaiyun.com/base/wxcard_bg.png"/>
+						<img ms-if="!isVisible" class="card_received" src="assets/img/card_received-726de3fb6b.png" />
+					
+					</div>
+					<input type="button" ms-click="click(0)" ms-value="{{cardBtnText}}" class="card_btn" id="card_btn" ms-class="card_btn_dis:!isVisible"/>
+				</div>
+				<div style="width: 100%;" ms-if="!isFission" >
+					<div class="_card_top">
+						<div ms-repeat-item="cardInfos" class="_card_infos"  ms-click="click($index)">
+							<img class="_card_logo" src="assets/img/card_logo-a93bbfb272.png"/>
+							<img class="_card_bg" src="assets/img/card_bg-273897b4f4.jpg"/>
+							<div class="_card_title"><span>{{brand_name}}</span></div>
+							<div class="_card_brand_name"><span>{{title}}</span></div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+	        
+	    </section>
+	
+	    <script src="vender.js"></script>
+	    <script src="common.js"></script>
+	    <script src="card.js"></script>
+	</body>
+</html>

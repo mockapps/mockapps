@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+        <meta http-equiv="Pragma" content="no-cache"/>
+        <meta http-equiv="Expires" content="0"/>
+        <link rel="stylesheet" href="boot.css">
+        <link rel="stylesheet" href="lottery_list.css">
+    </head>
+    <body>
+        <script src="boot.js"></script>
+        <div ms-controller="root" class="container">
+            <div class="lottery_specific_goods">
+                <div class="lottery_specific_img"><img ms-src="{{goods.imgUrl}}"></div>
+                <div class="lottery_specific_goods_info">
+                    <div class="lottery_specific_goods_name">{{goods.goodsName}}</div>
+                    <div class="lottery_specific_sale_price">¥{{goods.salePrice}}</div>
+                    <div class="lottery_specific_market_price">¥{{goods.marketPrice}}</div>
+                    <div class="lottery_specific_status">
+                        <span>已开奖</span>
+                    </div>
+                </div>    
+            </div>
+            <div class="lottery_specific_bg">
+            </div>
+            <div class="lottery_specific_result">
+                <div class="lottery_result_title">
+                    <img src="assets/img/lottery_reward_pic-75ef7bfc6e.png" class="lottery_reward_pic">
+                    <div class="lottery_reward_list">中奖名单</div>
+                    <div class="lottery_coupons" ms-click="to_see_coupons">点击查看代金券</div>
+                </div>
+                <div class="lottery_result_info">
+                    <div class="lottery_lucky_guy">幸运儿</div>
+                    <div class="lottery_order_id">订单编号</div>
+                    <div class="lottery_tel_num">电话</div>
+                </div>
+                <div class="lottery_pp_list">
+                    <div class="lottery_showYaoheList">
+                        <div ms-repeat-item="lottery_list" class="lottery_pp_list_item">
+                            <div class="pp_list_name_hide" ms-click="showNextLuckyGuys()" ms-if="!item">隐藏了{{hideNum}}位小伙伴，点击显示</div>
+                            <img class="lottery_pp_list_avatar" ms-src="{{item.avatar}}" ms-if="item">
+                            <div class="lottery_pp_list_info" ms-if="item">
+                                <div class="lottery_pp_list_name"><b>{{item.nickname}}</b></div>
+                                <div class="lottery_pp_list_order">{{item.order_sn}}</div>
+                                <div class="lottery_pp_list_mobile">{{item.mobile}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <script src="vender.js"></script>
+        <script src="common.js"></script>
+        <script src="lottery_list.js"></script>
+
+    </body>
+</html>
+

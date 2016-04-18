@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-cache,no-store,must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <link rel="stylesheet" href="boot.css">
+    <link rel="stylesheet" href="personal.css">
+</head>
+
+<body>
+    <script src="boot.js"></script>
+
+    <section class="main-view container" ms-controller="root" ms-css-visibility="visible">
+        <div class="my my_head" ms-click="login">
+            <div class="my_head_pic">
+                <img id="uinLogo" class="my_head_img" ms-src="{{avatarURL}}">
+            </div>
+            <div class="my_head_info">
+                <h4 id="nickname" class="my_head_name ">{{nickname}}</h4>
+            </div>
+        </div>
+
+        <div class="nav">
+            <div class="nav_item nav_order">
+                <div ms-click="showOrders(0)" class="nav_item_order_hd">
+                    <div class="nav_item_order">我的订单</div>
+                    <div class="nav_item_order_bd">查看全部订单
+                        <img class="nav_item_order_bd_arrow" src="assets/img/personal_arrow-dd13467d78.png">
+                    </div>
+                </div>
+                <div class="nav_item_bd">
+<!--                    <a ms-click="showOrders(0)">
+                        <div class="nav_item_order_img order_all"></div>
+                        <span class="nav_item_txt">全部</span>
+                    </a> -->
+                    <a ms-click="showOrders(1)">
+                        <div class="nav_item_order_img order_unpay"></div>
+                        <span class="nav_item_txt">待付款<i class="nav_item_num" ms-text="payCount" ms-if="payCount != 0"></i></span>
+                    </a>
+                    <a ms-click="showOrders(2)">
+                        <div class="nav_item_order_img order_unsend"></div>
+                        <span class="nav_item_txt">待发货<i class="nav_item_num" ms-text="sendCount" ms-if="sendCount != 0"></i></span>
+                    </a>
+                    <a ms-click="showOrders(3)">
+                        <div class="nav_item_order_img order_unreceived"></div>
+                        <span class="nav_item_txt">待收货<i class="nav_item_num" ms-text="recvCount" ms-if="recvCount != 0"></i></span>
+                    </a>
+                    <a ms-click="showOrders(4)">
+                        <div class="nav_item_order_img order_unevaluated"></div>
+                        <span class="nav_item_txt">待评价<i class="nav_item_num" ms-text="rateCount" ms-if="rateCount != 0"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav">
+            <ul class="nav_list">
+                <li class="nav_cheap" ms-click="showGroups()">
+                    <div class="nav_list_img"></div>
+                    <div class="nav_list_txt">我的团</div>
+                </li>
+                <li class="nav_lottory" ms-click="showLottory()">
+                    <div class="nav_list_img"></div>
+                    <div class="nav_list_txt">我的抽奖</div>
+                </li>
+                <li class="nav_like" ms-click="showLikes()">
+                    <div class="nav_list_img"></div>
+                    <div class="nav_list_txt">我的收藏</div>
+                </li>
+                <li class="nav_cart" ms-click="showCoupons()">
+                    <div class="nav_list_img"></div>
+                    <div class="nav_list_txt">我的优惠券</div>
+                </li>
+                <li class="nav_adress" ms-click="showAddresses()">
+                    <div class="nav_list_img"></div>
+                    <div class="nav_list_txt">收货地址</div>
+                </li>
+                <li class="nav_msg" ms-click="showChatList()">
+                    <div class="nav_list_img">
+                        <i class="nav_item_num msg" ms-if="newMsgCount != 0" ms-text="newMsgCount"></i>
+                    </div>
+                    <div class="nav_list_txt">我的消息</div>
+                </li>
+                <li class="nav_faq" ms-click="showSuggestion()">
+                    <div class="nav_list_img"></div>
+                    <div class="nav_list_txt">常见问题</div>
+                </li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="nav_download_app" ms-click="downloadApp" ms-if="showAppDownload">
+            <div class="nav_download_image"></div>
+            <span class="nav_download_text">APP里确认收货就有红包</span>
+            <span class="nav_download_button">立即下载</span>
+            <div class="nav_download_icon"></div>
+        </div>
+        <div class="nav nav_item_hd_logout"><div ms-click="logout" class="coupons_a" ms-text="logoutText"></div></div>
+    </section>
+
+    <script src="vender.js"></script>
+    <script src="common.js"></script>
+    <script src="personal.js"></script>
+</body>
+</html>

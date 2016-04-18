@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <link rel="stylesheet" href="boot.css">
+</head>
+
+<body>
+    <script src="boot.js"></script>
+    
+    <div class="eg_container" ms-controller="root">
+        <div class="eg_banner">
+            <img class="eg_img" ms-attr-src="imgUrl">
+            <div class="eg_list_desc">
+                <div class="tuan_g_img_text">
+                    <div class="tuan_g_img_item" ms-repeat="listDesc">
+                        <div class="tuan_g_img_round" ms-if="el.length > 0"></div>
+                        <div class="tuan_img_text_border" ms-if="el.length > 0"><span ms-text="el"></span></div>
+                    </div>
+                </div>
+            </div>
+            <img class="eg_logo" src="http://pinduoduo.b0.upaiyun.com/activity/app_exclusive_logo.png"/>
+        </div>
+        <div class="eg_title">
+            <p>{{title}}</p>
+        </div>
+        <div class="eg_body" ms-if="!isShowRule">
+            <div class="eg_notification">
+                <div class="eg_notification_title">
+                    <span class="eg_font_black">如何参加</span>
+                    <span class="eg_font_red">{{price}}元</span>
+                    <span class="eg_font_black">APP专享团</span>
+                </div>
+                <div class="eg_notification_content">
+                    <div class="eg_font_gray"> 1、长按复制专享码</div>
+                    <div class="eg_font_gray"> 2、去昊幺哥APP首页输入专享码</div>
+                    <div class="eg_font_gray"> 3、参加好友团</div>
+                </div>
+            </div>
+            <div class="eg_decoration">
+                <div class="eg_text">
+                    <span class="eg_font_black">长按</span>
+                    <span class="eg_font_red">复制</span>
+                    <span class="eg_font_black">您的APP</span>
+                    <span class="eg_font_red">专享码</span>
+                </div>
+            </div>
+            <div class="eg_border_1">
+                <div class="eg_copy_btn">
+                    <span>{{exclusiveCode}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="eg_body" ms-if="isShowRule">
+            <div class="eg_notification">
+                <div class="eg_notification_title">
+                    <span class="eg_font_red">{{price}}元</span>
+                    <span class="eg_font_black">APP专享团,如何开团？</span>
+                </div>
+                <div class="eg_notification_content">
+                    <div class="eg_content_border">
+                        <div class="eg_font_gray"> 
+                            <p>1、新用户下载昊幺哥APP，</p>
+                            <p>&nbsp &nbsp &nbsp老用户打开昊幺哥APP</p>
+                        </div>
+                        <div class="eg_font_gray"> 
+                            <p>2、在APP首页找到APP专享团，</p>
+                            <p>&nbsp &nbsp &nbsp直接开团并邀请朋友参团</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="eg_decoration">
+                <img class="eg_shortcut" ms-src="shortCut"/>
+            </div>
+        </div>
+        <div class="eg_footer">
+            <div class="eg_border_2">
+                <div class="eg_download">
+                    <a style="color: inherit;" ms-click="download">下载／打开昊幺哥APP</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="vender.js"></script>
+    <script src="common.js"></script>
+    <script src="exclusive_group.js"></script>
+</body>
+</html>

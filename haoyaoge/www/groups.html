@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <link rel="stylesheet" href="boot.css">
+</head>
+
+<body>
+    <script src="boot.js"></script>
+    <div class="con" ms-controller="groups">
+        <div class="nav_fixed">
+            <a ms-click="switchList(3)" class="fixed_nav_item_groups">
+                <span class="nav_txt" ms-class="nav_cur:groupType==3">全部</span>
+            </a>
+            <a ms-click="switchList(0)" class="fixed_nav_item_groups">
+                <span class="nav_txt" ms-class="nav_cur:groupType==0">组团中</span>
+            </a>
+            <a ms-click="switchList(1)" class="fixed_nav_item_groups">
+                <span ms-class="nav_cur:groupType==1">已成团</span>
+            </a>
+            <a ms-click="switchList(2)" class="fixed_nav_item_groups">
+                <span ms-class="nav_cur:groupType==2">组团失败</span>
+            </a>
+        </div>
+        <div class="mt_order" id="groups">
+            <div class="groups" ms-repeat-group="groupList" ms-if-loop="group.show">
+                <div class="groups_line"></div>
+                <div class="mt_g">
+                    <div class="mt_g_wrap">
+                        <div class="mt_g_img" ms-click="gotoGroup(group)"> 
+                            <img ms-src="{{group.orderGoods.thumbUrl}}">
+                        </div>
+                        <div class="mt_g_info">
+                            <p class="mt_g_name" ms-text="group.orderGoods.goodsName"></p>
+                            <p class="mt_g_price">
+                                <span class="mt_g_number" ms-text="group.groupNumber"></span>
+                                <span>
+                                    <b>¥</b><span ms-text="group.orderGoods.price"></span>
+                                </span>
+                            </p>
+                            <span class="mt_status_txt" ms-text="getGroupStatusTxt(group.groupStatus)"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt_status">
+                    <a class="mt_status_lk1" ms-click="gotoOrder(group)">查看订单详情</a>
+                    <a class="mt_status_lk1 marg_right" ms-click="gotoGroup(group)"  ms-class="on_going_group: group.ongoingGroup" ms-text="group.goToGroupText"></a>
+                </div>
+            </div>
+            <div class="mt_nogroups" ms-if="noGroupsAtAll" ms-click="goHome">
+                <h4 ms-text="noGroupsText"></h4>
+            </div>
+        </div>
+        <div id="load_more" ms-class="{{loadingClass}}">
+            <div class="center">
+                <span ms-if="loadingRotateVisible">
+                    <img ms-class="img_rotate {{loadingRotateClass}}" src="assets/img/pull_loading-1e493b5612.png"/>
+                </span>
+                <span class="orders_text" ms-text="loadingTxt"></span>
+            </div>
+        </div>
+    </div>
+    <div style="height:58px;visibility:hidden "></div>
+    <script src="vender.js"></script>
+    <script src="common.js"></script>
+    <script src="groups.js"></script>
+</body>
+</html>

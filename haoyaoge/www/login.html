@@ -1,0 +1,96 @@
+<!doctype html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-cache,no-store,must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <link rel="stylesheet" href="boot.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <script src="boot.js"></script>
+    <div id="login" ms-controller="login">
+        <div id="first" class="main">
+            <div class="login_box">
+                <div class="login_title">选择登陆方式</div>
+                <div class="section_wrap">
+                    <section class="section wechat_login" ms-if="wechatLoginVisible" ms-click="login(3)">
+                        <div class="login_box_img">
+                            <img src="assets/img/loginicon-weixin-8482f2354f.png">
+                        </div>
+                        <div class="login_box_txt">微信登录</div>
+                    </section>
+                    <section class="section qq_login" ms-if="qqLoginVisible" ms-click="login(4)">
+                        <div class="login_box_img">
+                            <img src="assets/img/loginicon-qq-5d6d70a37f.png">
+                        </div>
+                        <div class="login_box_txt">QQ登录</div>
+                    </section>
+                    <section class="section weibo_login" ms-if="weiboLoginVisible" ms-click="login(2)">
+                        <div class="login_box_img">
+                            <img src="assets/img/loginicon-weibo-3f955823af.png">
+                        </div>
+                        <div class="login_box_txt">微博登录</div>
+                    </section>
+                    <section class="section phone_login" ms-if="phoneLoginVisible" ms-click="showPhoneLogin()">
+                        <div class="login_box_img">
+                            <img src="assets/img/loginicon-phone-525c55cc0e.png">
+                        </div>
+                        <div class="login_box_txt">手机登陆</div>
+                    </section>
+                </div>
+            </div>
+            <div class="login_footer">
+                <img src="assets/img/login_footer-b8a4ba07e3.png">
+                <p ms-text="versionInfo"></p>
+            </div>
+        </div>
+
+        <div class="container">
+            <form>
+                <div class="login_input">
+                    <div class="input_group">
+                        <label for="user_mobile" id="icon1" class="phone_icon"></label>
+                        <input type="tel" id="user_mobile" placeholder="手机号码" ms-duplex="telephone" ms-input="clearError()"/>
+                    </div>
+                    <hr class="input_hr"/>
+                    <div class="input_group">
+                        <label for="user_mobile" id="icon2" class="phone_icon"></label>
+                        <input type="tel" id="input_code" placeholder="验证码" ms-duplex="verificationCode" ms-input="clearError()"/>
+                        <button type="button" id="code_button" ms-click="requestVerificationCode()">{{verificationCodeMessage}}</button>
+                    </div>
+                </div>
+                <div class="error">
+                    <p class="text-error" ms-visible="errorMessage.length>0">{{errorMessage}}</p>
+                </div>
+                <p> 
+                    <input id="agreement" type="checkbox" ms-duplex-checked="agreementChecked" ms-click="clearError()"/>
+                    <label for="agreement"></label>
+                    <strong>我已经阅读并同意</strong>
+                    <a ms-click="showTerms()"><span>昊幺哥协议</span></a>
+                </p>
+                <button type="submit" id="submit_button" ms-click="phoneLogin()">登录</button>
+                <button class="submit_button_login" ms-click="hidePhoneLogin()">返回</button>
+            </form>
+            <!-- <div class="quick_login">
+                <div class="txt">
+                    快捷登录
+                </div>
+                <p>
+                    <a id="weixin" ms-click="login(3)" ms-if="wechatLoginVisible"></a>
+                    <a id="weibo" ms-click="login(2)" ms-if="weiboLoginVisible"></a>
+                </p>
+            </div> -->
+        </div>
+    </div>
+
+    <script src="vender.js"></script>
+    <script src="common.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

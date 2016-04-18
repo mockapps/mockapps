@@ -1,0 +1,1 @@
+webpackJsonp([70],[function(a,n,o){"use strict";var e=o(6),c=o(3);c.hide(),avalon.ready(function(){avalon.define({$id:"root",shopName:e.shop.name}),avalon.scan(document.body)})}]);

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-cache,no-store,must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <link rel="stylesheet" href="boot.css">
+    <link rel="stylesheet" href="suggestion.css">
+</head>
+
+<body>
+    <script src="boot.js"></script>
+    <div ms-controller="root" class="faq-wrap">
+        <div ms-if="faqId != 9">
+            <div class="faq-header" ms-text="faqHeader"></div>
+            <div ms-if="faqTextInfo" class="faq-textinfo" ms-text="faqTextInfo"></div>
+            <div ms-if="faqListInfo" class="faq-list">
+                <div class="faq-list-one" ms-repeat="faqListInfo">
+                    <span>{{$index+1}}.</span>{{el}}
+                </div>
+            </div>
+            <div ms-if="faqTableInfo" class="faq-table" ms-repeat-table="faqTableInfo">
+                <div class="faq-table-header">{{table.header}}</div>
+                <div class="faq-table-list">
+                    <div class="faq-table-one" ms-repeat="table.list">
+                        <span>{{$index+1}}.</span>{{el}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="faq-special" ms-if="faqId == 9">
+            <div class="faq-header" ms-text="faqHeader"></div>
+            <div class="faq-spcial-title">一、联系昊幺哥在线客服</div>
+            <div class="faq-spcial-text">1.搜索关注微信公众号“昊幺哥”，进入微信公众号</div>
+            <img ms-src="faqImg[0]">
+            <div class="faq-spcial-text">2.点击右下方按钮“平台客服”，选择“在线客服”</div>
+            <img ms-src="faqImg[1]">
+            <div class="faq-spcial-text">3.点击键盘图标，在对话框内输入您的问题，稍后就会有客服同学帮您处理</div>
+            <img ms-src="faqImg[2]">
+            <div class="faq-spcial-text">4.客服时间9:00-24:00</div>
+            <div class="faq-spcial-title">二、进入昊幺哥个人中心，我的消息中联系“昊幺哥官方客服”</div>
+            <div class="faq-spcial-title">三、昊幺哥客服电话为：4008822528</div>
+            <div class="faq-spcial-subtitle">客服时间9:00-20:00</div>
+        </div>
+        <div class="faq-bottom" ms-if="faqBottomInfo" ms-text="faqBottomInfo"></div>
+        <div style="height: 50px; visibility: hidden;"></div>
+    </div>
+
+
+    <script src="vender.js"></script>
+    <script src="common.js"></script>
+    <script src="faq.js"></script>
+</body>
+</html>

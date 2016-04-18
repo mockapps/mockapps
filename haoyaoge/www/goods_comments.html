@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-cache,no-store,must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <meta property="og:title" content="昊幺哥"/>
+    <meta property="og:description" content="风靡全国的拼团商城，优质商品新鲜直供，快来一起昊幺哥吧"/>
+    <meta property="og:image" content="http://pinduoduo.b0.upaiyun.com/base/share_logo.jpg"/>
+    <link rel="stylesheet" href="boot.css">
+</head>
+<body>
+    <script src="boot.js"></script>
+    <div class="goods-comments-container" ms-controller="goodsComments">
+        <div class="goods-comments-title">
+            <div class="goods-comments-all">全部评价</div>
+            <div class="goods-comments-amount" ms-if="showAmounts">共有{{amounts}}条评价</div>
+        </div>
+        <div class="goods-comments-list">
+            <div class="goods-comments-detail" ms-repeat-item="lists">
+                <img ms-src="item.avatar" class="goods-comments-avatar">
+                <div class="goods-comments-name" ms-text="item.name">
+                </div>
+                <div class="goods-comments-time" ms-text="item.time">
+                </div>
+                <div class="goods-comments-stars">
+                    <div class="goods-comments-stars-show" ms-repeat-star="item.stars">
+                    </div>
+                </div>
+                <div class="goods-comments-content" ms-text="item.comment" ms-if="item.comment.length>0">
+                </div>
+                <div class="goods-comments-sku" ms-if="item.spec.length>0">
+                    <div class="goods-comments-skus" ms-repeat-sku="item.spec">
+                        <div class="goods-comments-sku-spec" ms-text="sku.spec_key"></div>
+                        <div class="goods-comments-sku-spec">:&nbsp</div>
+                        <div class="goods-comments-sku-spec" ms-text="sku.spec_value"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrap_position pullUp-show-comments" ms-class="no_order: noCommentAtAll">
+            <div class="posi_abso up" ms-if="isLoading">
+                <div class="center" id="center_pullup">
+                    <span><img class="img-rotate-comments loading-spin" src="assets/img/pull_loading-1e493b5612.png"/></span>
+                    <span class="orders-text">数据正在加载中</span>
+                </div>
+            </div>
+            <div class="posi_abso up">
+                <div class="center" id="center_pullup">
+                    <span class="orders-text" ms-text="message"></span>
+                </div>
+            </div>
+        </div>
+        <div class="go-top" ms-css-bottom="topButtonBottom" ms-css-opacity="topButtonOpacity"><span>顶部</span></div>
+    </div>
+    <script src="page.js"></script>
+    <script src="vender.js"></script>
+    <script src="common.js"></script>
+    <script src="goods_comments.js"></script>
+</body>
+</html>

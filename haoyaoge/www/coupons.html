@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-cache,no-store,must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <link rel="stylesheet" href="boot.css">
+</head>
+
+<body class="coupons_body">
+    <script src="boot.js"></script>
+    
+    <section ms-controller="coupons">
+    <div class="nav_fixed">
+        <a ms-click="tabChange(0)" class="fixed_nav_item_coupons" data-status="1"><span class="nav_txt" ms-class="nav_cur:currentTab==0">可使用</span></a>
+        <a ms-click="tabChange(1)" class="fixed_nav_item_coupons" data-status="2"><span class="nav_txt nav_payment" ms-class="nav_cur:currentTab==1">未激活<b class="nav_payment_num" style="display:none;"></b></span></a>
+        <a ms-click="tabChange(2)" class="fixed_nav_item_coupons" data-status="3"><span class="nav_txt nav_receiving" ms-class="nav_cur:currentTab==2">已用/已过期<b class="nav_receiving_num" style="display:none;"></b></span></a>
+    </div>
+    <div class="wrapper_coupons">
+        <div ms-if="couponList.length">
+            <b class="can_use" ms-if="currentTab==1&&frozen.length">未激活：</b>
+            <b class="can_use" ms-if="currentTab==2&&used.length">已使用：</b>
+            <div class="coup_one" ms-repeat-coupon="currentList">
+                <div ms-class="{{coupon.cpStyle.coupon_style.color}}">
+                    <div>
+	            		<img src="assets/img/cp_bg_gray_selected-9f5b1ac252.png" 
+		                	ms-attr-src="coupon.cpStyle.coupon_style.bg_url" 
+		                	class="coupons_bg" />
+                    </div>
+                    <img ms-if="currentTab==1" src="assets/img/frozen-576692ae7a.png" class="seal">
+                    <img ms-if="currentTab==2" src="assets/img/used-9de05b1587.png" class="seal">
+
+                    <div ms-if="coupon.type == 7" ms-click="gotogoods(coupon.goods_id)">
+                        <div class="free_img" >
+                            <img ms-src="coupon.thumb_url">
+                        </div>
+                        <div class="coup_text_left1 tuanzhang_text_left1" >
+                            <span>价值{{coupon.cpStyle.discount}}元</span>
+                            <div class="coup_text_catname tuanzhang_text_catname">仅限于团购此商品,未成团不退还</div>
+                            <div class="text_copus_desc1">{{coupon.start_time * 1000|date("yyyy-MM-dd")}} - {{coupon.end_time * 1000|date("yyyy-MM-dd")}}</div>
+                        </div>
+                        <div class="coup_time_right1 tuanzhang_time_right1" >
+                            <div class="tuanzhang_price">团长免单</div>
+                            <span>{{coupon.freeTuanCoupon_text}}</span><br>
+                        </div>
+                    </div>
+                    <div ms-if="coupon.type != 7">
+    	                <div>
+    	                    <b class="pin1" >￥</b>
+    	                </div>
+    	                <div>
+                            <b class="pin2" ms-class="pin2-small:coupon.cpStyle.discount>=100">{{coupon.cpStyle.discount}}</b>
+    	                </div>
+    	                <div class="coup_text_left1">
+    	                    <b>{{coupon.batch_name}}</b>
+    	                    <div class="coup_text_catname">{{coupon.cpStyle.cat_name}}</div>
+    	                    <div class="text_copus_desc1" >{{coupon.start_time  * 1000|date("yyyy-MM-dd")}} - {{coupon.end_time * 1000|date("yyyy-MM-dd")}}</div>
+    	                </div>
+    	                <div class="coup_time_right1" >
+    	                    <b>{{coupon.cpStyle.coupon_style.type}}</b><br>
+                            <span ms-if="currentTab==0" ms-click="gotoRank()" class="coup_rightnow">立即使用</span>
+                            <span ms-if="currentTab==1">未激活</span>
+                            <span ms-if="currentTab==2">已使用</span><br>
+    	                </div>
+                    </div>
+                </div>
+            </div>
+            <div ms-if="currentTab == 2">
+                <b class="can_use" ms-if="currentTab==2&&expired.length">已过期：</b>
+                <div class="coup_one" ms-repeat-coupon="expired">
+                    <div ms-class="{{coupon.cpStyle.coupon_style.color}}">
+                        <div>
+                            <img src="assets/img/cp_bg_gray_selected-9f5b1ac252.png" 
+                                ms-attr-src="coupon.cpStyle.coupon_style.bg_url" 
+                                class="coupons_bg" />
+                        </div>
+                        <img ms-if="currentTab==2" src="assets/img/expired-805d6dbaad.png" class="seal">
+
+                        <div ms-if="coupon.type == 7" ms-click="gotogoods(coupon.goods_id)">
+                            <div class="free_img" >
+                                <img ms-src="coupon.thumb_url">
+                            </div>
+                            <div class="coup_text_left1 tuanzhang_text_left1" >
+                                <span>价值{{coupon.cpStyle.discount}}元</span>
+                                <div class="coup_text_catname tuanzhang_text_catname">仅限于团购此商品,未成团不退还</div>
+                                <div class="text_copus_desc1">{{coupon.start_time * 1000|date("yyyy-MM-dd")}} - {{coupon.end_time * 1000|date("yyyy-MM-dd")}}</div>
+                            </div>
+                            <div class="coup_time_right1 tuanzhang_time_right1" >
+                                <div class="tuanzhang_price">团长免单</div>
+                                <span>{{coupon.freeTuanCoupon_text}}</span><br>
+                            </div>
+                        </div>
+                        <div ms-if="coupon.type != 7">
+                            <div>
+                                <b class="pin1" >￥</b>
+                            </div>
+                            <div>
+                                <b class="pin2" ms-class="pin2-small:coupon.cpStyle.discount>=100">{{coupon.cpStyle.discount}}</b>
+                            </div>
+                            <div class="coup_text_left1">
+                                <b>{{coupon.batch_name}}</b>
+                                <div class="coup_text_catname">{{coupon.cpStyle.cat_name}}</div>
+                                <div class="text_copus_desc1" ms-if="currentTab==0&&(used.length)">{{coupon.used_time * 1000|date("yy-MM-dd")}}</div>
+                                <div class="text_copus_desc1" ms-if="currentTab!=0&&(frozen.length||expired.length)">{{coupon.start_time  * 1000|date("yyyy-MM-dd")}} - {{coupon.end_time * 1000|date("yyyy-MM-dd")}}</div>
+                            </div>
+                            <div class="coup_time_right1" >
+                                <b>{{coupon.cpStyle.coupon_style.type}}</b><br>
+                                <span>已过期</span><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div ms-if="couponList.length==0">
+            <div ms-if="netErr" class="center  margintop" ms-text="errorText.DEFAULT"></div>
+            <div ms-if="couponList.length==0 && showCurrUsedCoupons" class="coup_no_coupons" ms-html="errorText.NO_COUPONS"></div>
+        </div>
+    </div>
+    </section>
+    
+    <script src="vender.js"></script>
+    <script src="common.js"></script>
+    <script src="coupons.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-cache,no-store,must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <link rel="stylesheet" href="boot.css">
+    <link rel="stylesheet" href="feedback.css">
+</head>
+
+<body>
+    <script src="boot.js"></script>
+    <div ms-controller="root" class="feedback-wrap">
+            <div class="feedback-title">具体商品的售后问题，可以在<span ms-click="gotoOrder()">我的订单</span>的订单详情页直接反馈，以便我们第一时间跟进处理。</div>
+            <div class="feedback-subtitle">其他意见反馈</div>
+            <textarea class="feedback-text" ms-duplex="feedbackMsg"></textarea>
+            <button id="feedback-submit" ms-click="submit()">提交</button>
+    </div>
+    
+
+    <script src="vender.js"></script>
+    <script src="common.js"></script>
+    <script src="feedback.js"></script>
+</body>
+</html>

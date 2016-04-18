@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-cache,no-store,must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <link rel="stylesheet" href="boot.css">
+</head>
+
+<body>
+    <script src="boot.js"></script>
+    <div class="mod_container" ms-controller="root" ms-css-visibility="show">
+        <div class="wx_bar">
+            <div class="wx_bar_back">
+                <a id="back"></a>
+            </div>
+            <div class="wx_bar_tit">收货地址</div>
+        </div>
+
+        <div class="wx_wrap address_new">
+            <p>
+                <label><span class="tit">收货人</span>
+                    <input style="background-color:white;" placeholder="名字" type="text" ms-duplex="receiver" data-duplex-event="change" data-duplex-changed="onReceiverEdited">
+                    <span style="color:red;" ms-if="!isReceiverValid">请填写姓名</span>
+                </label>
+            </p>
+            <p>
+                <label><span class="tit">手机号码</span>
+                    <input style="background-color:white;" placeholder="手机号码" type="tel" ms-duplex="mobile" data-duplex-event="change" data-duplex-changed="onMobileEdited">
+                    <span style="color:red;" ms-if="!isMobileValid">请填写正确的手机号</span>
+                </label>
+            </p>
+<!--
+            <p>
+                <label><span class="tit">身份证</span>
+                    <input placeholder="身份证号" type="tel">
+                    <span style="color:red;">请填写本人真实身份证号</span>
+                    <h4 style="width:80%;text-align:center;margin-left:10%;height:25px;">(&nbsp;*因海关查验需要，身份证号码和姓名必须一致，否则无法操作发货!&nbsp;)</h4>
+                </label>
+            </p>
+-->
+            <p>
+                <label><span class="tit">省份</span>
+                    <select ms-duplex="provinceID" data-duplex-changed="onProvinceEdited">
+                        <option value="0">- 选择省 -</option>
+                        <option ms-repeat-province="provinces" ms-attr-value="province.region_id">{{province.region_name}}</option>
+                    </select>
+                    <span style="color:red;" ms-if="!isProvinceIDValid">请选择省</span>
+                </label>
+            </p>
+            <p>
+                <label><span class="tit">市</span>
+                    <select ms-duplex="cityID" data-duplex-changed="onCityEdited">
+                        <option value="0">- 选择市 -</option>
+                        <option ms-repeat-city="cities" ms-attr-value="city.region_id">{{city.region_name}}</option>
+                    </select>
+                    <span style="color:red;" ms-if="!isCityIDValid">请选择市</span>
+                </label>
+            </p>
+            <p>
+                <label><span class="tit">区/县</span>
+                    <select ms-duplex="districtID" data-duplex-changed="onDistrictEdited">
+                        <option value="0">- 选择区/县 -</option>
+                        <option ms-repeat-district="districts" ms-attr-value="district.region_id">{{district.region_name}}</option>
+                    </select>
+                    <span style="color:red;" ms-if="!isDistrictIDValid">请选择区/县</span>
+                </label>
+            </p>
+            <p>
+                <label><span class="tit">详细地址</span>
+                    <input style="background-color:white;" placeholder="详细地址" type="text" ms-duplex="address" data-duplex-event="change" data-duplex-changed="onAddressEdited">
+                    <span style="color:red;" ms-if="!isAddressValid">请填写详细地址</span>
+                </label>
+            </p>
+            <div class="loadWeixinAddress2" ms-click="loadWeixinAddress" ms-if="showLoadWeixinAddress">从微信选择收货地址<img ms-click="loadWeixinAddress" class="loadWeixinAddressImg2" src="assets/img/forwardWeixinAddress-11b7e073ce.png"></div>
+            <p class="action">
+                <button id="confirm_address" class="submit" ms-click="onConfirm()">确认</button>
+                <button id="delete_address" class="submit" style="background-color:red;" ms-visible="isEdit" ms-click="onDelete()">删除</button>
+            </p>
+        </div>
+    </div>
+
+    <script src="vender.js"></script>
+    <script src="common.js"></script>
+    <script src="address.js"></script>
+</body>
+</html>

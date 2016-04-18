@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-cache,no-store,must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <link rel="stylesheet" href="boot.css">
+    <link rel="stylesheet" href="coupon_receive.css">
+</head>
+<body>
+    <script src="boot.js"></script>
+    <div ms-controller="root">
+        <img id="coupon_receive_img" src="http://pinduoduo.b0.upaiyun.com/activity/black_friday_detail_555.png" ms-click="receiveOrUse">
+        <div id="coupon_receive_main">
+            <div id="coupon_received_info">
+                <div id="coupon_received_mesg" ms-if="if_received">
+                    <span>该优惠券每人限领一次，您已经领取过了</span>
+                </div>
+                <div id="coupon_receive_button">
+                    <div id="coupon_receive_use" ms-click="receiveOrUse">{{coupon_received}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="vender.js"></script>
+    <script src="common.js"></script>
+    <script src="coupon_receive.js"></script>
+</body>
+</html>

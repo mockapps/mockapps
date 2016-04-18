@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta property="og:title" content="昊幺哥" />
+    <meta property="og:description" content="风靡全国的拼团商城，优质商品新鲜直供，快来一起昊幺哥吧" />
+    <meta property="og:image" content="http://pinduoduo.b0.upaiyun.com/base/share_logo.jpg" />
+    <link rel="stylesheet" href="boot.css">
+    <link rel="stylesheet" href="mall_coupons.css">
+</head>
+
+<body id="main">
+    <script src="boot.js"></script>
+    <div id="index-content" class="container" ms-controller="root" ms-css-visibility="show" style="padding:0!important;background-color:#F3F3F3;">
+        <div class="mall-coupons-banner" ms-if="banner" ms-css-height="bannerHeight">
+            <img ms-src="banner" />
+        </div>
+        <div class="mall-coupons-list-wrapper">
+            <div class="mall-coupons-list" ms-repeat-coupon="coupons" ms-click="getCoupon($index, coupon.batchID)">
+                <div class="type" ms-class-received="coupon.isTaken">
+                    <div class="detail" ms-text="coupon.typeLabel"></div>
+                    <div class="action" ms-text="coupon.actionLabel"></div>
+                </div>
+                <div class="mall-coupons-detail">
+                    <span class="sign">￥</span>
+                    <span class="discount" ms-text="coupon.discount"></span>
+                    <div class="label">
+                        <div class="batch-name" ms-text="coupon.batchName"></div>
+                        <div class="cat-name" ms-text="mallName"></div>
+                        <div class="time">{{coupon.startTime|date("yyyy-MM-dd")}} - {{coupon.endTime|date("yyyy-MM-dd")}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="vender.js"></script>
+    <script src="common.js"></script>
+    <script src="mall_coupons.js"></script>
+</body>
+
+</html>

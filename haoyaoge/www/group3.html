@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <meta property="og:title" content="昊幺哥"/>
+    <meta property="og:description" content="风靡全国的拼团商城，优质商品新鲜直供，快来一起昊幺哥吧"/>
+    <meta property="og:image" content="http://pinduoduo.b0.upaiyun.com/base/share_logo.jpg"/>
+    <link rel="stylesheet" href="boot.css">
+</head>
+
+<body id="group">
+    <script src="boot.js"></script>
+    <section class="group-view" ms-controller="group">
+    <div class="explain_modal" >
+        <div class="explain_tuan explain_icon" style="display:block;" ms-click="showExplain()"></div>
+        <div id="showExplain" ms-visible="showExplainBg" style="display:block;">
+            <div class="showBg" ms-click="hideExplain()" ms-css-background-image="explainBgImg">
+                <img ms-src="explainBgClose" style="position: absolute; top: 10px; right: 10px">
+            </div>
+        </div>
+    </div>
+    <div class="group-app-banner" ms-click="clickAppBanner" ms-if="showAppBanner">
+        <img ms-src="appBannerImg">
+    </div>
+    <div class="content">
+        <div class="H5_con" id="group_title" ms-if="showAppBanner">
+            <!-- <div class="tips topStateWrap tips_succ tips_succ2" ms-if="titleStatus==0">
+                <div class="tips_ico"></div>
+                <div class="tips_tit" ms-text="tips.title"></div>
+                <div class="tips_txt" ms-text="tips.txt"></div>
+            </div>
+            <div class="cardtips" ms-if="titleStatus==1">
+                <p class="cardtips_txt">{{tips.title}}<br>
+                    {{tips.txt}}
+                </p>
+            </div>
+            <div class="tips topStateWrap tips_err" ms-if="titleStatus==2">
+                <div class="tips_ico"></div>
+                <div class="tips_tit" ms-text="tips.title"></div>
+            </div> -->
+        </div>
+        <div class="H5_con">
+            <!--<div id="group_detail" class="tm" ms-class="tm_succ:groupStatus==1" ms-class="tm_err:groupStatus==2">-->
+            <div id="group_detail" ms-class="tm {{groupClass}}">
+                <a class="goItemPage" ms-click="gotoGoodsDetail()">
+                    <div class="td tuanDetailWrap">
+                        <div class="td_img">
+                            <img alt="" ms-src="{{goodsInfo.thumbUrl}}">
+                        </div>
+                        <div class="td_info margin_height">
+                            <p class="td_name" ms-text="goodsInfo.goodsName"></p>
+                            <p class="td_mprice">
+                            <span class="tuanTotal">{{groupOrderInfo.requireNum}}</span>人团：<i>¥</i><b>{{goodsInfo.price}}</b><i> /件</i>
+                            </p>
+                            <p class="td_num"></p>
+                            <div class="img_out" id="img_out" style="display:block;" ms-if="isSoldOut&&groupStatus==0"></div>
+                        </div>
+                        <div class="groupLotteryRule" ms-if="hasLotteryRule" ms-click="showLotteryRule">抽奖规则</div>
+                    </div>
+                </a>
+                <div class="order_suc_arrow">
+                    <span></span>
+                </div>
+            </div>
+
+            <div ms-class-ppwrap="groupStatus == 1">
+                <div class="pp">
+                    <div class="pp_users_num" ms-if="groupStatus == 1">{{groupOrderInfo.users.length}}人参团</div>
+                    <div class="pp_users all" id="pp_users">
+                        <a ms-class="pp_users_item {{user.avatarClass2}} {{user.avatarClass}}" ms-repeat-user="usersAvatar">
+                            <img alt="" ms-src="{{user.avatarImg}}" ms-css-height="avatarHeight">
+                        </a>
+                    </div>
+                    <div class="pp_vtips" id="flag_2_a" ms-if="groupStatus==1" ms-click="showAllUserList()">{{showAllTitle}}
+                        <img id="show_all" >
+                    </div>
+                    <!-- <div class="pp_tips" id="flag_1_a" ms-if="groupStatus==1">对于诸位大侠的相助，团长感激涕零</div> -->
+                    <div class="pp_tips" id="flag_0_a" ms-if="groupStatus==0">还差<b>{{leftUserNum}}</b>人，盼你如南方人盼暖气~</div>
+                    <div class="pp_state" id="flag_0_b" ms-if="groupStatus==0">
+                        <div class="pp_time">
+                            剩余<span id="ti_time_day" ms-if="leftDays>0">{{leftDays}}</span><span ms-if="leftDays>0">天</span>
+                            <span id="ti_time_hour">{{leftHours}}</span>:
+                            <span id="ti_time_min">{{leftMinutes}}</span>:
+                            <span id="ti_time_sec">{{leftSeconds}}</span>结束
+                        </div>
+                    </div>
+                </div>
+                <div class="pp_list" ms-if="showAllFlag">
+                    <div id="showYaoheList">
+                        <div class="pp_list_item" ms-repeat-user="usersList">
+                            <div class="pp_list_name_hide" ms-click="showAllUsers()" ms-if="!user">隐藏了{{hideNum}}位小伙伴，点击显示</div>
+                            <img class="pp_list_avatar" alt="" ms-src="{{user.avatarImg}}" ms-if="user">
+                            <div class="pp_list_info" id="pp_list_info" ms-if="user">
+                                <span class="pp_list_name"><span ms-if="$index==0">团长</span>
+                                <b>{{user.nickname}}</b>
+                            </span>
+                            <span class="pp_list_time">{{user.joinTime*1000|date("yyyy-MM-dd HH:mm:ss")}}
+                                <span ms-if="$index==0">开团</span><span ms-if="$index>0">参团</span>
+                            </span>
+                        </div>
+                    </div>
+                        </br>
+                    </div>
+                </div>
+            </div>
+             <div class="group_mall" ms-click="gotoMall()" ms-if="mall.name.length>0">
+                 <img ms-src="{{mall.logo}}">
+                 <div class="mall_sub">
+                     <span>{{mall.name}}</span>
+                     <div class="sales">销量：{{mall.soldQuantity}}</div>
+                 </div>
+                 <div class="enter_button">
+                     <img src="http://pinduoduo.b0.upaiyun.com/mall/mall_icon_small.png">
+                     <span>进店逛逛</span>
+                 </div>
+            </div>
+        </div>
+        <div id="shareit" ms-click="hideShareTip()" style="display:block;" ms-visible="shareitVisible">
+            <div class="arrow">
+                <img src="assets/img/share-it-315ec4e161.png">
+                <div class="label">
+                    <span>
+                    点击右上角，</br>
+                    将它分享给好友
+                    </span>
+                </div>
+            </div>
+            <div class="addcontact_qrcode" ms-if="isNewUser">
+                <img ms-src="qrCodeImg">
+            </div>
+            <div class="addcontact_hint" ms-if="isNewUser">长按并识别二维码，关注昊幺哥</br>
+                <p>关注成功后完成此次购物</p>
+            </div>
+            <div class="subscribed_hint" ms-if="!isNewUser">
+                <div class="subscribed_tip" ms-text="subscribedTip"></div>
+                <br>
+                <br>
+                <div class="group_left_user_num">还差{{leftUserNum}}人就能组团成功</div>
+                <br>
+                快邀请更多小伙伴参团吧
+            </div>
+        </div>
+        <div class="step">
+            <div class="step_hd">拼团玩法<a class="step_more" ms-click="showGroupRule()">查看详情</a>
+            </div>
+            <div id="footItem" class="step_list">
+                <div class="step_item">
+                    <div class="step_num">1</div>
+                    <div class="step_detail">
+                        <p class="step_tit">选择
+                            <br>心仪商品</p>
+                    </div>
+                </div>
+                <div class="step_item">
+                    <div class="step_num">2</div>
+                    <div class="step_detail">
+                        <p class="step_tit">支付开团
+                            <br>或参团</p>
+                    </div>
+                </div>
+                <div class="step_item" ms-class="step_item_on: groupStatus==0" id="step_3">
+                    <div class="step_num">3</div>
+                    <div class="step_detail">
+                        <p class="step_tit">等待好友
+                            <br>参团支付</p>
+                    </div>
+                </div>
+                <div class="step_item" ms-class="step_item_on: groupStatus==1" id="step_4">
+                    <div class="step_num">4</div>
+                    <div class="step_detail">
+                        <p class="step_tit">达到人数
+                            <br>团购成功</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mod_footer">
+            <div class="mod_footer_lk">
+                <a class="on" id="shop_name" ms-click="goHome()" ms-text="shopName"></a>
+                <a class="mygroups" ms-click="gotoMyGroups()">我的团</a>
+            </div>
+            <!--<div class="mod_footer_logo">
+                <span>www.yangkeduo.com</span>
+            </div>-->
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="H5_con fixopt" id="fixopt" style="display: block;">
+            <div class="fixopt_item fixopt_item2" ms-if="bottomStatus==0">
+                <a class="fixopt_home" ms-click="goHome()">更多拼团</a>
+                <a class="fixopt_btn" ms-click="createGroup()">我也开个团</a>
+            </div>
+            <div class="fixopt_item fixopt_item2" ms-if="bottomStatus==1">
+                <a class="fixopt_home" ms-click="goHome()">更多拼团</a>
+                <a class="fixopt_btn" id="share_button" ms-click="showShareTip()">还差{{leftUserNum}}人组团成功</a>
+            </div>
+            <div class="fixopt_item fixopt_item2" ms-if="bottomStatus==2">
+                <a class="fixopt_home" ms-click="goHome()">更多拼团</a>
+                <a class="fixopt_btn" ms-click="joinGroup()">我也要参团</a>
+            </div>
+        </div>
+    </div>
+    </section>
+    <script src="vender.js"></script>
+    <script src="common.js"></script>
+    <script src="group.js"></script>
+</body>
+</html>

@@ -1,0 +1,658 @@
+<html><head><avalon ms-skip="" class="avalonHide"><style id="avalonStyle">.avalonHide{ display: none!important
+}</style><div class="tuan_recommend" ms-css-height="recommendHeight" ms-if="item.isSubject">
+            <div class="tuan_recommend_head" ms-text="item.subjectName" ms-click="forwardSubjects(item.subjectID,
+$index)"></div>
+            <div class="tuan_read_more" ms-click="forwardSubjects(item.subjectID, $index)"><span>查看更多</span><img
+src="assets/img/home_arrow-0417024bbe.png"></div>
+            <div class="tuan_bd" ms-scroll="onSubjectScroll($index)" ms-class="{{item.scrollClass}}">
+                <ul class="tuan_recommend_ul">
+                    <li ms-repeat-goods="item.goodsList" ms-click="forwardGoods(goods.goodsID, $outer.$index)">
+                        <img ms-src="goods.thumbUrl" ms-data-url="goods.loadUrl" class="tuan_recommand_forward"
+ms-css-height="subjectImgHeight" ms-css-width="subjectImgWidth">
+                        <div class="tuan_recommend_title" ms-css-width="subjectImgWidth"
+ms-text="goods.goodsName"></div>
+                        <div class="tuan_recommend_price">￥<span ms-text="goods.price"></span></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="fugai"></div>
+        </div><div class="tuan_recommend" ms-css-height="recommendHeight" ms-if="item.isSubject">
+            <div class="tuan_recommend_head" ms-text="item.subjectName" ms-click="forwardSubjects(item.subjectID,
+$index)"></div>
+            <div class="tuan_read_more" ms-click="forwardSubjects(item.subjectID, $index)"><span>查看更多</span><img
+src="assets/img/home_arrow-0417024bbe.png"></div>
+            <div class="tuan_bd" ms-scroll="onSubjectScroll($index)" ms-class="{{item.scrollClass}}">
+                <ul class="tuan_recommend_ul">
+                    <li ms-repeat-goods="item.goodsList" ms-click="forwardGoods(goods.goodsID, $outer.$index)">
+                        <img ms-src="goods.thumbUrl" ms-data-url="goods.loadUrl" class="tuan_recommand_forward"
+ms-css-height="subjectImgHeight" ms-css-width="subjectImgWidth">
+                        <div class="tuan_recommend_title" ms-css-width="subjectImgWidth"
+ms-text="goods.goodsName"></div>
+                        <div class="tuan_recommend_price">￥<span ms-text="goods.price"></span></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="fugai"></div>
+        </div><div class="tuan_recommend" ms-css-height="recommendHeight" ms-if="item.isSubject">
+            <div class="tuan_recommend_head" ms-text="item.subjectName" ms-click="forwardSubjects(item.subjectID,
+$index)"></div>
+            <div class="tuan_read_more" ms-click="forwardSubjects(item.subjectID, $index)"><span>查看更多</span><img
+src="assets/img/home_arrow-0417024bbe.png"></div>
+            <div class="tuan_bd" ms-scroll="onSubjectScroll($index)" ms-class="{{item.scrollClass}}">
+                <ul class="tuan_recommend_ul">
+                    <li ms-repeat-goods="item.goodsList" ms-click="forwardGoods(goods.goodsID, $outer.$index)">
+                        <img ms-src="goods.thumbUrl" ms-data-url="goods.loadUrl" class="tuan_recommand_forward"
+ms-css-height="subjectImgHeight" ms-css-width="subjectImgWidth">
+                        <div class="tuan_recommend_title" ms-css-width="subjectImgWidth"
+ms-text="goods.goodsName"></div>
+                        <div class="tuan_recommend_price">￥<span ms-text="goods.price"></span></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="fugai"></div>
+        </div><div class="tuan_recommend" ms-css-height="recommendHeight" ms-if="item.isSubject">
+            <div class="tuan_recommend_head" ms-text="item.subjectName" ms-click="forwardSubjects(item.subjectID,
+$index)"></div>
+            <div class="tuan_read_more" ms-click="forwardSubjects(item.subjectID, $index)"><span>查看更多</span><img
+src="assets/img/home_arrow-0417024bbe.png"></div>
+            <div class="tuan_bd" ms-scroll="onSubjectScroll($index)" ms-class="{{item.scrollClass}}">
+                <ul class="tuan_recommend_ul">
+                    <li ms-repeat-goods="item.goodsList" ms-click="forwardGoods(goods.goodsID, $outer.$index)">
+                        <img ms-src="goods.thumbUrl" ms-data-url="goods.loadUrl" class="tuan_recommand_forward"
+ms-css-height="subjectImgHeight" ms-css-width="subjectImgWidth">
+                        <div class="tuan_recommend_title" ms-css-width="subjectImgWidth"
+ms-text="goods.goodsName"></div>
+                        <div class="tuan_recommend_price">￥<span ms-text="goods.price"></span></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="fugai"></div>
+        </div><div class="tuan_g" ms-if="!item.isSubject">
+            <i ms-class="sale-out:isSoldOut(item.status)"></i>
+            <div class="tuan_g_img">
+                <img src="http://pinduoduo.b0.upaiyun.com/test/default.jpg" ms-data-url="item.imgUrl"
+ms-class="{{imgLoadingClass}}" ms-css-height="imgHeight">
+                <div class="tuan_g_img_text">
+                    <div class="tuan_g_img_item" ms-repeat="item.imgText">
+                        <div class="tuan_g_img_round" ms-if="el.length > 0"></div>
+                        <div class="tuan_img_text_border" ms-if="el.length > 0"><span ms-text="el"></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tuan_g_info">
+                <p class="tuan_g_name" ms-text="item.goodsName"></p>
+            </div>
+            <div class="tuan_g_core">
+                <div class="tuan_g_core_img">
+                    <img src="assets/img/tuan_g_core-4935ae4c83.png">
+                </div>
+                <div class="tuan_g_price" ms-css-width="priceWidth" ms-class="price-big: parseInt(priceWidth) > 170">
+                    <span ms-text="item.eventDesc" ms-class="eventDesc-small: item.eventDesc.length > 5"></span>
+                    <b ms-class="price-small:item.salePrice.length>6">￥{{item.salePrice}}
+                    </b>
+                </div>
+                <div class="tuan_g_btn">{{item.goodsID == 884 ? "详情" : "去开团"}}</div>
+            </div>
+            <div class="like goods_list_like">
+                <img ms-src="item.likeImg">
+                <div ms-click="goodsLike(item)" class="like_click_button"></div>
+            </div>
+        </div><div class="groupcode input-page" ms-if="banner.isInput">
+                <img ms-src="{{banner.imgUrl}}">
+                <span class="input-area">
+                    <input type="text" ms-duplex="groupCode">
+                </span>
+                <span class="group-button" ms-click="joinSpecialGroup"></span>
+            </div><div class="groupcode input-page" ms-if="banner.isInput">
+                <img ms-src="{{banner.imgUrl}}">
+                <span class="input-area">
+                    <input type="text" ms-duplex="groupCode">
+                </span>
+                <span class="group-button" ms-click="joinSpecialGroup"></span>
+            </div><div class="groupcode input-page" ms-if="banner.isInput">
+                <img ms-src="{{banner.imgUrl}}">
+                <span class="input-area">
+                    <input type="text" ms-duplex="groupCode">
+                </span>
+                <span class="group-button" ms-click="joinSpecialGroup"></span>
+            </div><div class="groupcode input-page" ms-if="banner.isInput">
+                <img ms-src="{{banner.imgUrl}}">
+                <span class="input-area">
+                    <input type="text" ms-duplex="groupCode">
+                </span>
+                <span class="group-button" ms-click="joinSpecialGroup"></span>
+            </div><div class="groupcode input-page" ms-if="banner.isInput">
+                <img ms-src="{{banner.imgUrl}}">
+                <span class="input-area">
+                    <input type="text" ms-duplex="groupCode">
+                </span>
+                <span class="group-button" ms-click="joinSpecialGroup"></span>
+            </div><div class="groupcode input-page" ms-if="banner.isInput">
+                <img ms-src="{{banner.imgUrl}}">
+                <span class="input-area">
+                    <input type="text" ms-duplex="groupCode">
+                </span>
+                <span class="group-button" ms-click="joinSpecialGroup"></span>
+            </div><div class="groupcode input-page" ms-if="banner.isInput">
+                <img ms-src="{{banner.imgUrl}}">
+                <span class="input-area">
+                    <input type="text" ms-duplex="groupCode">
+                </span>
+                <span class="group-button" ms-click="joinSpecialGroup"></span>
+            </div><div class="new-tip" ms-if="item.showTip&amp;&amp;item.spClass!='sp-haitao'">
+            <img src="http://pinduoduo.b0.upaiyun.com/activity/activity_new_tip.png">
+        </div><div class="new-tip" ms-if="item.showTip&amp;&amp;item.spClass!='sp-haitao'">
+            <img src="http://pinduoduo.b0.upaiyun.com/activity/activity_new_tip.png">
+        </div><div class="new-tip" ms-if="item.showTip&amp;&amp;item.spClass!='sp-haitao'">
+            <img src="http://pinduoduo.b0.upaiyun.com/activity/activity_new_tip.png">
+        </div><div class="new-tip" ms-if="item.showTip&amp;&amp;item.spClass!='sp-haitao'">
+            <img src="http://pinduoduo.b0.upaiyun.com/activity/activity_new_tip.png">
+        </div><div class="new-tip" ms-if="item.showTip&amp;&amp;item.spClass!='sp-haitao'">
+            <img src="http://pinduoduo.b0.upaiyun.com/activity/activity_new_tip.png">
+        </div><div class="ws-for-push" ms-class="ws-for-push-show:visible" ms-click="joinGroup" ms-if="visible"
+avalonctrl="notification">
+    <img ms-src="imageURL">
+    <span ms-text="message"></span>
+</div></avalon>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-cache,no-store,must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta property="og:title" content="昊幺哥">
+    <meta property="og:description" content="风靡全国的拼团商城，优质商品新鲜直供，快来一起昊幺哥吧">
+    <meta property="og:image" content="http://pinduoduo.b0.upaiyun.com/base/share_logo.jpg">
+    <link rel="stylesheet" href="boot.css">
+<title>昊幺哥</title><script type="text/javascript" charset="utf-8" async="" src="9.js"></script><script
+type="text/javascript" charset="utf-8" async="" src="10.js"></script><script type="text/javascript" charset="utf-8"
+async="" src="12.js"></script><script type="text/javascript" charset="utf-8" async="" src="6.js"></script><script
+type="text/javascript" charset="utf-8" async="" src="5.js"></script></head>
+
+<body id="main">
+    <script src="boot.js"></script><div class="pin-spinner" style="display: none;">
+<div class="pin-spinner-container pin-spinner-container1">
+    <div class="pin-spinner-circle1"></div>
+    <div class="pin-spinner-circle2"></div>
+    <div class="pin-spinner-circle3"></div>
+    <div class="pin-spinner-circle4"></div>
+</div>
+<div class="pin-spinner-container pin-spinner-container2">
+    <div class="pin-spinner-circle1"></div>
+    <div class="pin-spinner-circle2"></div>
+    <div class="pin-spinner-circle3"></div>
+    <div class="pin-spinner-circle4"></div>
+</div>
+<div class="pin-spinner-container pin-spinner-container3">
+    <div class="pin-spinner-circle1"></div>
+    <div class="pin-spinner-circle2"></div>
+    <div class="pin-spinner-circle3"></div>
+    <div class="pin-spinner-circle4"></div>
+</div>
+</div><footer><ul class="footer">
+    <li><a id="footer_home" class="nav-controller active"><i class="fb fb-home"></i>首页</a></li>
+    <li><a id="footer_rank" class="nav-controller"><i class="fb fb-rank"></i>热榜</a></li>
+    <li><a id="footer_oversea" class="nav-controller"><i class="fb fb-oversea fb-badge"></i>海淘</a></li>
+    <li><a id="footer_class" class="nav-controller"><i class="fb fb-class"></i>搜索</a></li>
+    <li><a id="footer_personal" class="nav-controller"><i class="fb fb-user"></i>个人中心</a></li>
+</ul>
+</footer><div class="pin-toast-container">
+    <div class="pin-toast"></div>
+</div>
+    <div id="index-content" class="container" avalonctrl="root" style="visibility: visible;">
+        <div id="banner" style="height: 298.594px;"><div class="activity-banner" avalonctrl="banner" style="height:
+298.594px;">
+    <ul id="index-slider" style="position: relative; transition: none; width: 3717px; left: -1593px;">
+        <!--repeat396683700383--><li data-repeat-rendered="bannerRendered" style="width: 531px; float: left; display:
+inline;">
+            <a>
+                <img src="http://omsproduction.b0.upaiyun.com/goods/d181311b8a08cf58351d67fcea4dab65a83103870d.jpg!750"
+style="width: 531px;">
+            </a>
+            <!--ms-if-->
+        </li><!--repeat396683700383--><li data-repeat-rendered="bannerRendered" style="width: 531px; float: left;
+display: inline;">
+            <a>
+                <img
+src="http://omsproduction.b0.upaiyun.com/goods/e1a3a07e15/640/352/efd2215d9dbd7ab8ea9a6edb23010fb0.jpg!750"
+style="width: 531px;">
+            </a>
+            <!--ms-if-->
+        </li><!--repeat396683700383--><li data-repeat-rendered="bannerRendered" style="width: 531px; float: left;
+display: inline;">
+            <a>
+                <img
+src="http://omsproduction.b0.upaiyun.com/goods/40bb84a1ee/640/350/21cf1b9694f69248f37cbec7f072be81.jpg!750"
+style="width: 531px;">
+            </a>
+            <!--ms-if-->
+        </li><!--repeat396683700383--><li data-repeat-rendered="bannerRendered" style="width: 531px; float: left;
+display: inline;">
+            <a>
+                <img
+src="http://omsproduction.b0.upaiyun.com/goods/2c103478d7/640/350/b919971fdd7f62b5da90be1a6daeee99.jpg!750"
+style="width: 531px;">
+            </a>
+            <!--ms-if-->
+        </li><!--repeat396683700383--><li data-repeat-rendered="bannerRendered" style="width: 531px; float: left;
+display: inline;">
+            <a>
+                <img
+src="http://omsproduction.b0.upaiyun.com/goods/b3da740182/640/350/450c6410184d9e95c878e731c5809290.jpg!750"
+style="width: 531px;">
+            </a>
+            <!--ms-if-->
+        </li><!--repeat396683700383--><li data-repeat-rendered="bannerRendered" style="width: 531px; float: left;
+display: inline;">
+            <a>
+                <img src="http://pinduoduo.b0.upaiyun.com/test/default.jpg" style="width: 531px;">
+            </a>
+            <!--ms-if-->
+        </li><!--repeat396683700383--><li data-repeat-rendered="bannerRendered" style="width: 531px; float: left;
+display: inline;">
+            <a>
+                <img src="http://pinduoduo.b0.upaiyun.com/test/default.jpg" style="width: 531px;">
+            </a>
+            <!--ms-if-->
+        </li><!--repeat396683700383--><!--repeat396683700383:end-->
+    <!-- Powered by TouchSlider v2.0.1  https://github.com/qiqiboy/touchslider --></ul>
+    <div class="banner-focus">
+        <div class="banner-hd"><ul>
+                <!--repeat433910183609--><li class=""></li><!--repeat433910183609--><li
+class=""></li><!--repeat433910183609--><li class=""></li><!--repeat433910183609--><li
+class="on"></li><!--repeat433910183609--><li></li><!--repeat433910183609--><li></li><!--repeat433910183609--><li></li><!--repeat433910183609--><!--repeat433910183609:end-->
+        </ul></div>
+    </div>
+</div></div>
+        <div id="quick-entrance" class="index-slider-jianju"><ul class="quick-entrance-wrapper"
+avalonctrl="quick-entrance">
+    <!--repeat109101608396--><li data-repeat-rendered="quickEntranceRendered">
+    <div class="quick-entrance-cube">
+        <img src="http://pinduoduo.b0.upaiyun.com/activity/spike.png">
+        <div class="new-tip">
+            <img src="http://pinduoduo.b0.upaiyun.com/activity/activity_new_tip.png">
+        </div>
+        <!--
+                <div class="black_friday-tip" ms-if="item.showTip&&item.spClass=='sp-haitao'">
+                    <img src="http://pinduoduo.b0.upaiyun.com/activity/tip_555.png">
+                </div>
+                -->
+        <div class="cube-text">
+            <span>秒杀</span>
+        </div>
+    </div>
+    </li><!--repeat109101608396--><li data-repeat-rendered="quickEntranceRendered">
+    <div class="quick-entrance-cube">
+        <img src="http://pinduoduo.b0.upaiyun.com/activity/lottery.png">
+        <div class="new-tip">
+            <img src="http://pinduoduo.b0.upaiyun.com/activity/activity_new_tip.png">
+        </div>
+        <!--
+                <div class="black_friday-tip" ms-if="item.showTip&&item.spClass=='sp-haitao'">
+                    <img src="http://pinduoduo.b0.upaiyun.com/activity/tip_555.png">
+                </div>
+                -->
+        <div class="cube-text">
+            <span>抽奖</span>
+        </div>
+    </div>
+    </li><!--repeat109101608396--><li data-repeat-rendered="quickEntranceRendered">
+    <div class="quick-entrance-cube">
+        <img src="http://pinduoduo.b0.upaiyun.com/activity/newbie_gift_icon.png">
+        <div class="new-tip">
+            <img src="http://pinduoduo.b0.upaiyun.com/activity/activity_new_tip.png">
+        </div>
+        <!--
+                <div class="black_friday-tip" ms-if="item.showTip&&item.spClass=='sp-haitao'">
+                    <img src="http://pinduoduo.b0.upaiyun.com/activity/tip_555.png">
+                </div>
+                -->
+        <div class="cube-text">
+            <span>新人礼包</span>
+        </div>
+    </div>
+    </li><!--repeat109101608396--><li data-repeat-rendered="quickEntranceRendered">
+    <div class="quick-entrance-cube">
+        <img src="http://pinduoduo.b0.upaiyun.com/activity/cat_2.png">
+        <!--ms-if-->
+        <!--
+                <div class="black_friday-tip" ms-if="item.showTip&&item.spClass=='sp-haitao'">
+                    <img src="http://pinduoduo.b0.upaiyun.com/activity/tip_555.png">
+                </div>
+                -->
+        <div class="cube-text">
+            <span>食品</span>
+        </div>
+    </div>
+    </li><!--repeat109101608396--><li data-repeat-rendered="quickEntranceRendered">
+    <div class="quick-entrance-cube">
+        <img src="http://pinduoduo.b0.upaiyun.com/activity/cat_1.png">
+        <!--ms-if-->
+        <!--
+                <div class="black_friday-tip" ms-if="item.showTip&&item.spClass=='sp-haitao'">
+                    <img src="http://pinduoduo.b0.upaiyun.com/activity/tip_555.png">
+                </div>
+                -->
+        <div class="cube-text">
+            <span>服饰箱包</span>
+        </div>
+    </div>
+    </li><!--repeat109101608396--><li data-repeat-rendered="quickEntranceRendered">
+    <div class="quick-entrance-cube">
+        <img src="http://pinduoduo.b0.upaiyun.com/activity/cat_3.png">
+        <!--ms-if-->
+        <!--
+                <div class="black_friday-tip" ms-if="item.showTip&&item.spClass=='sp-haitao'">
+                    <img src="http://pinduoduo.b0.upaiyun.com/activity/tip_555.png">
+                </div>
+                -->
+        <div class="cube-text">
+            <span>家居生活</span>
+        </div>
+    </div>
+    </li><!--repeat109101608396--><li data-repeat-rendered="quickEntranceRendered">
+    <div class="quick-entrance-cube">
+        <img src="http://pinduoduo.b0.upaiyun.com/activity/cat_77.png">
+        <!--ms-if-->
+        <!--
+                <div class="black_friday-tip" ms-if="item.showTip&&item.spClass=='sp-haitao'">
+                    <img src="http://pinduoduo.b0.upaiyun.com/activity/tip_555.png">
+                </div>
+                -->
+        <div class="cube-text">
+            <span>母婴</span>
+        </div>
+    </div>
+    </li><!--repeat109101608396--><li data-repeat-rendered="quickEntranceRendered">
+    <div class="quick-entrance-cube">
+        <img src="http://pinduoduo.b0.upaiyun.com/test/default_square.jpg">
+        <!--ms-if-->
+        <!--
+                <div class="black_friday-tip" ms-if="item.showTip&&item.spClass=='sp-haitao'">
+                    <img src="http://pinduoduo.b0.upaiyun.com/activity/tip_555.png">
+                </div>
+                -->
+        <div class="cube-text">
+            <span>美妆护肤</span>
+        </div>
+    </div>
+    </li><!--repeat109101608396--><li data-repeat-rendered="quickEntranceRendered">
+    <div class="quick-entrance-cube">
+        <img src="http://pinduoduo.b0.upaiyun.com/test/default_square.jpg">
+        <div class="new-tip">
+            <img src="http://pinduoduo.b0.upaiyun.com/activity/activity_new_tip.png">
+        </div>
+        <!--
+                <div class="black_friday-tip" ms-if="item.showTip&&item.spClass=='sp-haitao'">
+                    <img src="http://pinduoduo.b0.upaiyun.com/activity/tip_555.png">
+                </div>
+                -->
+        <div class="cube-text">
+            <span>海淘</span>
+        </div>
+    </div>
+    </li><!--repeat109101608396--><!--repeat109101608396:end-->
+</ul></div>
+        <div id="app-group-index"></div>
+        <section class="main-view tuan" id="goods_list"><div avalonctrl="goods_list">
+<div class="goods-list-wrapper">
+    <!--repeat499687138945--><div data-repeat-rendered="goodsListReady"> 
+        <!--ms-if-->
+        <div class="tuan_g">
+            <i></i>
+            <div class="tuan_g_img">
+                <img src="http://omsproduction.b0.upaiyun.com/goods/292f86e73e847ab6c4fb3483b1466238edceff2dbc.jpg!750"
+data-url="http://omsproduction.b0.upaiyun.com/goods/292f86e73e847ab6c4fb3483b1466238edceff2dbc.jpg!750"
+class="imgLoading_goods_list" style="height: 238.594px;">
+                <div class="tuan_g_img_text">
+                    <!--repeat28266769275--><div class="tuan_g_img_item">
+                        <div class="tuan_g_img_round"></div>
+                        <div class="tuan_img_text_border"><span> 澳洲水光针2代</span></div>
+                    </div><!--repeat28266769275--><div class="tuan_g_img_item">
+                        <div class="tuan_g_img_round"></div>
+                        <div class="tuan_img_text_border"><span>补水白皙紧致美白淡斑</span></div>
+                    </div><!--repeat28266769275--><div class="tuan_g_img_item">
+                        <div class="tuan_g_img_round"></div>
+                        <div class="tuan_img_text_border"><span>让你省下多少针</span></div>
+                    </div><!--repeat28266769275--><!--repeat28266769275:end-->
+                </div>
+            </div>
+            <div class="tuan_g_info">
+                <p class="tuan_g_name">【澳洲进口】69元/支 Eaoron水光针涂抹式精华液二代10ml
+收缩毛孔补水紧致【限时11:00秒杀 限量200份】</p>
+            </div>
+            <div class="tuan_g_core">
+                <div class="tuan_g_core_img">
+                    <img src="assets/img/tuan_g_core-4935ae4c83.png">
+                </div>
+                <div class="tuan_g_price price-big" style="width: 220px;">
+                    <span>2人团</span>
+                    <b>￥69.00
+                    </b>
+                </div>
+                <div class="tuan_g_btn">去开团</div>
+            </div>
+            <div class="like goods_list_like">
+                <img src="http://pinduoduo.b0.upaiyun.com/like/unlike.png">
+                <div class="like_click_button"></div>
+            </div>
+        </div>
+    </div><!--repeat499687138945--><div data-repeat-rendered="goodsListReady"> 
+        <!--ms-if-->
+        <div class="tuan_g">
+            <i></i>
+            <div class="tuan_g_img">
+                <img src="http://omsproduction.b0.upaiyun.com/goods/4a607329a8311186b57b4893e42c02e7090bbc352b.jpg!750"
+data-url="http://omsproduction.b0.upaiyun.com/goods/4a607329a8311186b57b4893e42c02e7090bbc352b.jpg!750"
+class="imgLoading_goods_list" style="height: 238.594px;">
+                <div class="tuan_g_img_text">
+                    <!--repeat935832992196--><div class="tuan_g_img_item">
+                        <div class="tuan_g_img_round"></div>
+                        <div class="tuan_img_text_border"><span> 泰国进口榴莲</span></div>
+                    </div><!--repeat935832992196--><div class="tuan_g_img_item">
+                        <div class="tuan_g_img_round"></div>
+                        <div class="tuan_img_text_border"><span>新鲜空运 质地饱满</span></div>
+                    </div><!--repeat935832992196--><div class="tuan_g_img_item">
+                        <div class="tuan_g_img_round"></div>
+                        <div class="tuan_img_text_border"><span>活血散寒 健脾补气</span></div>
+                    </div><!--repeat935832992196--><!--repeat935832992196:end-->
+                </div>
+            </div>
+            <div class="tuan_g_info">
+                <p class="tuan_g_name">【限量250份】1元1个泰国进口榴莲（3-4斤）再慢就被别人抢完啦！【水果之王 肉质细腻
+入口绵密】</p>
+            </div>
+            <div class="tuan_g_core">
+                <div class="tuan_g_core_img">
+                    <img src="assets/img/tuan_g_core-4935ae4c83.png">
+                </div>
+                <div class="tuan_g_price price-big" style="width: 220px;">
+                    <span>10人团</span>
+                    <b>￥1.00
+                    </b>
+                </div>
+                <div class="tuan_g_btn">去开团</div>
+            </div>
+            <div class="like goods_list_like">
+                <img src="http://pinduoduo.b0.upaiyun.com/like/unlike.png">
+                <div class="like_click_button"></div>
+            </div>
+        </div>
+    </div><!--repeat499687138945--><div data-repeat-rendered="goodsListReady"> 
+        <!--ms-if-->
+        <div class="tuan_g">
+            <i></i>
+            <div class="tuan_g_img">
+                <img src="http://omsproduction.b0.upaiyun.com/goods/4a607329a8aa1065683e8d474e487de758becdbefd.jpg!750"
+data-url="http://omsproduction.b0.upaiyun.com/goods/4a607329a8aa1065683e8d474e487de758becdbefd.jpg!750"
+class="imgLoading_goods_list" style="height: 238.594px;">
+                <div class="tuan_g_img_text">
+                    <!--repeat17705411464--><div class="tuan_g_img_item">
+                        <div class="tuan_g_img_round"></div>
+                        <div class="tuan_img_text_border"><span>娇艳欲滴 吉祥红果</span></div>
+                    </div><!--repeat17705411464--><div class="tuan_g_img_item">
+                        <div class="tuan_g_img_round"></div>
+                        <div class="tuan_img_text_border"><span>果肉细腻 清甜可口</span></div>
+                    </div><!--repeat17705411464--><div class="tuan_g_img_item">
+                        <div class="tuan_g_img_round"></div>
+                        <div class="tuan_img_text_border"><span>低糖 富含膳食纤维</span></div>
+                    </div><!--repeat17705411464--><!--repeat17705411464:end-->
+                </div>
+            </div>
+            <div class="tuan_g_info">
+                <p class="tuan_g_name">【APP专享团】1元3个越南红心火龙果（3斤装
+单果约400g）【富含丰富花青素】限量1000份，再慢就被别人抢完啦！</p>
+            </div>
+            <div class="tuan_g_core">
+                <div class="tuan_g_core_img">
+                    <img src="assets/img/tuan_g_core-4935ae4c83.png">
+                </div>
+                <div class="tuan_g_price price-big" style="width: 220px;">
+                    <span>10人团</span>
+                    <b>￥1.00
+                    </b>
+                </div>
+                <div class="tuan_g_btn">去开团</div>
+            </div>
+            <div class="like goods_list_like">
+                <img src="http://pinduoduo.b0.upaiyun.com/like/unlike.png">
+                <div class="like_click_button"></div>
+            </div>
+        </div>
+    </div><!--repeat499687138945--><div data-repeat-rendered="goodsListReady"> 
+        <!--ms-if-->
+        <div class="tuan_g">
+            <i></i>
+            <div class="tuan_g_img">
+                <img src="http://omsproduction.b0.upaiyun.com/goods/e1a3a07e15571e29abab59b2797974bbfbe368efc4.jpg!750"
+data-url="http://omsproduction.b0.upaiyun.com/goods/e1a3a07e15571e29abab59b2797974bbfbe368efc4.jpg!750"
+class="imgLoading_goods_list" style="height: 238.594px;">
+                <div class="tuan_g_img_text">
+                    <!--repeat84175837785--><div class="tuan_g_img_item">
+                        <div class="tuan_g_img_round"></div>
+                        <div class="tuan_img_text_border"><span>欧式卷草提花设计</span></div>
+                    </div><!--repeat84175837785--><div class="tuan_g_img_item">
+                        <div class="tuan_g_img_round"></div>
+                        <div class="tuan_img_text_border"><span>优质安全净味舒适</span></div>
+                    </div><!--repeat84175837785--><div class="tuan_g_img_item">
+                        <div class="tuan_g_img_round"></div>
+                        <div class="tuan_img_text_border"><span>限量特供价格</span></div>
+                    </div><!--repeat84175837785--><!--repeat84175837785:end-->
+                </div>
+            </div>
+            <div class="tuan_g_info">
+                <p class="tuan_g_name">99元【限量抢罗莱】 lovo时尚贡藤席套件夏凉席三件套</p>
+            </div>
+            <div class="tuan_g_core">
+                <div class="tuan_g_core_img">
+                    <img src="assets/img/tuan_g_core-4935ae4c83.png">
+                </div>
+                <div class="tuan_g_price price-big" style="width: 220px;">
+                    <span>2人团</span>
+                    <b>￥99.00
+                    </b>
+                </div>
+                <div class="tuan_g_btn">去开团</div>
+            </div>
+            <div class="like goods_list_like">
+                <img src="http://pinduoduo.b0.upaiyun.com/like/unlike.png">
+                <div class="like_click_button"></div>
+            </div>
+        </div>
+    </div><!--repeat499687138945--><div data-repeat-rendered="goodsListReady"> 
+        <div class="tuan_recommend" style="height: 318.54px;">
+            <div class="tuan_recommend_head">时尚春装 心动春夏</div>
+            <div class="tuan_read_more"><span>查看更多</span><img src="assets/img/home_arrow-0417024bbe.png"></div>
+            <div class="tuan_bd subject_scroll_4">
+                <ul class="tuan_recommend_ul">
+                    <!--repeat050288226455--><li>
+                        <img class="tuan_recommand_forward"
+data-url="http://testpdd.b0.upaiyun.com/goods/d41d8cd98fa9ca06e784607066a8e33ac0c754d884.jpg"
+src="http://testpdd.b0.upaiyun.com/goods/d41d8cd98fa9ca06e784607066a8e33ac0c754d884.jpg" style="height: 180.54px; width:
+180.54px;">
+                        <div class="tuan_recommend_title" style="width: 180.54px;">23.9元
+【超舒适】韩版潮流卡通斑马印花纯棉宽松圆领T恤 </div>
+                        <div class="tuan_recommend_price">￥<span>23.90</span></div>
+                    </li><!--repeat050288226455--><li>
+                        <img class="tuan_recommand_forward"
+data-url="http://testpdd.b0.upaiyun.com/goods/d41d8cd98f227068d54f039241df20423832916dd5.jpg"
+src="http://testpdd.b0.upaiyun.com/goods/d41d8cd98f227068d54f039241df20423832916dd5.jpg" style="height: 180.54px; width:
+180.54px;">
+                        <div class="tuan_recommend_title" style="width: 180.54px;">29.9元
+2016夏装女装棉麻衬衫短袖亚麻上衣半袖女士纯色大码麻料 PYP641003</div>
+                        <div class="tuan_recommend_price">￥<span>29.90</span></div>
+                    </li><!--repeat050288226455--><li>
+                        <img class="tuan_recommand_forward"
+data-url="http://testpdd.b0.upaiyun.com/goods/d41d8cd98fbdb91ab7c9ac291cc4d13103f42f766e.jpg"
+src="http://testpdd.b0.upaiyun.com/goods/d41d8cd98fbdb91ab7c9ac291cc4d13103f42f766e.jpg" style="height: 180.54px; width:
+180.54px;">
+                        <div class="tuan_recommend_title" style="width: 180.54px;">48元
+2016新颖款韩版厚底鱼嘴松糕鞋172</div>
+                        <div class="tuan_recommend_price">￥<span>48.00</span></div>
+                    </li><!--repeat050288226455--><li>
+                        <img class="tuan_recommand_forward"
+data-url="http://testpdd.b0.upaiyun.com/goods/d41d8cd98f01d5a362fa6800064387e303f47b09ac.jpg"
+src="http://pinduoduo.b0.upaiyun.com/test/default_square.jpg" style="height: 180.54px; width: 180.54px;">
+                        <div class="tuan_recommend_title" style="width: 180.54px;">49元
+【北极绒正品】【直降10元】韩版条纹字母棉质可外穿睡裙春夏款女士宽松大码家居服</div>
+                        <div class="tuan_recommend_price">￥<span>49.00</span></div>
+                    </li><!--repeat050288226455--><li>
+                        <img class="tuan_recommand_forward"
+data-url="http://testpdd.b0.upaiyun.com/goods/d41d8cd98fd138036cd8d10f2e94329b85c6208048.jpg"
+src="http://pinduoduo.b0.upaiyun.com/test/default_square.jpg" style="height: 180.54px; width: 180.54px;">
+                        <div class="tuan_recommend_title" style="width: 180.54px;">49元
+韩版圆领镂空钩花木耳边拼接宽松连衣裙</div>
+                        <div class="tuan_recommend_price">￥<span>49.00</span></div>
+                    </li><!--repeat050288226455--><li>
+                        <img class="tuan_recommand_forward"
+data-url="http://testpdd.b0.upaiyun.com/goods/d41d8cd98fe10e2c384c6f8f26d5c12a9aaafd4b48.jpg"
+src="http://pinduoduo.b0.upaiyun.com/test/default_square.jpg" style="height: 180.54px; width: 180.54px;">
+                        <div class="tuan_recommend_title" style="width:
+180.54px;">18.8元包邮时尚平底夹趾两穿花朵凉拖鞋</div>
+                        <div class="tuan_recommend_price">￥<span>18.80</span></div>
+                    </li><!--repeat050288226455--><li>
+                        <img class="tuan_recommand_forward"
+data-url="http://testpdd.b0.upaiyun.com/goods/d41d8cd98ff5a9d035ecfa313d305fd026bea3993f.jpg"
+src="http://pinduoduo.b0.upaiyun.com/test/default_square.jpg" style="height: 180.54px; width: 180.54px;">
+                        <div class="tuan_recommend_title" style="width: 180.54px;">39元
+时尚雪纺连衣裙条纹假两件套装无袖长裙子</div>
+                        <div class="tuan_recommend_price">￥<span>39.00</span></div>
+                    </li><!--repeat050288226455--><li>
+                        <img class="tuan_recommand_forward"
+data-url="http://testpdd.b0.upaiyun.com/goods/d41d8cd98f6a12b6bf71ef5466365b1b6d8f8fe9bb.jpg"
+src="http://pinduoduo.b0.upaiyun.com/test/default_square.jpg" style="height: 180.54px; width: 180.54px;">
+                        <div class="tuan_recommend_title" style="width: 180.54px;">49.9元
+【森马官方】森马女士条纹星星字母印花短袖T恤</div>
+                        <div class="tuan_recommend_price">￥<span>49.90</span></div>
+                    </li><!--repeat050288226455--><li>
+                        <img class="tuan_recommand_forward"
+data-url="http://testpdd.b0.upaiyun.com/goods/d41d8cd98f7d9f3da950a33140da218ab1a30b3534.jpg"
+src="http://pinduoduo.b0.upaiyun.com/test/default_square.jpg" style="height: 180.54px; width: 180.54px;">
+                        <div class="tuan_recommend_title" style="width:
+180.54px;">36元【厂家直销】纯色半高圆领套头修身无袖背心YF-FXY8023</div>
+                        <div class="tuan_recommend_price">￥<span>36.00</span></div>
+                    </li><!--repeat050288226455--><!--repeat050288226455:end-->
+                </ul>
+            </div>
+            <div class="fugai"></div>
+        </div>
+        <!--ms-if-->
+    </div><!--repeat499687138945--><!--repeat499687138945:end-->
+    <div id="load_more" class="pullUp_show">
+        <div class="center">
+            <span>
+                <img src="assets/img/pull_loading-1e493b5612.png" class="img_rotate loading-spin">
+            </span>
+            <span class="orders_text">正在玩命的加载...</span>
+        </div>
+    </div>
+</div>
+<div class="go-top go_top_goods_list" style="bottom: 64px; opacity: 1;"><span>顶部</span></div>
+</div></section>
+    </div>
+    <script src="vender.js"></script>
+    <script src="common.js"></script>
+    <script src="index.js"></script>
+
+
+<script src="//hm.baidu.com/hm.js?091f8ad9fb2b7ee325f325c8b1704453"></script><!--ms-if--></body></html>

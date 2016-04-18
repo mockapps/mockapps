@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+        <meta http-equiv="Pragma" content="no-cache"/>
+        <meta http-equiv="Expires" content="0"/>
+        <link rel="stylesheet" href="boot.css">
+        <link rel="stylesheet" href="spike.css">
+    </head>
+    <body>
+        <script src="boot.js"></script>
+        <div ms-controller="root" class="lottery_container">
+            <div id="lottery_background">
+                <div id="lottery_all">
+                    <div ms-repeat-item="lottery_list" ms-click="selectGoods(item.goods_id)" class="lottery_goods">
+                        <img class="lottery_pic" ms-src="item.pic_src">
+                        <div class="lottery_info">
+                            <div class="lottery_left_time">
+                                <div class="lottery_left_time_head">{{item.depend}}:</div>
+                                <div class="lottery_left_time_detail" ms-if="!item.if_on_sale">
+                                    <span class="left_time_im">{{item.month}}</span>月
+                                    <span class="left_time_im">{{item.day}}</span>日
+                                    <span class="left_time_im">{{item.hour}}</span>:
+                                    <span class="left_time_im">{{item.minute}}</span>
+                                </div>
+                                <div class="spike_left_quantity_detail" ms-if="item.if_on_sale">
+                                    <span class="left_quantity_im">{{item.quantity}}</span>
+                                </div>
+                            </div>
+                            <div class="lottery_goods_name">{{item.goods_name}}</div>
+                            <div class="lottery_buy">
+                                <div class="lottery_price_all">
+                                    <div class="lottery_sale_price">¥{{item.sale_price}}</div>
+                                    <div class="lottery_market_price">¥{{item.market_price}}</div>
+                                </div>
+                                <div ms-class={{item.button_class}}>{{item.buy_button}}</div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="vender.js"></script>
+        <script src="common.js"></script>
+        <script src="spike.js"></script>
+    </body>
+</html>
+                                   

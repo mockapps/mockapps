@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+        <meta http-equiv="Pragma" content="no-cache"/>
+        <meta http-equiv="Expires" content="0"/>
+        <link rel="stylesheet" href="boot.css">
+        <link rel="stylesheet" href="likes.css">
+    </head>
+    <body>
+        <script src="boot.js"></script>  
+
+        <div ms-controller="root" ms-css-visibility = "listVisible" id="likes">
+            <div class="no-like" ms-visible="noLikeVisible">还没有添加任何商品到收藏，<br/>去找找你心仪的商品吧~</div>
+            <div class="likes-like" ms-repeat-item="likes" ms-visible="item.visible" ms-class="{{likeStyle}}" data-repeat-rendered="likeListReady">
+                <div class="likes-like_goods" ms-click="selectGoods(item.goodsID)">
+                    <div class="likes-like_goods_img">
+                        <img ms-src="{{item.thumb_url}}">
+                    </div>
+                    <div class="likes-like_goods_name" ms-text="item.goods_name"></div>
+                    <div class="core-container">
+                        <div class="likes-like_goods_core">
+                            <div class="likes_g_price">
+                                <span ms-text="item.eventDesc"></span>
+                                <b ms-class="price-small:item.salePrice.length>5"><span>¥</span>{{item.salePrice}}</b>
+                            </div>
+                            <div class="likes_g_btn">{{item.goodsID == 884 ? "查看详情" : "去开团"}}</div>
+                        </div>
+                    </div>
+                    <div class="like-like_button gif" ms-click="cancelLike(item)">
+                        <img ms-src="item.likeImg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="height: 50px; visibility: hidden"></div>
+
+        <script src="vender.js"></script>
+        <script src="common.js"></script>
+        <script src="likes.js"></script>
+    </body>
+</html>

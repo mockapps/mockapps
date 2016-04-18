@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+        <meta http-equiv="Pragma" content="no-cache"/>
+        <meta http-equiv="Expires" content="0"/>
+        <link rel="stylesheet" href="boot.css">
+        <link rel="stylesheet" href="chat_detail.css">
+    </head>
+    <body>
+        <script src="boot.js"></script>
+        <div class="chatContainer" ms-controller="root">
+            <div class="chatBanner">
+                <div class="chatMallName" ms-text="mallInfo.mallName"></div>
+                <img ms-if="!isDefaultMall" class="chatToMall" src="http://pinduoduo.b0.upaiyun.com/mall/mall_icon_small.png" ms-click="forwardMall">
+            </div>
+            <div class="messageContainer">
+                <div class="messageInnerContainer">
+                <div class="checkMoreMessage" ms-click="queryLastTenMsg">...点击查看更多消息...</div>
+                <div class="messageShow" ms-repeat-message="messageArray">
+                   <!-- <div class="chatGoodsMessage" ms-if="message.role=='goods'">
+                        <div class="chatGoodsName" ms-text="message.goodsName">
+                        </div>
+                        <div class="sendGoodsUrl" ms-click="sendGoodsUrl">发送当前宝贝链接
+                        </div>
+                    </div>   -->
+                    <div class="customerMessage" ms-if="message.role=='customer'">
+                        <div class="chatTimeShow" ms-if="message.time" ms-text="message.time">
+                        </div>
+                        <img class="chatUserAvatar" ms-src="{{userInfo.avatar}}">
+                        <div class="chatRightContent">
+                            <img src="assets/img/chat_right-5b9a827190.png">
+                            <p ms-if="!message.isUrl&&!message.localId&&(message.type==0)">{{message.message}}</p>
+                            <p ms-if="message.isUrl&&!message.localId&&(message.type==0)"><a style="color: blue" ms-href="{{message.message}}">{{message.message}}</a></p>
+                            <div class="imageMask" ms-if="message.loading"></div>
+                            <div class="messagePic" ms-if="message.localId">
+                                <img ms-src="message.localId" class="chatPic" ms-click="viewChatImage(message.imageUrl, message.fail)">
+                            </div>
+                            <div ms-if="message.fail" class="messageFailedBox"><img src="assets/img/messageFailed-92bb4bc7be.png" class="messageFailed"></div>
+                            <div ms-if="message.loading" class="messageLoadingBox"><img src="assets/img/messageLoading-60aa27dfe4.gif" class="messageLoading"></div>
+                            <div class="messagePic" ms-if="message.type==1">
+                                <img ms-src="message.message" class="chatPic" ms-click="viewChatImage(message.message)">
+                            </div>
+                     <!--       <div class="chatGoodsDetail" ms-if="message.thumbUrl">
+                                <div class="detailGoodsLink"><p><a ms-href="{{message.url}}">{{message.url}}</a></p></div>
+                                <img ms-src="{{message.thumbUrl}}" class="detailGoodsUrl">
+                                <div class="detailGoodsName" ms-text="message.goodsName"></div>
+                                <div class="detailMallName">卖家: {{message.mallName}}</div>
+                                <div class="detailGoodsPrice">价格: ¥{{message.price}}</div>
+                            </div>
+                     -->
+                        </div>
+                    </div>
+                    <div class="chatMallMessage" ms-if="message.role=='mall'">
+                        <div class="chatTimeShow" ms-if="message.time" ms-text="message.time">
+                        </div>
+                        <img class="chatMallAvatar" ms-src="{{mallInfo.avatar}}">
+                        <div class="chatLeftContent">
+                            <img src="assets/img/chat_left-0247bc2145.png">
+                            <p ms-if="message.type==0">{{message.message}}</p>
+                            <div class="messagePicLeft" ms-if="message.type==1">
+                                <img ms-src="message.message" class="chatPicLeft" ms-click="viewChatImage(message.message, message.fail)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+            <form class="messageToSend" onsubmit=false>
+                <!--<img class="sendExpression" src="assets/img/sendExpression-f975d0a766.png" ms-click="sendExpression"> -->
+                <input id="messageInput" ms-on-input="checkInput" class="messageContent" ms-click="clickMessage" placeholder="  请输入您的消息" type="text" ms-duplex="currentText" autofocus="autofocus">
+                <div class="sendPicBg" ms-if="showImageSelect" ms-click="imageSelect">
+                    <input accept="image/*" type="file" class="sendPicOrVideo" value="">
+                </div>
+                <input type="submit" value="发送" class="chatMessageSend" ms-if="showTextSend"> 
+            </form>
+        </div>
+        <script src="vender.js"></script>
+        <script src="common.js"></script>
+        <script src="chat_detail.js"></script>
+    </body>
+</html>
+

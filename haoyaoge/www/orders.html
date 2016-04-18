@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-cache,no-store,must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <link rel="stylesheet" href="boot.css">
+    <link rel="stylesheet" href="orders.css">
+</head>
+
+<body>
+    <script src="boot.js"></script>
+
+    <div ms-controller="root">
+        <div class="nav_fixed">
+            <a ms-click="switchList(0)" class="fixed_nav_item_orders">
+                <span class="nav_txt" ms-class="nav_cur:orderType==0">全部</span>
+            </a>
+            <a ms-click="switchList(1)" class="fixed_nav_item_orders">
+                <span ms-class="nav_cur:orderType==1">待付款</span>
+            </a>
+            <a ms-click="switchList(2)" class="fixed_nav_item_orders">
+                <span ms-class="nav_cur:orderType==2">待发货</span>
+            </a>
+            <a ms-click="switchList(3)" class="fixed_nav_item_orders">
+                <span ms-class="nav_cur:orderType==3">待收货</span>
+            </a>
+            <a ms-click="switchList(4)" class="fixed_nav_item_orders">
+                <span ms-class="nav_cur:orderType==4">待评价</span>
+            </a>
+        </div>
+
+        <div id="dealliststatus1" class="native-scroll" style="padding-top: 45px;">
+            <div class="orders-order" ms-repeat-order="orders" ms-if-loop="order.show">
+                <img class="orders-lottery_status" ms-if="(order.order_status == 1)&&(order.lucky_status != null)&&(order.lucky_status < 3)" src="assets/img/lottery_wait-4c3a62a91a.png"/>
+                <img class="orders-lottery_status" ms-if="(order.order_status == 1)&&(order.lucky_status == 3)&&(order.lucky_result == 0)" src="assets/img/lottery_not-9b0b5c484e.png"/>
+                <img class="orders-lottery_status" ms-if="(order.order_status == 1)&&(order.lucky_status == 3)&&(order.lucky_result == 1)" src="assets/img/lottery_lucky-6ce72def6f.png"/>
+                <!--<div class="order_hd" ms-text="order.order_time*1000|date('yyyy-MM-dd HH:mm:ss')"></div>-->
+                <div class="orders-order_bd">
+                    <div class="orders-order_glist">
+                        <a ms-click="showOrderDetails(order.order_sn)">
+                            <div class="orders-mall_title" ms-if="order.mall!=null">
+                                <img class="_icon" ms-src="{{order.mall.logo}}"/>
+                                <span class="_mall_name" ms-text="order.mall.mall_name"></span>
+                                <span class="_order_status" ms-text="order.order_status_desc"></span>
+                            </div>
+                            <div class="orders-order_goods">
+                                <div class="orders-order_goods_img">
+                                    <img ms-src="{{order.order_goods[0].thumb_url}}">
+                                </div>
+                                <div class="orders-order_goods_name" >
+                                    <div class="_goods_name" ms-text="order.order_goods[0].goods_name"></div>
+                                    <div class="_spec" ms-if="order.spec.length>0" ms-text="order.spec"></div>
+                                </div>
+                                <div class="orders-order_goods_attr">
+                                    <div class="orders-order_goods_attr_item">
+                                        <div class="orders-order_goods_price">
+                                            <div class="_price"><i>¥</i>{{order.goods_price}}</div>
+                                            <div class="_num">&times;{{order.goods_number}}</div>
+                                            <div ms-if="order.used_coupons">
+                                                <span class="pay3_item_ico" style="float:right;margin-top:6px;"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="orders-order_ft">
+                            <div class="orders-order_total">
+                                <div class="_right">
+                                    <div class="_order_price">共{{order.goods_number}}件商品&nbsp;合计：<b>¥{{order.order_amount}}</b>(免运费)</div>
+                                </div>
+                            </div>
+                            <div class="orders-order_opt">
+                                <div class="orders-order_btn" ms-if-loop="order.order_combined_status==0">
+                                    <a class="_order_btn_buy" ms-click="payOrder(order)"></a>
+                                    <a class="_order_btn_cancel" ms-click="cancelOrder(order)"></a>
+                                </div>
+                                <div class="orders-order_btn" ms-if-loop="order.order_combined_status==3">
+                                    <a class="_order_btn_receive" ms-click="confirmShipment(order)"></a>
+                                    <a class="_order_btn_shipping" ms-click="showExpress(order)"></a>
+                                    <a class="_order_btn_extend" ms-visible="!order.can_extend_receive.hasExtended" ms-click="extendReception(order)"></a>
+                                </div>
+                                <div class="orders-order_btn" ms-if-loop="order.order_combined_status==4">
+                                    <a class="_order_btn_evaluate" ms-click="forwardEvaluate(order)" ms-if="order.rate_status==1"></a>
+                                    <a class="_order_btn_shipping" ms-click="showExpress(order)"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrap_position pullUp_show" ms-class="no_order: noOrderAtAll">
+                <div class="posi_abso up" ms-if="isLoading">
+                    <div class="center" id="center_pullup">
+                        <span><img class="img_rotate loading-spin" src="assets/img/pull_loading-1e493b5612.png"/></span>
+                        <span class="orders-text">数据正在加载中</span>
+                    </div>
+                </div>
+                <div class="posi_abso up">
+                    <div class="center" id="center_pullup">
+                        <span class="orders-text" ms-text="message"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="orders-order_list_gap"></div>
+
+    <script src="vender.js"></script>
+    <!--script src="common.js"></script-->
+    <!--script src="orders.js"></script>-->
+</body>
+</body>
+</html>

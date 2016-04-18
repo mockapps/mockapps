@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	    <meta name="format-detection" content="telephone=no">
+	    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+	    <meta http-equiv="Pragma" content="no-cache"/>
+        <meta http-equiv="Expires" content="0"/>
+        <meta property="og:title" content="昊幺哥"/>
+        <meta property="og:description" content="风靡全国的拼团商城，优质商品新鲜直供，快来一起昊幺哥吧"/>
+        <meta property="og:image" content="http://pinduoduo.b0.upaiyun.com/base/share_logo.jpg"/>
+	    <link rel="stylesheet" href="boot.css">
+	</head>
+	<body>
+        <script src="boot.js"></script>     
+		<section id="index-content" class="rank_container" ms-controller="rank">
+            <div class="nav_fixed" ms-visible="rankData.rankVisible">
+                <a ms-click="reloadGoodsByRank(0)"  class="fixed_nav_item_rank"><span class="nav_txt" ms-class="nav_cur: currentRankType==0">{{rankTypes[0].name}}</span></a>
+                <a ms-click="reloadGoodsByRank(1)"  class="fixed_nav_item_rank"><span class="nav_txt" ms-class="nav_cur: currentRankType==1">{{rankTypes[1].name}}</span></a>
+                <a ms-click="reloadGoodsByRank(2)"  class="fixed_nav_item_rank"><span class="nav_txt" ms-class="nav_cur: currentRankType==2">{{rankTypes[2].name}}</span></a>
+            </div>
+            <div class="rank_header_fix"></div>
+            <!--
+            <div class="main-view tuan" id="goods_list" ms-css-visibility="show"></div>
+            -->
+            <div class="main-view rank" id="goods_list_0" ms-css-visibility="show" ms-if="currentRankType==0"></div>
+            <div class="main-view rank" id="goods_list_1" ms-css-visibility="show" ms-if="currentRankType==1"></div>
+            <div class="main-view rank" id="goods_list_2" ms-css-visibility="show" ms-if="currentRankType==2"></div>
+	    </section>
+        <script src="vender.js"></script>
+        <script src="common.js"></script>
+        <script src="rank.js"></script>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-cache,no-store,must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <link rel="stylesheet" href="boot.css">
+    <link rel="stylesheet" href="suggestion.css">
+</head>
+
+<body>
+    <script src="boot.js"></script>
+    <div ms-controller="root" class="suggestion-wrap">
+        <div class="suggestion-header">常见问题</div>
+        <div style="height: 45px; visibility: hidden;"></div>
+        <div class="suggestion-body">
+            <div class="suggestion-list">
+                <div class="suggestion-one" ms-repeat="questionList" ms-click="gotoFaq($index)">
+                    <div class="suggestion-title">{{el}}</div>
+                    <div class="suggestion-arrow">
+                        <img src="assets/img/home_arrow-0417024bbe.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="height: 50px; visibility: hidden;"></div>
+        <!-- <div class="suggestion-footer" ms-click="gotoFeedback()">
+            <span><img src="assets/img/feedbackicon-4b61869171.png">我要反馈</span>
+        </div> -->
+    </div>
+
+
+    <script src="vender.js"></script>
+    <script src="common.js"></script>
+    <script src="suggestion.js"></script>
+</body>
+</html>

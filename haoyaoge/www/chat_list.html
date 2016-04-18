@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+        <meta http-equiv="Pragma" content="no-cache"/>
+        <meta http-equiv="Expires" content="0"/>
+        <link rel="stylesheet" href="boot.css">
+        <link rel="stylesheet" href="chat_list.css">
+    </head>
+    <body>
+        <script src="boot.js"></script>
+        <div class="chatListContainer" ms-controller="root">
+            <div class="ifNoMessage" ms-if="!anyMessage">您暂时没有消息</div>
+            <div class="messageListContainer">
+                <div class="messageListDetail"  ms-repeat-item="chatList "ms-click="forwardChatDetail(item.mallID)">
+                    <img class="chatListAvatar" ms-src="{{item.avatar}}">
+                    <div class="chatImgDot" ms-if="item.status=='unread'"></div>
+                    <div class="chatListName" ms-text="item.mallName">
+                    </div>
+                    <div class="chatListDate" ms-text="item.date" ms-if="!item.isToday">
+                    </div>
+                    <div class="chatListDate" ms-text="item.dateTime" ms-if="item.isToday">
+                    </div>
+
+                    <div class="chatListMsg" ms-text="item.lastMsg">
+                    </div>
+                </div>
+            </div>
+            <div class="wrap_position" ms-if="isLoading">
+                <div class="center" id="center_pullup">
+                    <span><img class="img_rotate loading-spin" src="assets/img/pull_loading-1e493b5612.png"/></span>
+                    <span class="loading-text">正在加载</span>
+                </div>
+            </div>
+
+        </div>
+        <script src="vender.js"></script>
+        <script src="common.js"></script>
+        <script src="chat_list.js"></script>
+    </body>
+</html>
+
+

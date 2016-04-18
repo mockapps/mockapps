@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-cache,no-store,must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <meta property="og:title" content="昊幺哥"/>
+    <meta property="og:description" content="88元大红包，立即领取！您的新年愿望，昊幺哥来承包！"/>
+    <meta property="og:image" content="http://pinduoduo.b0.upaiyun.com/base/share_logo.jpg"/>
+    <link rel="stylesheet" href="boot.css">
+    <link rel="stylesheet" href="coupon_event.css">
+</head>
+<body>
+    <script src="boot.js"></script>
+    <div class="bg" ms-controller="root" ms-css-visibility="show">
+        <img class="loadImage bgImage" ms-src="backgroundUrl">
+        <img ms-src="animation" class="coupon_animation" ms-class="loadImage: received" ms-if="received">
+        <img src="assets/img/coupon_bg_cover-b797bb3832.png" class="coupon_cover" ms-class="loadImage: received" ms-if="received">
+        <div class="coupon_event_message" ms-class="coupon_event_message_received: !received">
+            <div ms-text="messageLabelTop"></div>
+            <div ms-text="messageLabelBottom"></div>
+        </div>
+        <div class="button-newyear" ms-click="receiveCoupons" ms-class="button-newyear-received: !received">
+            <img ms-src="buttonLabel">
+        </div>
+        <div class="coupon_event_coupons" ms-if="received" ms-click="forwardCoupons">
+            <div class="coup_one" ms-repeat-coupon="coupons">
+                <div class="coupon_style_red">
+                    <div><img ms-src="coupon_bg" class="coupons_bg" /></div>
+                    <div><b class="pin1" >￥</b></div>
+                    <div><b class="pin2" ms-class="event-pin2-small:coupon.discount>=100">{{coupon.discount}}</b></div>
+                    <div class="coup_text_left1">
+                        <b>{{coupon.batch_name}}</b>
+                        <div class="coup_text_catname">{{coupon.cat_name}}</div>
+                        <div class="text_copus_desc1">{{coupon.start_time * 1000|date("yy-MM-dd")}} ~ {{coupon.end_time * 1000|date("yy-MM-dd")}}</div>
+                    </div>
+                    <div class="coup_time_right1">
+                        <b>{{coupon.type}}</b><br>
+                        <span ms-click="gotoRank()" class="coup_rightnow">立即使用</span><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="vender.js"></script>
+    <script src="common.js"></script>
+    <script src="coupon_event_newyear.js"></script>
+</body>
+</html>

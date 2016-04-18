@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-cache,no-store,must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <link rel="stylesheet" href="boot.css">
+    <link rel="stylesheet" href="order.css">
+</head>
+
+<body>
+    <script src="boot.js"></script>
+
+    <div id="root" ms-controller="root">
+        <div class="order-state" ms-class="order-state_recommend:status!=0" ms-class="order-state_1:status==2" ms-class-1="order-state_2:status==3" ms-class-2="order-state_3:status==4">
+
+            <div class="order-banner">
+                <div class="_banner_img"
+                    ms-class-order_unpay="status==0"
+                    ms-class-order_payed="status==1"
+                    ms-class-order_shiping="status==2"
+                    ms-class-order_receive="status==3"
+                    ms-class-order_received="status==4"
+                    ms-class-order_cancel="status>=5">
+                </div>
+                <div class="_banner_txt">
+                    <div class="_msg_tag">{{bannerInfo.title.tag}}</div>
+                    <div class="_msg_content">{{bannerInfo.title.msg}}</div>
+                </div>
+            </div>
+
+            <div class="order-address_info">
+                <img class="order-address_icon" src="assets/img/address_locate-a8a004db65.png"/>
+                <div class="order-address_body">
+                    <div class="_address_body_top">
+                        <div class="_address_person">收货人：{{receiver}}</div>
+                        <div class="_address_mobile">{{mobile}}</div>
+                    </div>
+                    <div class="_address_body_detail">收货地址：{{address}}</div>
+                </div>
+            </div>
+
+            <div class="order-order">
+                <div class="order-order_bd">
+                    <div class="order-mall_title" ms-if="mall.name!=null">
+                        <img class="_icon" ms-src="{{mall.logo}}"/>
+                        <span class="_mall_name" ms-text="mall.name"></span>
+                        <span class="_order_status" ms-text="statusDescription"></span>
+                    </div>
+
+                    <div class="order-order_goods" ms-click="showGoodsDetails">
+                        <div class="order-order_goods_img" >
+                            <img ms-src="{{goods.thumbnailURL}}"/>
+                        </div>
+                        <div class="order-order_goods_name" >
+                            <div class="_goods_name" ms-text="goods.name"></div>
+                            <div class="_spec" ms-if="goods.spec.length>0" ms-text="goods.spec"></div>
+                        </div>
+                        <div class="order-order_goods_attr">
+                            <div class="order-order_goods_attr_item">
+                                <div class="order-order_goods_price">
+                                    <div class="_price"><i>¥</i>{{goods.price}}</div>
+                                    <div class="_num">&times;{{goods.goodsNumber}}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-order_group_detail" ms-class="order-order_group_detail_offset:showComplaint">
+                            <a class ="_group_info" ms-click="showGroupDetails()" ms-if="associatedGroupOrderID!=null">查看团详情</a>
+                        </div>
+                        <div class="order-order_group_detail" ms-if="showComplaint">
+                            <a class ="show_complaint" ms-click="showAfterSalesComplaint()">{{complaintHint}}</a>
+                        </div>
+                    </div>
+                    <div class="order-order_ft">
+                        <div class="order-order_total">
+                            <div class="_coupon_des" ms-if="couponDescription!=null">{{couponDescription}}</div>
+                            <div class="_right">
+                                <div class="_order_price">共1件商品&nbsp;合计：<b>¥{{orderAmount}}</b>(免运费)</div>
+                            </div>
+                        </div>
+                        <div class="order-order_more_info">
+                            <div class="_more_info" ms-click="phoneCall()">
+                                <img class="_more_info_img" src="assets/img/phone_call-9c4b445ee5.png"/>
+                                <a class="_more_info_txt" id="phone_call">拨打电话</a>
+                            </div>
+                            <div class="_more_info _hr"  ms-click="contact()">
+                                <img class="_more_info_img" ms-if="mall.canContact" src="assets/img/chat-4f13924c39.png"/>
+                                <img class="_more_info_img" ms-if="!mall.canContact" src="assets/img/chat_disable-80def53840.png"/>
+                                <span class="_more_info_txt">联系卖家</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="order-order_detail">
+                <div class="order-detail_row">
+                    <div class="_row_key">订单编号：</div>
+                    <div class="_row_value">
+                        <span>{{orderSN}}</span>
+                    </div>
+                </div>
+                <div class="order-detail_row">
+                    <div class="_row_key">支付方式：</div>
+                    <div class="_row_value">{{paymentProvider}}</div>
+                </div>
+                <div class="order-detail_row">
+                    <div class="_row_key">下单时间：</div>
+                    <div class="_row_value">{{orderTime*1000|date("yyyy-MM-dd HH:mm:ss")}}</div>
+                </div>
+                <div class="order-detail_row" ms-if="confirmTime!='0' ">
+                    <div class="_row_key">成团时间：</div>
+                    <div class="_row_value">{{confirmTime*1000|date("yyyy-MM-dd HH:mm:ss")}}</div>
+                </div>
+                <div class="order-detail_row" ms-if="shippingTime!='0' ">
+                    <div class="_row_key">发货时间：</div>
+                    <div class="_row_value">{{shippingTime*1000|date("yyyy-MM-dd HH:mm:ss")}}</div>
+                </div>
+                <div class="order-detail_row" ms-if="receiveTime!='0' " >
+                    <div class="_row_key">成交时间：</div>
+                    <div class="_row_value">{{receiveTime*1000|date("yyyy-MM-dd HH:mm:ss")}}</div>
+                </div>
+
+                <div class="order-detail_row" ms-visible="shipmentStatus>=1">
+                    <div class="_row_key">快递方式：</div>
+                    <div class="_row_value">{{shipmentProvider}}</div>
+                </div>
+                <div class="order-detail_row" ms-visible="shipmentStatus>=1">
+                    <div class="_row_key">运单编号：</div>
+                    <div class="_row_value">{{trackingNumber}}</div>
+                </div>
+
+            </div>
+
+            <div class="pay2_1" ms-if="status==0">
+                <div class="pay2_hd">请选择支付方式</div>
+                <div class="pay2_list bordertop" ms-click="selectPaymentType(2)" ms-if="weChatPayVisible">
+                    <div class="pay2_item pay2_wx pay2_selected">
+                        <span class="pay2_item_state_default" ms-class="pay2_item_state:paymentType==2"></span>
+                        <span class="pay2_item_ico"></span>
+                        <span class="pay2_item_tit">微信支付</span>
+                    </div>
+                </div>
+                <div class="pay2_list" ms-click="selectPaymentType(1)" ms-if="aliPayVisible">
+                    <div class="pay2_item pay2_wx pay2_selected">
+                        <span class="pay2_item_state_default" ms-class="pay2_item_state:paymentType==1"></span>
+                        <span class="pay2_item_ico_ali"></span>
+                        <span class="pay2_item_tit">支付宝支付</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="order-state_btn" ms-if="status==0">
+                <a class="_state_btn_2 action_button" ms-click="payOrder()"></a>
+                <a class="_state_btn_1 action_button" ms-click="cancelOrder()"></a>
+
+            </div>
+            <div class="order-state_btn" ms-if="status==3">
+                <a class="_state_btn_3 action_button" ms-click="confirmShipment()"></a>
+                <a class="_state_btn_5 action_button" ms-click="showExpress()"></a>
+                <a class="_state_btn_4 action_button" ms-click="extendReception()" ms-visible="!canExtendReception.hasExtended"></a>
+            </div>
+            <div class="order-state_btn" ms-if="status==4">
+                <a class="_state_btn_6 action_button" ms-click="forwardEvaluate()" ms-if="rateStatus==1"></a>
+                <a class="_state_btn_5 action_button" ms-click="showExpress()"></a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="vender.js"></script>
+    <script src="common.js"></script>
+    <script src="order.js"></script>
+</body>
+</html>

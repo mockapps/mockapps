@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-cache,no-store,must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+</head>
+
+<body>
+<script>
+var target = (function() {
+    var search = location.search;
+    if (search == null || search.length <= 0) {
+        return null;
+    }
+    if (search[0] == "?") {
+        search = search.substring(1);
+    }
+    var url = null;
+    search.split("&").forEach(function(token) {
+        var pair = token.split("=");
+        if (pair[0] == "url") {
+            url = decodeURIComponent(pair[1] || "");
+        }
+    });
+    return url;
+})();
+if (target == null || target.length <= 0) {
+    location.href = "index.html";
+}
+var openApp = function(openURL, callback) {
+    var poll = function(onresult) {
+        var expectDelay = 2000;
+        var actualDelayThreshold = 2500;
+        var totalTick = 100;
+        var check = function(elapsed) {
+            if (elapsed > actualDelayThreshold || document.hidden || document.webkitHidden) {
+                onresult(true);
+            } else {
+                onresult(false);
+            }
+        };
+        var start = new Date();
+        var tick = 0;
+        var handle = setInterval(function() {
+            var elapsed = (new Date()) - start;
+            if (++tick >= totalTick || elapsed > actualDelayThreshold) {
+                clearInterval(handle);
+                check(elapsed);
+            }
+        }, expectDelay / totalTick);
+    };
+    window.location = openURL;
+    //var node = document.createElement("iframe");
+    //node.style.display = "none";
+    //node.src = openURL;
+    //document.body.appendChild(node);
+    //setTimeout(function() {
+    //    document.body.removeChild(node);
+    //}, 2000);
+    if (callback != null) {
+        poll(function(success) {
+            callback(success);
+        });
+    }
+};
+var openURL = null;
+if (navigator.userAgent.match(/Android/i) != null) {
+    openURL = "intent://request?share_url=" + encodeURIComponent(target) + "#Intent;scheme=pinduoduo;package=com.xunmeng.pinduoduo;end";
+} else if (navigator.userAgent.match(/iPhone|iPad/i) != null) {
+    openURL = "pinduoduo://request?share_url=" + encodeURIComponent(target);
+}
+openApp(openURL, function(success) {
+    if (!success) {
+        location.href = "http://a.app.qq.com/o/simple.jsp?pkgname=com.xunmeng.pinduoduo";
+    }
+});
+</script>
+</body>
+</html>

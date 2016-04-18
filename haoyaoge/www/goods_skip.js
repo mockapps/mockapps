@@ -1,0 +1,1 @@
+webpackJsonp([74],[function(e,r,t){"use strict";var a=t(1),i=t(5);t(3);a.prepare({requireLogin:!1},function(){var e=a.getParameter("goods_id")||"";e.length>0?i.reset("goods.html?"+a.buildQuery(a.getParameters())):i.reset("index.html")})}]);

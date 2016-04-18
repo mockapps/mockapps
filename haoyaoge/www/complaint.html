@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-cache,no-store,must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <meta property="og:title" content="昊幺哥"/>
+    <meta property="og:description" content="风靡全国的拼团商城，优质商品新鲜直供，快来一起昊幺哥吧"/>
+    <meta property="og:image" content="http://pinduoduo.b0.upaiyun.com/base/share_logo.jpg"/>
+    <link rel="stylesheet" href="boot.css">
+    <link rel="stylesheet" href="complaint.css">
+</head>
+
+<body>
+    <script src="boot.js"></script>
+
+    <div class="complaint-container" ms-controller="root">
+        <div class="complaint-tilte">您正在投诉订单<span style="color: #999; margin-left: 4px;">#{{orderSN}}</span></div>
+        <div class="complaint-order-goods">
+            <div class="complaint-order-goods-img">
+                <img ms-src="{{goodsThumbnailURL}}">
+            </div>
+            <div class="complaint-order-goods-name" ms-text="goodsName"></div>
+            <div class="complaint-order-amount">
+                <div>
+                    <span style="font-size: 14px;">¥&nbsp;</span>{{orderAmount.toString().split(".")[0]}}.
+                    <span style="font-size: 14px; margin-left: -4px;">{{orderAmount.toString().split(".")[1]}}</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="complaint-content">
+            <div class="complaint-content-left">问题分类<span style="color: red">*</span></div>
+            <div id="problem_type" class="complaint-content-right">
+                <select class="complain-problem-type">
+                    <option value="">请选择</option>
+                    <option value="1">未收到货</option>
+                  <option value="2">水果破损腐烂</option>
+                  <option value="3">商品少发漏发发错</option>
+                  <option value="4">商品与描述不一致</option>
+                  <option value="5">退款过程遇到问题</option>
+                  <option value="0">其他</option>
+                </select>
+            </div> 
+            <div class="complaint-content-left">问题描述<span style="color: red">*</span></div>
+            <div class="complaint-content-right" ms-if="hideProblemDesc" ms-click="changeProblemDescHideStatus()">最少10字，最多200字</div>  
+            <div class="complaint-content-right-input" ms-if="!hideProblemDesc">
+                <textarea id="complaint_desc_text" ms-duplex="problemDesc" rows="5" class="complaint-content-right-text" placeholder="最少10字，最多200字" maxlength="200"></textarea>
+            </div>
+
+            <div id="certificate_img">
+                <div style="display: inline-block; float: left;" ms-repeat-img="certificateImages">
+                    <div class="upload-img-view" ms-click="viewImage(img.sourceUrl)">
+                        <img class="upload-img-unit" ms-src="img.sourceUrl"><span></span>
+                        <div class="delete-img" ms-click="deleteUploadImage(img.sourceUrl)">
+                            <span style="display:inline-block; width: 82%; height: 2px; line-height:100%; background-color:white;"></span>
+                        </div>
+                        <img src="assets/img/messageLoading-60aa27dfe4.gif" class="upload-img-loading" ms-if="img.loading">
+                    </div>
+                </div>
+                <div class="upload-img" ms-if="showUploadIcon" ms-click="imageSelect">
+                    <input accept="image/*" type="file" class="upload-select-img" value="">
+                </div>
+                <div class="upload-img-hint" ms-if="certificateImages.length == 0">
+                    <p>上传凭证（最多三张）</p>
+                </div>
+            </div>
+            <div class="complaint-refund" ms-click="changeRefundValue()">
+                <a></a><i ms-if="isRefund"></i>
+                <span>我要退款</span>
+            </div>
+            <div class="complaint-notice">
+                <div style="font-size: 16px; font-weight: bold;"><br />投诉须知：</div>
+                
+                <div>1、交易问题</div>
+                <ol>
+                    <li class="list-num-1">
+                        <p>若商家在规定时间内没有发货或虚假发货的，您可以在此进行投诉。</p>
+                    </li>
+                    <li class="list-num-2">
+                        <p>若未收到商品、收到的商品表面不一致、与描述不符、存在质量问题产生争议的，您可以在此进行投诉。</p>  
+                    </li>
+                    <li class="list-num-3">
+                        <p>若商品是假冒商品产生争议的，您可以在卖家发货后的30天内进行售后投诉。</p>  
+                    </li>
+                    <li class="list-num-4">
+                        <p>若收到的水果、生鲜腐烂或商品损坏的，建议您先与商家协商处理，若在协商过程中出现争议或商家未处理，您可以对此上传照片凭证（最多三张），我们将介入处理。</p>  
+                    </li>
+                </ol>
+                
+                <div><br />2、其他问题</div>
+                <ol>
+                    <li class="list-num-1">
+                        <!-- <p>我们将在7天内处理您的投诉，处理结果将发送到我的消息-昊幺哥官方客服，届时您可以点击查看。</p> -->
+                        <p>因春节假期原因，2月5日~2月13日反馈的售后投诉问题，处理进度会有所延迟，我们将在2月20日前处理完毕，给各位多多粉们带来不便敬请谅解。</p>
+                    </li>
+                    <li class="list-num-2">
+                        <p>若对处理结果有异议，您可以与昊幺哥官方客服联系。</p>  
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="complaint-submit">
+            <span ms-click="confirmComplaint()">{{submitHint}}</span>
+        </div>
+    </div>
+    <script src="vender.js"></script>
+    <script src="common.js"></script>
+    <script src="complaint.js"></script>
+</body>
+</html>

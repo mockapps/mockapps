@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-cache,no-store,must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+</head>
+
+<body>
+<script>
+var refer = null;
+var code = null;
+(function() {
+    var search = location.search;
+    if (search == null || search.length <= 0) {
+        return null;
+    }
+    if (search[0] == "?") {
+        search = search.substring(1);
+    }
+    search.split("&").forEach(function(token) {
+        var pair = token.split("=");
+        var key = pair[0];
+        var value = pair[1] || "";
+        if (key == "refer") {
+            refer = decodeURIComponent(value);
+        } else if (key == "code") {
+            code = decodeURIComponent(value);
+        }
+    });
+})();
+if (refer == null || refer.length <= 0) {
+    location.href = "index.html";
+} else {
+    if (refer.indexOf("?") >= 0) {
+        location.href = refer + "&code=" + code;
+    } else {
+        location.href = refer + "?code=" + code;
+    }
+}
+</script>
+</body>
+</html>

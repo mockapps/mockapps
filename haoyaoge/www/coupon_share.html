@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-cache,no-store,must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <link rel="stylesheet" href="boot.css">
+</head>
+
+<body class="container" style="background-color: #fff">
+    <script src="boot.js"></script>
+    <div class="coupon_bg img_body" ms-controller="root">
+        <div class="top_img">
+            <img src="assets/img/coupon_share_top-df1f10f69a.png">
+        </div>
+        <div class="coupon_caller_content">
+            <div class="title" ms-class-icon="!success">
+                <img ms-src="titleIcon" ms-if="!success">
+                <span>{{message}}</span>
+            </div>
+
+            <div class="coupon_detail" ms-if="success" ms-class="{{color}}">
+                <div>
+                 <img src="assets/img/cp_bg_gray_selected-9f5b1ac252.png" 
+                 ms-attr-src="{{bg_style}}" 
+                 class="coupons_bg" />
+                 <div>
+                    <b class="pin1" >￥</b>
+                </div>
+                <div>
+                    <b class="pin2" >{{couponInfo.discount}}</b>
+                </div>
+                <div class="coup_text_left1 coupon_share_left">
+                    <b>{{couponInfo.name}}</b>
+                    <div class="coup_text_catname">{{couponInfo.catName}}</div>
+                    <div class="text_copus_desc1">{{couponInfo.startTime * 1000|date("yyyy-MM-dd")}} - {{couponInfo.expireTime * 1000|date("yyyy-MM-dd")}}</div>
+                </div>
+                <div class="coup_time_right1 coupon_share_right" >
+                    <b>{{type}}</b><br>
+                    <span ms-click="gotoRank()" class="coup_rightnow">立即使用</span>
+                </div>
+            </div>
+        </div>
+        <div class="coupon_show" ms-if="!out" ms-click="showCoupons()" >
+            <span>查看优惠券</span>
+        </div>
+        <div class="coupon_out" ms-if="out" ms-css-height="couponshowHeight"></div>
+        <div class="coupon_share">
+            <span class="coupon_recommend">您可能还喜欢</span>
+            <div class="coupon_buttons mari">
+                <div class="use_btn button out" ms-click="home()" ms-if="out&&isAppInstalled">
+                    <img src="assets/img/coupon_home2-b6b2e415a0.png">
+                    <span>更多拼团</span>
+                </div>
+                <div class="use_btn button" ms-click="home()" ms-if="!out&&isAppInstalled">
+                    <img src="assets/img/coupon_home1-3d8e91a38e.png">
+                    <span>更多拼团</span>
+                </div>
+                <div class="use_btn button download" ms-click="downloadApp()" ms-if="!isAppInstalled">
+                    <img src="assets/img/share_down-00e0155c40.png">
+                    <span>下载App查看更多拼团</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="vender.js"></script>
+    <script src="common.js"></script>
+    <script src="coupon_share.js"></script>
+</body>
+</html>

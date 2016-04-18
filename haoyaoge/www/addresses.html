@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-cache,no-store,must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <link rel="stylesheet" href="boot.css">
+</head>
+
+<body>
+    <script src="boot.js"></script>
+    <div class="wx_wrap" ms-controller="address">
+        <div class="add_address_red" ms-click="addAddress()">
+            <div class="inner_red">
+                <a class="add_text_red" style="color:white">新增地址</a>
+            </div>
+        </div>
+        <div class="address_list">
+            <div class="address" ms-repeat-address="addresses">
+            	<div class="wrap_address">
+                    <span class="none" ms-if="address.is_default=='1'">默认</span>
+                </div>
+                <ul ms-class-1="bg_color:address.address_id==selectedAddressID" ms-click="chooseAddress(address)" ms-class="marginleft:selectedAddressID!=null" style="margin-left:0px">
+                    <li class="add_li"><strong>{{address.name}}</strong></li>
+                    <li>{{address.mobile}}</li>
+                    <li class="add_li_font"><span>{{address.province}}&nbsp;{{address.city}}</span></li>
+                    <li class="add_li_font"><span>{{address.address}}</span></li>
+                    <li class="edit" ms-click="edit(address.uid,address.address_id)">编辑</li>
+                    <span ms-class="icon_address:address.is_default=='1'" ms-if="selectedAddressID==null"></span>
+                    <span ms-class="icon_address1:true" ms-class-1="bg_color:address.address_id==selectedAddressID" ms-if="selectedAddressID!=null"></span>
+                </ul>
+            </div>
+            <div ms-if="showLoadWeixinAddress" class="loadWeixinAddressBg" ms-click="loadWeixinAddress"><div class="loadWeixinAddress">从微信选择收货地址</div><img class="loadWeixinAddressImg" src="assets/img/forwardWeixinAddress-11b7e073ce.png"></div>
+            <div class="margin_footer"></div>
+        </div>
+    </div>
+
+    <script src="vender.js"></script>
+    <script src="common.js"></script>
+    <script src="addresses.js"></script>
+</body>
+</html>

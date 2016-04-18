@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	    <meta name="format-detection" content="telephone=no">
+	    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+	    <meta http-equiv="Pragma" content="no-cache"/>
+	    <meta http-equiv="Expires" content="0"/>
+        <meta property="og:title" content="昊幺哥"/>
+        <meta property="og:description" content="风靡全国的拼团商城，优质商品新鲜直供，快来一起昊幺哥吧"/>
+        <meta property="og:image" content="http://pinduoduo.b0.upaiyun.com/base/share_logo.jpg"/>
+	    <link rel="stylesheet" href="boot.css">
+	    <link rel="stylesheet" href="catgoods.css">
+	</head>
+	<body>
+        <script src="boot.js"></script>
+		<section id="index-content" class="container" ms-controller="root">
+			<div class="nav_all_catgoods" ms-class="catname-slide-up: isUp">
+				<div class="nav_all_catgoods_header" ms-click="hideAllCats">
+					<span>分类</span>
+					<img src="assets/img/personal_arrow-dd13467d78.png">
+				</div>
+				<div class="nav_all_catgoods_body">
+					<div class="nav_all_catgoods_one" ms-repeat-cat="catList" ms-click="switchList($index)">
+						<span style="padding: 3px 0;" ms-class="nav_cur_catgoods_one:currentCat == cat.optId">{{cat.optName}}</span>
+					</div>
+				</div>
+			</div>
+			<div id="nav_all_mask" ms-click="hideAllCats" ms-if="maskVisible"></div>
+			<div class="nav_fixed_wrap" ms-if="catList.length > 0">
+				<ul class="nav_fixed_catgoods">
+					<li ms-repeat-cat="catList" ms-click="switchList($index)" class="fixed_nav_item_catgoods" ms-class="fixed_nav_item_catgoods_first:($index == 0)">
+					    <span ms-class= "nav_cur_cat:currentCat == cat.optId" ms-text="cat.optName"></span>
+					</li>
+				</ul>
+				<div class="nav_fix_cat_btn" ms-click="showAllCats">
+					<img class="nav_fix_cat_img" src="assets/img/personal_arrow-dd13467d78.png">
+				</div>
+			</div>
+
+			<div style="height: 50px;" ms-if="catList.length > 0"></div>
+			<div class="main-view catgoods_list" id="goods_grid" ms-css-visibility="show"></div>
+	    </section>
+	    <script src="vender.js"></script>
+	    <script src="common.js"></script>
+        <script src="catgoods.js"></script>
+	</body>
+</html>

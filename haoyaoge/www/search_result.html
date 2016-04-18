@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-cache,no-store,must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <meta property="og:title" content="昊幺哥"/>
+    <meta property="og:description" content="风靡全国的拼团商城，优质商品新鲜直供，快来一起昊幺哥吧"/>
+    <meta property="og:image" content="http://pinduoduo.b0.upaiyun.com/base/share_logo.jpg"/>
+    <link rel="stylesheet" href="boot.css">
+    <link rel="stylesheet" href="search_result.css">
+</head>
+<body>
+    <script src="boot.js"></script>
+    <div class="search-result-view-container" ms-controller="root">
+        <div class="search-view-top-result">
+            <div class="search-title-container search-title-container-result">
+                <form onsubmit=false id="search-result-submit">
+                    <input type="search" style="-webkit-appearance: none" class="search-box-view-main search-box-view-result" placeholder="输入您想要查找的商品名称" ms-duplex="content">
+                </form>
+                <div class="search-view-icon search-view-icon-main"></div>
+                <div class="search-content-clear search-content-clear-result" ms-click="clearSearchBox"></div>
+                <div class="cancel-container-view" ms-click="cancelSearch" ms-click="cancelSearch">
+                    <div class="cancel-button-view">取消</div>
+                </div>
+            </div>
+            <div class="no-result-match-title" ms-if="noResult">
+                <div class="no-result-match-main">
+                    <span>抱歉,&nbsp&nbsp"</span>
+                    <span class="no-result-match-key">{{searchKey}}</span>
+                    <span>"&nbsp&nbsp暂无搜索结果,</span>
+                </div>
+                <div class="no-result-recommend-title">我们为您推荐了以下热门商品</div>
+            </div>
+        </div>
+        <div class="search-result-amount" ms-if="!noResult">共找到{{total}}条相关结果</div>
+        <div class="no-result-recommend" ms-if="noResult">热门推荐</div>
+        <div class="search-result-list">
+            <div class="search-result-goods" ms-repeat-item="currentList" ms-click="forwardGoods(item.goodsID)">
+                <div class="search-result-image-container">
+                    <img src="http://pinduoduo.b0.upaiyun.com/test/default_square.jpg" ms-data-url="item.thumbURL">
+                </div>
+                <div class="search-result-info">
+                    <div class="search-result-info-name" ms-text="item.goodsName"></div>
+                    <div class="search-result-info-detail">
+                        <div class="search-result-info-group" ms-text="item.groupDesc"></div>
+                        <div class="search-result-info-price">￥<span class="search-result-info-price-size" ms-text="item.price"></span></div>
+                        <div class="search-result-forward-goods">去开团<div class="search-goods-forward-icon"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="load_more" ms-class="{{loadingClass}}">
+            <div class="center" ms-if="loadingClass=='pullUp_show_search'">
+                <span>
+                    <img ms-class="img_rotate {{loadingRotateClass}}" src="assets/img/pull_loading-1e493b5612.png"/>
+                </span>
+                <span ms-class="orders_text {{loadingTextClass}}" ms-text="loadingTxt"></span>
+            </div>
+        </div>
+        <div class="go-top" ms-css-bottom="topButtonBottom" ms-css-opacity="topButtonOpacity"><span>顶部</span></div>
+    </div>
+    <script src="vender.js"></script>
+    <script src="common.js"></script>
+    <script src="search_result.js"></script>
+</body>
+</html>
+
