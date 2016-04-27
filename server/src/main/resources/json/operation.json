@@ -35,12 +35,12 @@
     "opt_infos": [
         {
             "id": "1",
-            "opt_name": "卤菜",
+            "opt_name": "肺片",
             "priority": "1"
         },
         {
             "id": "2",
-            "opt_name": "啤酒",
+            "opt_name": "兔丁",
             "priority": "2"
         }
     ]

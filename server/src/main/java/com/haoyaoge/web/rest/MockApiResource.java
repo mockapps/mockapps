@@ -84,9 +84,24 @@ public class MockApiResource {
         return IOUtils.toString(resourceLoader.getResource("classpath:/json/search.json").getInputStream(),"UTF-8");
     }
 
+    @RequestMapping(value = "/operation/{id}/groups", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public String operationGroups(@PathVariable Long id) throws Exception{
+        return IOUtils.toString(resourceLoader.getResource("classpath:/json/operation_group.json").getInputStream(),"UTF-8");
+    }
+
     @RequestMapping(value = "/group", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public String group(@RequestParam String q) throws Exception{
         return IOUtils.toString(resourceLoader.getResource("classpath:/json/search.json").getInputStream(),"UTF-8");
+    }
+
+    @RequestMapping(value = "/reviews/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public String reviews(@PathVariable Long id) throws Exception{
+        return IOUtils.toString(resourceLoader.getResource("classpath:/json/reviews.json").getInputStream(),"UTF-8");
+    }
+
+    @RequestMapping(value = "/recommendation", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public String goodsRecommendation(@RequestParam("goods_id") Long id) throws Exception{
+        return IOUtils.toString(resourceLoader.getResource("classpath:/json/goods_recommendation.json").getInputStream(),"UTF-8");
     }
 
 }
