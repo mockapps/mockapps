@@ -103,5 +103,10 @@ public class MockApiResource {
     public String goodsRecommendation(@RequestParam("goods_id") Long id) throws Exception{
         return IOUtils.toString(resourceLoader.getResource("classpath:/json/goods_recommendation.json").getInputStream(),"UTF-8");
     }
+    @RequestMapping(value = "/spike_list", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public String spikeList() throws Exception{
+        return IOUtils.toString(resourceLoader.getResource("classpath:/json/spike_list.json").getInputStream(),"UTF-8");
+    }
+
 
 }

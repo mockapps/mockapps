@@ -1,0 +1,65 @@
+{
+    "goods":[        {
+        "goods_id": "1",
+        "goods_name": "测试1",
+        "image_url": "http:\/\/10.15.4.151\/xuehua\/xuehuagood750.jpg",
+        "thumb_url": "http:\/\/10.15.4.151\/xuehua\/xuehuagood750.jpg",
+        "market_price": "9900",
+        "price": "1800",
+        "event_type": "1",
+        "start_time": "1461747600",
+        "end_time": "1461563431",
+        "quantity": "10",
+        "sold_quantity": "0",
+        "list_desc": "[\" \\u6cf0\\u56fd\\u8fdb\\u53e3\\u69b4\\u83b2\",\"\\u65b0\\u9c9c\\u7a7a\\u8fd0 \\u8d28\\u5730\\u9971\\u6ee1\",\"\\u6d3b\\u8840\\u6563\\u5bd2 \\u5065\\u813e\\u8865\\u6c14\"]",
+        "group": {
+            "price": "100",
+            "customer_num": "10"
+        },
+        "logo": "http:\/\/pinduoduo.b0.upaiyun.com\/base\/logo.jpg",
+        "mall_id": "1"
+    },
+        {
+            "goods_id": "2",
+            "goods_name": "测试2",
+            "image_url": "http:\/\/10.15.4.151\/wly\/wlygood750.jpg",
+            "thumb_url": "http:\/\/10.15.4.151\/wly\/wlygood750.jpg",
+
+            "market_price": "3900",
+            "price": "1800",
+            "event_type": "1",
+            "start_time": "1461747600",
+            "end_time": "1461563431",
+            "quantity": "10",
+            "sold_quantity": "0",
+            "list_desc": "[\"\\u5a07\\u8273\\u6b32\\u6ef4 \\u5409\\u7965\\u7ea2\\u679c\",\"\\u679c\\u8089\\u7ec6\\u817b \\u6e05\\u751c\\u53ef\\u53e3\",\"\\u4f4e\\u7cd6 \\u5bcc\\u542b\\u81b3\\u98df\\u7ea4\\u7ef4\"]",
+            "group": {
+                "price": "100",
+                "customer_num": "10"
+            },
+            "logo": "http:\/\/pinduoduo.b0.upaiyun.com\/base\/logo.jpg",
+            "mall_id": "1"
+        },
+        {
+            "goods_id": "3",
+            "goods_name": "测试3",
+            "image_url": "http:\/\/10.15.4.151\/duck\/duckgoods.jpg",
+            "thumb_url": "http:\/\/10.15.4.151\/duck\/duckgoods.jpg",
+            "market_price": "3900",
+            "is_app": "1",
+            "price": "1800",
+            "event_type": "1",
+            "start_time": "1462287600",
+            "end_time": "1461563431",
+            "quantity": "10",
+            "sold_quantity": "0",
+            "list_desc": "[\"\\u5a07\\u8273\\u6b32\\u6ef4 \\u5409\\u7965\\u7ea2\\u679c\",\"\\u679c\\u8089\\u7ec6\\u817b \\u6e05\\u751c\\u53ef\\u53e3\",\"\\u4f4e\\u7cd6 \\u5bcc\\u542b\\u81b3\\u98df\\u7ea4\\u7ef4\"]",
+            "group": {
+                "price": "100",
+                "customer_num": "10"
+            },
+            "logo": "http:\/\/pinduoduo.b0.upaiyun.com\/base\/logo.jpg",
+            "mall_id": "1"
+        }],
+    "server_time": 1461747927
+}
