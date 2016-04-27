@@ -79,25 +79,7 @@ webpackJsonp([32], {
                     spClass: "",
                     show: !0
                 }, {
-                    name: "抽奖",
-                    imgUrl: "http://pinduoduo.b0.upaiyun.com/activity/lottery.png",
-                    forwardUrl: "lottery.html",
-                    showTip: !1,
-                    key: "index_lottery",
-                    priority: 2,
-                    spClass: "",
-                    show: !0
-                }, {
-                    name: "新人礼包",
-                    imgUrl: "http://pinduoduo.b0.upaiyun.com/activity/newbie_gift_icon.png",
-                    forwardUrl: "newbee_gift.html",
-                    showTip: !1,
-                    key: "index_gift",
-                    priority: 3,
-                    spClass: "",
-                    show: !0
-                }, {
-                    name: "食品",
+                    name: "烧辣",
                     imgUrl: "http://pinduoduo.b0.upaiyun.com/activity/cat_2.png",
                     forwardUrl: "catgoods.html?opt_id=1&opt_type=1&all=true",
                     showTip: !1,
@@ -105,7 +87,7 @@ webpackJsonp([32], {
                     spClass: "",
                     show: !0
                 }, {
-                    name: "服饰箱包",
+                    name: "酒类",
                     imgUrl: "http://pinduoduo.b0.upaiyun.com/activity/cat_1.png",
                     forwardUrl: "catgoods.html?opt_id=14&opt_type=1&all=true",
                     showTip: !1,
@@ -113,19 +95,11 @@ webpackJsonp([32], {
                     spClass: "",
                     show: !0
                 }, {
-                    name: "家居生活",
+                    name: "食品",
                     imgUrl: "http://pinduoduo.b0.upaiyun.com/activity/cat_3.png",
                     forwardUrl: "catgoods.html?opt_id=15&opt_type=1&all=true",
                     showTip: !1,
                     priority: 7,
-                    spClass: "",
-                    show: !0
-                }, {
-                    name: "母婴",
-                    imgUrl: "http://pinduoduo.b0.upaiyun.com/activity/cat_77.png",
-                    forwardUrl: "catgoods.html?opt_id=4&opt_type=1&all=true",
-                    showTip: !1,
-                    priority: 8,
                     spClass: "",
                     show: !0
                 }],
