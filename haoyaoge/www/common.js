@@ -1013,6 +1013,7 @@ webpackJsonp([30], {
                 }, t, n, !0)
             },
             login: function(e, t, n, u) {
+               // alert(t);
                 var s = this,
                     c = function() {
                         switch (e) {
@@ -1077,7 +1078,9 @@ webpackJsonp([30], {
                         };
                         r.isWeiboPlatform() ? u.redirect_uri = o.RedirectURI.Weibo : r.isQQPlatform() && (u.redirect_uri = o.RedirectURI.QQConnect), f(u)
                     } else {
-                        if (null == t) return a.reload("login.html?from=" + encodeURIComponent(location.href));
+                        if (null == t) {
+                        //alert("a");
+                        return a.reload("login.html?from=" + encodeURIComponent(location.href));}
                         var u = {
                             app_id: c
                         };

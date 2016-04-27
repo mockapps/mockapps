@@ -1,0 +1,47 @@
+{
+    "goods_list":[ {
+        "goods_id": "1",
+        "goods_name": "测试商品1",
+        "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f03bb90064738aeb1fc28abb98ed2699b.jpg",
+        "market_price": "6900",
+        "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f2d897808760cb0ab6a3f4bb58ea217b9.jpg",
+        "group": {
+            "customer_num": "2",
+            "price": "1990"
+        }
+    },
+        {
+            "goods_id": "2",
+            "goods_name": "测试商品2",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f83ff1f662a7dabe5ca0d032c3b4f4b17.jpg",
+            "market_price": "16600",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fdfca7883270ab80140c7583da5a70332.jpg",
+            "group": {
+                "customer_num": "2",
+                "price": "3900"
+            }
+        },
+        {
+            "goods_id": "3",
+            "goods_name": "测试商品3",
+            "image_url": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/2c103478d7\/750\/352\/1492d9b9ddb5fd1f13ae546d54a4e4b6.jpg",
+            "market_price": "5800",
+            "thumb_url": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/2c103478d7\/200\/200\/bdf4f4595ad25cddee2223427dd2d10d.jpg",
+            "group": {
+                "customer_num": "2",
+                "price": "1990"
+            }
+        }],
+    "opt_infos": [
+        {
+            "id": "1",
+            "opt_name": "卤菜",
+            "priority": "1"
+        },
+        {
+            "id": "2",
+            "opt_name": "啤酒",
+            "priority": "2"
+        }
+    ]
+}

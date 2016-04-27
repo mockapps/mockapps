@@ -1,0 +1,32 @@
+[
+    {
+        "subject_id": "1",
+        "subject": "测试主题1",
+        "second_name": "",
+        "desc": "测试主题1",
+        "home_banner": "http:\/\/10.15.4.151\/xuehua\/xuehuagood750.jpg",
+        "type": "home",
+        "position": "0",
+        "share_image": ""
+    },
+    {
+        "subject_id": "2",
+        "subject": "测试主题2",
+        "second_name": "",
+        "desc": "\u54c1\u724c\u4e13\u573a",
+        "home_banner": "http:\/\/10.15.4.151\/wly\/wlygood750.jpg",
+        "type": "home",
+        "position": "0",
+        "share_image": ""
+    },
+    {
+        "subject_id": "3",
+        "subject": "测主题3",
+        "second_name": "",
+        "desc": "测试主题3",
+        "home_banner": "http:\/\/10.15.4.151\/duck\/duckgoods.jpg",
+        "type": "home",
+        "position": "0",
+        "share_image": "http:\/\/10.15.4.151\/duck\/duckgoods.jpg"
+    }
+]

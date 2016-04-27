@@ -1,0 +1,1931 @@
+{
+    "goods_list": [
+        {
+            "goods_id": "49900",
+            "goods_name": "22.8\u5143\u597d\u65fa\u89d2\u9ebb\u8fa3\u706f\u5f71\u725b\u8089\u4e1d100g*3\u5305 \u53e3\u5473\u968f\u673a",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f8c23ebddd6cb5778a530b122e3dea348.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f7f296767c385b5ec855b28bb41a3c53f.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fed6a80a1aa5b626c52c973f27d4cd43a.jpg",
+            "market_price": "3990",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u6d53\\u9999\\u56db\\u6ea2 \\u56de\\u5473\\u65e0\\u7a77\",\"\\u4f18\\u8d28\\u725b\\u8089 \\u56bc\\u52b2\\u5341\\u8db3\",\"\\u8089\\u9999\\u7eaf\\u6b63 \\u786c\\u5ea6\\u9002\\u4e2d\"]",
+            "group": {
+                "price": "2280",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/d06f144f1d\/310\/310\/adff66c90b657587bbb475a37a512236.jpg",
+            "mall_id": "1021",
+            "time": 1461224388
+        },
+        {
+            "goods_id": "49523",
+            "goods_name": "49\u5143 \u590f\u5b63\u65b0\u6b3e\u68c9\u9ebb\u77ed\u8896\u5927\u7801\u886c\u886b\u5973\u97e9\u8303 \u4e2d\u957f\u6b3e\u5bbd\u677e\u886c\u8863\u767e\u642d\u4e0a\u88632701",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fdfe25b1f6f9351bffe6c33e585d5bccb.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fa8de25a1b38ac9702d88239025837b13.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f870261673a5bd46c7bbc80b447782c93.jpg",
+            "market_price": "19800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u84dd\\u767d\\u53cc\\u8272\\u53ef\\u9009\",\"\\u62c9\\u7d22\\u6d3b\\u529b\\u8896\\u53e3\",\"\\u80f8\\u524dU\\u578b\\u62fc\\u63a5\"]",
+            "group": {
+                "price": "4900",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/pinduoduo.b0.upaiyun.com\/2\/2015\/11\/hncjl5agioyvzk4d.jpg",
+            "mall_id": "183",
+            "time": 1461218574
+        },
+        {
+            "goods_id": "49508",
+            "goods_name": "59\u5143 \u97e9\u90fd\u8863\u820d\u97e9\u7248\u5973\u88c5\u590f\u88c5\u65b0\u6b3e\u5370\u82b1\u5bbd\u677e\u663e\u7626\u5706\u9886\u77ed\u8896T\u6064",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f741d6efd70e21b3c4906cd64f602960a.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f374dba4203a54c45da4810b31d825265.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fc14e91f76d9901b41c1e840a0ebafb21.jpg",
+            "market_price": "15800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u5168\\u573a\\u5305\\u90ae\\uff01\",\"\\u6570\\u91cf\\u6709\\u9650\\uff0c\\u62a2\\u5b8c\\u4e3a\\u6b62\\uff01\",\"\\u5168\\u5e74\\u6700\\u4f4e\\uff0c\\u4ec5\\u6b64\\u4e00\\u6b21\\uff01\"]",
+            "group": {
+                "price": "5900",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f674b69efb9a9c1f5b8e448e00daa6f4d.jpg",
+            "mall_id": "2873",
+            "time": 1461218410
+        },
+        {
+            "goods_id": "49490",
+            "goods_name": "79\u5143 \u97e9\u90fd\u8863\u820d\u97e9\u7248\u5973\u590f\u88c5\u65b0\u6b3e\u4fee\u8eab\u7eaf\u8272\u725b\u4ed4\u80cc\u5e26\u8fde\u8863\u88d9",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f6332d2ea2c29ed73af4d60796f45b6ee.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f208863ef034ac6ed5ee68d7ad93391df.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98ffcec3b505e50c4b3240fb26fbb81ed54.jpg",
+            "market_price": "27800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u5168\\u573a\\u5305\\u90ae\\uff01\",\"\\u6570\\u91cf\\u6709\\u9650\\uff0c\\u62a2\\u5b8c\\u4e3a\\u6b62\\uff01\",\"\\u5168\\u5e74\\u6700\\u4f4e\\uff0c\\u4ec5\\u6b64\\u4e00\\u6b21\\uff01\"]",
+            "group": {
+                "price": "7900",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f674b69efb9a9c1f5b8e448e00daa6f4d.jpg",
+            "mall_id": "2873",
+            "time": 1461218133
+        },
+        {
+            "goods_id": "49299",
+            "goods_name": "\u3010\u897f\u73ed\u7259\u8fdb\u53e3\u301119.9\u5143\/\u74f6  Seven Oaks\u6a61\u6728\u6797\u591a\u79cd\u53e3\u5473\u679c\u9171350g",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fae4e621719ac3a9cf017b846fc9faee9.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fac5576aadb57674271345b0c10764e24.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f6a9a1dd4079f44963267376358e87fe8.jpg",
+            "market_price": "3990",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u539f\\u88c5\\u8fdb\\u53e3\",\"\\u7eaf\\u6b63\\u98ce\\u5473\",\"\\u8425\\u517b\\u5065\\u5eb7\"]",
+            "group": {
+                "price": "1990",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f71234050d1b74911cd9f8d4b0277c6f5.jpg",
+            "mall_id": "3235",
+            "time": 1461215167
+        },
+        {
+            "goods_id": "49242",
+            "goods_name": "\u3010\u65e5\u672c\u8fdb\u53e3\u301179\u5143 Hisamitsu\u4e45\u5149\u5236\u836f \u6492\u9686\u5df4\u65af \u6d88\u708e\u9547\u75db\u8d34\u6b62\u75db\u818f\u8d34 140\u679a",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f8f6505abefa5d53a03385582cb69165e.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f4b65afb2cdfc79d5a7f4ffe088cada0b.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f3eb2bb86da29832e31a58f091f12dea5.jpg",
+            "market_price": "14900",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u5f3a\\u529b\\u9547\\u75db\",\"\\u5bc6\\u5c01\\u5f0f\\u6e17\\u900f\",\"\\u6613\\u4e8e\\u6495\\u8d34\"]",
+            "group": {
+                "price": "7900",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/5fdee5a68b5fbd618121bdc278b7f21e\/c81ad74a83e3795ce3f840236ba38f20.jpg",
+            "mall_id": "405",
+            "time": 1461214258
+        },
+        {
+            "goods_id": "49240",
+            "goods_name": "35.8\u5143  \u9001\u9879\u94fe\uff01\u7ae5\u88c52016\u590f\u5b63\u5973\u7ae5\u65e0\u8896T\u6064\u7f51\u7eb1\u88d9\u4e24\u4ef6\u5957",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f059b89e838be14c1fc6a655f78713a83.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fdb7a02d5da690fcc0960d8c8965be655.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fbcde0ac4a7fceb126b3501962c04fd5f.jpg",
+            "market_price": "15800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u9001\\u9879\\u94fe\\uff01\\u9001\\u9879\\u94fe\\uff01\",\"\\u8d85\\u503c\\u7279\\u4ef7 \\u9650\\u91cf\\u62a2\\u8d2d\",\"\\u505a\\u5de5\\u7cbe\\u81f4 \\u6027\\u4ef7\\u6bd4\\u9ad8\"]",
+            "group": {
+                "price": "3580",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/a74bb18c66d89e8a11f9d3134be91ed59a08d43e53.jpg",
+            "mall_id": "1199",
+            "time": 1461214248
+        },
+        {
+            "goods_id": "49230",
+            "goods_name": "\u3010\u65e5\u672c\u8fdb\u53e3\u301115.8\u5143 Daiso\u5927\u521b \u8d85\u81ea\u7136\u808c\u8272 \u857e\u4e1d\u7f51\u7eb1\u9690\u5f62\u53cc\u773c\u76ae\u8d34",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f44bd0a9293cd657a00290b1c45c963c2.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f3e520390cddbf9ee0a76b325a5870cae.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fd8b0005a38152824ab04b705a11aadd5.jpg",
+            "market_price": "2900",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u9690\\u5f62\\u81ea\\u7136\\u4e0d\\u6613\\u53d1\\u73b0\",\"\\u63d0\\u5347\\u6548\\u679c\\u660e\\u663e\",\"\\u6301\\u7eed\\u65f6\\u95f4\\u957f\"]",
+            "group": {
+                "price": "1580",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/5fdee5a68b5fbd618121bdc278b7f21e\/c81ad74a83e3795ce3f840236ba38f20.jpg",
+            "mall_id": "405",
+            "time": 1461214171
+        },
+        {
+            "goods_id": "49184",
+            "goods_name": "\u3010\u65e5\u672c\u8fdb\u53e3\u301130\u5143 \u5c0f\u6797\u9000\u70e7\u8d34 16\u7247\u88c5 \u4e24\u5c81\u4ee5\u4e0a\u5b9d\u5b9d\u4f7f\u7528",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fb86063b33d49389f440570f4ffdea028.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f3090c5d1bcdec4a6d5ffecf9de4b4ab1.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f5530d81112316ede84964dac987a3d73.jpg",
+            "market_price": "9600",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u65e5\\u672c\\u5c0f\\u6797\\u5236\\u836f\\u9000\\u70e7\\u8d34\",\"2\\u5c81\\u4ee5\\u4e0a\\u5b9d\\u5b9d\\u4f7f\\u7528\",\"16\\u7247\\u5b9e\\u60e0\\u88c5\"]",
+            "group": {
+                "price": "3000",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f6e33d0fa52f06b3cbc5c96651f3fef75.jpg",
+            "mall_id": "2509",
+            "time": 1461212848
+        },
+        {
+            "goods_id": "49182",
+            "goods_name": "49\u5143\u4e09\u5408\u4e00\u5145\u7535\u5b9d\u98ce\u6247USB\u8ff7\u4f60\u98ce\u6247\u79fb\u52a8\u79fb\u52a8\u7535\u6e90\u5c0f\u98ce\u6247\u8d1f\u79bb\u5b50\u51c0\u5316\u98ce\uff08\u5c0f\u5929\u4f7f\uff0c\u5c0f\u6076\u9b54\uff09",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f885712c634fb8f3a2b6139d2f099c94d.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f76fb7db29bcfdd146b6a743b236378b5.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fe518f3237d8647a6124af40ee4303d81.jpg",
+            "market_price": "10800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u968f\\u8eab\\u51c0\\u5316\\u5668\\u5185\\u7f6e\\u8d1f\\u79bb\\u5b50\",\"\\u968f\\u8eab\\u98ce\\u6247\\u8fde\\u7eed\\u9001\\u98ce\",\"\\u79fb\\u52a8\\u7535\\u6e90\\u5185\\u7f6e5200\"]",
+            "group": {
+                "price": "4900",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f767257090d1befa9d73e03bdc7b06657.jpg",
+            "mall_id": "1734",
+            "time": 1461212358
+        },
+        {
+            "goods_id": "48890",
+            "goods_name": "29.6\u5143 \u62a2\u8d2d\u5eb7\u8d1d\u6e7f\u5dfe\u624b\u53e3\u4e13\u7528\u67d4\u6e7f\u5dfe\u4fbf\u643a\u88c525\u62bd*8\u5305\u3010\u6b63\u54c1\u4fdd\u8bc1\uff0c\u5047\u4e00\u7f5a\u4e07\u3011",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f405165be061e21aaf536e1256a908348.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f4b2aeaf4f9b7399c0f8e3509b47e9202.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fc8eed316d66f892eae8dd225822992b5.jpg",
+            "market_price": "4900",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u5c0f\\u6e7f\\u5dfe\\u5927\\u7528\\u9014\",\"\\u6625\\u5b63\\u6e38\\u73a9\\u6e05\\u6d01\\u624b\\u53e3\\u5982\",\"\\u5927\\u54c1\\u724c\\u8d28\\u91cf\\u6709\\u4fdd\\u8bc1\"]",
+            "group": {
+                "price": "2960",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fca19952f7db6bbc692053b282e39d766.jpg",
+            "mall_id": "2876",
+            "time": 1461207199
+        },
+        {
+            "goods_id": "48843",
+            "goods_name": "9.9\u5143*2\u652f \u8389\u5965\u5170\u725b\u5976\u53bb\u6591\u589e\u767d\u6d17\u9762\u5976\u6b63\u54c1\u7279\u4ef7 \u8865\u6c34\u4fdd\u6e7f\u4f4e\u6ce1\u56fd\u8d27\u7cbe\u54c1\u6d01\u9762\u4e73120g*2",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98ff82991bbeab7a60ae5330a66d7fb7314.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f140dfe74d1d063acfad88f1958f7ca50.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fb5935b430ebd2df232145781dec52a06.jpg",
+            "market_price": "5800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u7f8e\\u767d\",\"\\u8865\\u6c34\",\"\\u6de1\\u6591\"]",
+            "group": {
+                "price": "990",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f3a2b4fcab938807112222f594f2d1661.jpg",
+            "mall_id": "2548",
+            "time": 1461201690
+        },
+        {
+            "goods_id": "48759",
+            "goods_name": "279\u5143\u6500\u9ad8\u5145\u7535\u5f0f\u9888\u690e\u6309\u6469\u4eea \u5bb6\u7528\u9888\u90e8\u7535\u52a8\u667a\u80fd\u7ecf\u7edc\u7406\u7597\u4eea \u6570\u7801\u7ecf\u7edc\u7406\u7597\u4eea\u5145\u7535",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fe28be0cda65261d6fd89c4039103ff62.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f8da1f624313be121825a6291cc96c888.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f738f85bab9954db9b384a5a26f6208f4.jpg",
+            "market_price": "68800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u7535\\u78c1\\u8109\\u51b2\\u6309\\u6469\",\"\\u7535\\u78c1\\u8109\\u51b2\\u6309\\u6469\",\"\\u7535\\u6781\\u7247 \\u7ea2\\u5916\\u70ed\\u6577\"]",
+            "group": {
+                "price": "27900",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/d06f144f1da6bcb7940a5b07edeff888a9445b431a.jpg",
+            "mall_id": "1162",
+            "time": 1461155001
+        },
+        {
+            "goods_id": "48550",
+            "goods_name": "48.8\u5143 \u3010\u4e2a\u6027\u62fc\u63a5\u30112016\u65b0\u6b3e\u65f6\u5c1a\u5b57\u6bcd\u5370\u82b1\u96ea\u7eba\u5047\u4e24\u4ef6\u5957\u957fT\u8fde\u8863\u88d9",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fad241ae1bd73404ccd23685b749140d9.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f1af9eaa7851969b227a324b25e92bc97.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f4728e565add9f9a2156138010b77334e.jpg",
+            "market_price": "12800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u7279\\u522b\\u7684\\u62fc\\u63a5\\u8fde\\u8863\\u88d9\",\"\\u524d\\u536b\\u65f6\\u5c1a \\u52a8\\u611f\\u5341\\u8db3\",\"\\u4e0a\\u8eab\\u9192\\u76ee \\u4e0b\\u8eab\\u795e\\u79d8\"]",
+            "group": {
+                "price": "4880",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/3aef4b2dfc08f53932ddaf8906473524\/5c2b93a568cd816ed0c8a967308b3340.jpg",
+            "mall_id": "256",
+            "time": 1461152427
+        },
+        {
+            "goods_id": "48545",
+            "goods_name": "38\u5143  2016\u5973\u88c5\u97e9\u7248\u65b0\u6b3e\u68c9\u9ebb\u77ed\u8896\u4e0a\u8863",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fe27ecbe7e38b24b5e2dd6f5852823862.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fc7b3dea209c33d776488c8a9029633e2.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fae228a674229eafe600ab69824fcbcb3.jpg",
+            "market_price": "16900",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u9ad8\\u6863\\u4f18\\u8d28\\u68c9\\u9ebb\\u9762\\u6599\",\"\\u5bbd\\u677e\\u8212\\u9002 \\u80d6\\u7626\\u80fd\\u7a7f\",\"\\u4e0d\\u8d77\\u7403\"]",
+            "group": {
+                "price": "3800",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/d7c6a8a2f1\/310\/310\/1f75fa046c2ee2b69ee76a6e5454dd24.jpg",
+            "mall_id": "946",
+            "time": 1461152379
+        },
+        {
+            "goods_id": "48423",
+            "goods_name": "79\u5143\u5305\u90ae \u7f2a\u8bd7\u7f57\u66fc\u8482\u514b\u7b80\u7ea6\u8212\u9002\u4e00\u7247\u5f0f\u65e0\u75d5\u65e0\u94a2\u5708\u805a\u62e2\u578b\u6587\u80f8\u8c03\u6574\u5185\u8863",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fd4800428956529412f82a86d5473bb02.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f67630f6a4a5a4982a293472cea578a57.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f0dd38026393c2c17cf943c89c4c1209c.jpg",
+            "market_price": "49900",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u5065\\u5eb7\\u8212\\u9002\\u65e0\\u94a2\\u5708\",\"\\u4e00\\u7247\\u5f0f\\u65e0\\u75d5\",\"\\u805a\\u62e2U\\u578b\\u7f8e\\u80cc\"]",
+            "group": {
+                "price": "7900",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/a74bb18c66fd06f7ae7a10c6a3184f2eee0bfafaf1.jpg",
+            "mall_id": "1527",
+            "time": 1461150585
+        },
+        {
+            "goods_id": "48199",
+            "goods_name": "12.8\u5143V\u9886\u590f\u88c5\u82b1\u8fb9\u857e\u4e1d\u80cc\u5fc3 \u6253\u5e95\u886b\u540a\u5e26\u9542\u7a7a\u80cc\u5fc3\u5973\u80cc\u5fc3",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f2276c9cc91b8ba3192303aa05290b775.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f96b4e8a5b99ebfa9dc8a53072527f183.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fa19506127c52f5b03f4d8a73a49d04e0.jpg",
+            "market_price": "9800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u65f6\\u5c1a\\u767d\\u642d\",\"\\u857e\\u4e1d\\u82b1\\u8fb9  \\u900f\\u6c14\\u8212\\u9002\",\"\\u6e05\\u65b0\\u9753\\u4e3d\"]",
+            "group": {
+                "price": "1280",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f7ffc87eb7333a035348dc0c35e644c9b.jpg",
+            "mall_id": "2013",
+            "time": 1461145797
+        },
+        {
+            "goods_id": "48130",
+            "goods_name": "58.9\u5143 \u590f\u5b63\u97e9\u7248\u5bbd\u677e\u6761\u7eb9\u56fe\u6848\u8fd0\u52a8\u4f11\u95f2\u5957\u88c5\u5973",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f7a614e6bdad0ba2950875efc5cdb8c76.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f30449d41af008053cb2f0179fc5056b2.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fc680923c258817c3273969e6e871020f.jpg",
+            "market_price": "16900",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u97e9\\u7248\\u62fc\\u63a5\\u6761\\u7eb9\\u5370\\u82b1\\u5957\\u88c5\",\"\\u5bbd\\u677e\\u8212\\u9002\",\"\\u51cf\\u9f84\\u7b80\\u7ea6\"]",
+            "group": {
+                "price": "5890",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/d7c6a8a2f1\/310\/310\/661e581aeeff0afc0b613c25847cae57.jpg",
+            "mall_id": "891",
+            "time": 1461145032
+        },
+        {
+            "goods_id": "48013",
+            "goods_name": "29\u5143\u4f18\u8d28\u68c9\u9ebb\u4eff\u4e9a\u9ebb\u5bbd\u677e\u5927\u7801\u523a\u7ee3T\u6064\u77ed\u8896\u5973\u590f",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f4970956db2fbae753e525a5fc567c367.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fd3b59541300161eb0d84c476b15bea8b.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98faf36a24bf29c6c22b33329746485433f.jpg",
+            "market_price": "8800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u4f18\\u8d28\\u68c9\\u9ebb\",\"\\u7b80\\u5355\\u6c14\\u8d28\\u6b3e\",\"\\u523a\\u7ee3\\u5de5\\u827a\"]",
+            "group": {
+                "price": "2900",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fd958a9f90c9d4ecf727e90c92a7a3164.jpg",
+            "mall_id": "1885",
+            "time": 1461143329
+        },
+        {
+            "goods_id": "47989",
+            "goods_name": "76\u5143 \u5362\u6b63\u6d69 \u53e4\u6cd5\u7a96\u5236\u6842\u82b1\u9f99\u4e95\u4f20\u7edf\u7eb8\u5305 200g",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f3bd143cb0b9ce3e9cb3cdb37616c5907.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f482b66a1a78bbea29377185f609baaf0.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f2344e7d29fd75b10d14f147388fdb51c.jpg",
+            "market_price": "18000",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u6c5f\\u5357\\u5999\\u97f5\",\" \\u53e4\\u6cd5\\u7aa8\\u5236\",\"\\u7518\\u9187\\u5473\\u8db3\"]",
+            "group": {
+                "price": "7600",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/a74bb18c664bb87c7e609af2009ffc3798c04757ec.jpg",
+            "mall_id": "1400",
+            "time": 1461142699
+        },
+        {
+            "goods_id": "47943",
+            "goods_name": "39\u5143\u6625\u590f\u88c5\u5957\u88c5\u6b27\u7f8e\u98ce\u84dd\u8272\u4e0a\u8863\u9ed1\u8272\u957f\u88e4\u5957\u88c5\u7ecf\u5178\u6c14\u8d28\u6b3e\u5973TZ0021",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fe0af543d11c59cf3086890954323e1b8.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f60e810f2b24f8febe57e27a62d750bf1.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fe40166c1b718690b279b969c6afc72cb.jpg",
+            "market_price": "16000",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"OL\\u4fee\\u8eab\\u5957\\u88c5\\uff01\",\"\\u8212\\u9002\\u9762\\u6599\\uff01\\u4f11\\u95f2\\u663e\\u7626\\uff01\",\"\\u5305\\u90ae\\uff01\\u5305\\u90ae\\uff01\\u5305\\u90ae\\uff01\"]",
+            "group": {
+                "price": "3900",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fdc366609e695926c17ab52146b978f28.jpg",
+            "mall_id": "1544",
+            "time": 1461142014
+        },
+        {
+            "goods_id": "47912",
+            "goods_name": "\u3010\u65e5\u672c\u8fdb\u53e3\u301136.9\u5143 \u8d44\u751f\u5802\u53ef\u60a0\u7136\u8fdb\u53e3\u6c90\u6d74\u9732\u6ce1\u6cab\u4e30\u5bcc\u6301\u4e45\u7559\u9999\u7f8e\u767d\u6ecb\u6da6550ML",
+            "image_url": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/bd3279e25e2b6a3baf6daa3dc866942b7e48bf4042.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f2926fa074ab3fd91209f6478c2bd9a10.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f0db1dc4146b3dc70c8bff6bb7a7666ee.jpg",
+            "market_price": "5900",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u7f8e\\u767d\\u6ecb\\u6da6\",\"\\u6301\\u4e45\\u7559\\u9999\",\"\\u6ce1\\u6cab\\u4e30\\u5bcc\"]",
+            "group": {
+                "price": "3690",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f0d9848f3f080d5b91ec3f2d073a36571.jpg",
+            "mall_id": "2242",
+            "time": 1461141659
+        },
+        {
+            "goods_id": "47860",
+            "goods_name": "29.9\u5143 \u6b63\u5b97COCOVEL\u6c90\u6d74\u9732750\u6beb\u5347*2\u9999\u578b \u5ae9\u767d\u8865\u6c34\u4fdd\u6e7f",
+            "image_url": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/bd3279e25ec8e785a55ec66b6ae06629a9d8837a12.jpg",
+            "thumb_url": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/bd3279e25e0d9f7ecb35ea8855806ebe342874b8a7.jpg",
+            "hd_thumb_url": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/bd3279e25ed0152cd55dc4ae1d7c62c3a6bb5cdf21.jpg",
+            "market_price": "6900",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u6b27\\u6d32\\u8fdb\\u53e3\\u9999\\u6599\",\"\\u8865\\u6c34\\u4fdd\\u6e7f\\u6da6\\u80a4\",\"\\u6563\\u53d1\\u8ff7\\u4eba\\u6c14\\u606f\"]",
+            "group": {
+                "price": "2990",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/d06f144f1d\/80\/80\/8a82f18a945d859ed3ad4cedf4653b2a.jpg",
+            "mall_id": "1004",
+            "time": 1461140821
+        },
+        {
+            "goods_id": "47718",
+            "goods_name": "29.9\u5143\u590f\u5b63\u65b0\u6b3e\u5973\u58eb\u73cd\u73e0\u96ea\u7eba\u7ed1\u5e26\u9632\u6652\u8863 \u77ed\u6b3e\u62ab\u80a9\u5f00\u886b\u9632\u7d2b\u5916\u7ebf\u6c99\u6ee9\u670d",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f7dacbd1ce6198dd1afe792b866009032.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98ff1e231d8ba7a9d32c416354b6715dcf8.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f30119b7b748bfad6592edbbf745c00c6.jpg",
+            "market_price": "9800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u53ef\\u4ee5\\u7a7f\\u7684\\u9632\\u6652\\u62ab\\u80a9\",\"\\u767e\\u53d8\\u767e\\u642d\",\"\\u987a\\u6ed1\\u8212\\u9002\"]",
+            "group": {
+                "price": "2990",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fad940cca12536c2102b750c98cba41ae.jpg",
+            "mall_id": "2919",
+            "time": 1461139160
+        },
+        {
+            "goods_id": "47656",
+            "goods_name": "19.9\u5143\u4e50\u9526\u8bb0\u519c\u5bb6\u7cef\u7c73\u9505\u5df41000\u514b\u5b89\u5fbd\u7cd5\u70b9\u7279\u4ea7",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fcb55253d2983110b3bdc9e61fff42789.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fe0d6a2ddaaf737b8bb9480af43dbc0e1.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f5866dbac6f4d71064027a2bb9f6227bd.jpg",
+            "market_price": "3000",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u519c\\u5bb6\\u624b\\u5de5\\u5236\\u4f5c\\u9505\\u5df4\",\"\\u7cef\\u7c73\\u9505\\u5df4\\u53e3\\u611f\\u72ec\\u7279\",\"\\u72ec\\u7acb\\u5c0f\\u5305\\u88c5\\u5f88\\u65b9\\u4fbf\"]",
+            "group": {
+                "price": "1990",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/d06f144f1d\/310\/310\/4618eedd8d5da816de2da8198c077ad3.jpg",
+            "mall_id": "1069",
+            "time": 1461138441
+        },
+        {
+            "goods_id": "47630",
+            "goods_name": "29.9\u5143 \u6da9\u742a\u6587\u827a\u8303\u5c0f\u767d\u978b\u65f6\u5c1a\u5c0f\u6e05\u65b0\u8212\u9002\u5e73\u5e95",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fbbe8e19d9e2bd36fb5fcd63026befd95.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fc69b53e49b5493a7e61a11e9a1ced8e2.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f68aa26589be9c6a3edabd03383367d5d.jpg",
+            "market_price": "12900",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u65f6\\u5c1a\\u5c0f\\u6e05\\u65b0\",\"\\u8212\\u9002\\u5e73\\u5e95\\u8bbe\\u8ba1\",\"\\u767e\\u642d\\u3001\\u7ecf\\u5178\"]",
+            "group": {
+                "price": "2990",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/5766613959\/310\/310\/1d31fbce36320e0270da8e38062a2a8c.jpg",
+            "mall_id": "629",
+            "time": 1461138138
+        },
+        {
+            "goods_id": "47615",
+            "goods_name": "12.8\u5143\/\u7bb1 \u6155\u6ecb\u70bc\u5976\u5473\u4e09\u660e\u6cbb\u84b8\u86cb\u7cd5500g \u65e5\u671f\u65b0\u9c9c ",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98ffe9ebff1631f6d9ea0434a4394e58616.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f9a1e6649195dacd0992beb7eb9e4f956.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f9b28016ea4bffaef8915a3957aee3620.jpg",
+            "market_price": "1900",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u70bc\\u5976\\u53e3\\u5473 \\u9c9c\\u5ae9\\u597d\\u5403\",\"\\u5b98\\u65b9\\u76f4\\u8425 \\u5065\\u5eb7\\u4fdd\\u8bc1\",\"\\u72ec\\u7acb\\u5305\\u88c5 \\u65b9\\u4fbf\\u536b\\u751f\"]",
+            "group": {
+                "price": "1280",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fb4fc44205526bae610db9c9c65474819.jpg",
+            "mall_id": "3095",
+            "time": 1461137938
+        },
+        {
+            "goods_id": "47605",
+            "goods_name": "25.8\u5143 \u97e9\u7248\u590f\u5b63\u767e\u642d\u5c0f\u767d\u978b\u5973\u5b66\u751f\u7cfb\u5e26\u8fd0\u52a8\u978b\u5b50",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f3edcf7f859bfa90a3dc338e7f92949d2.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f53cf4769885582750dd4ff2612ec98ad.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f98859f7655fc98d3d72caa63b6e64a2f.jpg",
+            "market_price": "12800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u4f18\\u8d28\\u9762\\u6599\\uff0c\\u8d28\\u5730\\u67d4\\u8f6f\",\"\\u8212\\u9002\\u900f\\u6c14\\uff01\\u7b80\\u7ea6\\u7684\\u978b\\u8eab\",\"\\u51cf\\u9707\\u978b\\u540e\\u8ddf\\uff0c\\u4e0d\\u78e8\\u811a\"]",
+            "group": {
+                "price": "2580",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fa75c632de9e9d8d8c3277213b3531adb.jpg",
+            "mall_id": "1552",
+            "time": 1461137798
+        },
+        {
+            "goods_id": "47546",
+            "goods_name": "19.9\u5143 \u65b0\u6b3e\u5973\u88c5\u7eaf\u8272\u68c9\u9ebb\u4e0a\u8863\u77ed\u8896\u5bbd\u677e\u5c0f\u6e05\u65b0t\u6064",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fd7ca0c62003f71f8f236f48389ef8e04.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fc784042f8e84b82d8699f22e6752ab95.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f8f43e244781fdd263062ea6d38116e52.jpg",
+            "market_price": "15900",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u7eaf\\u8272\\u68c9\\u9ebb\\u77ed\\u8896T\\u6064\",\"\\u5bbd\\u677e\\u5c0f\\u6e05\\u65b0\",\"\\u8212\\u9002\\u900f\\u6c14\"]",
+            "group": {
+                "price": "1990",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/d06f144f1d\/310\/310\/5c15452d881199be09221235e5b697b1.jpg",
+            "mall_id": "1025",
+            "time": 1461136757
+        },
+        {
+            "goods_id": "47444",
+            "goods_name": "33.9 \u6da9\u742a\u97e9\u56fd2016\u65b0\u6b3e\u86c7\u7eb9\u539a\u5e95\u4e50\u798f\u978b",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f125877ad86c4cd389a5d398ca60dadd7.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fa5decd8b1fefa225aff242c93f1f4226.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f0392f720e96070973c6133c42f4fec7e.jpg",
+            "market_price": "16900",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u660e\\u661f\\u540c\\u6b3e\\u65f6\\u5c1a\\u5ea6\\u9ad8\",\"\\u67d4\\u8f6f\\u6a61\\u80f6\\u5e95\\u8212\\u9002\\u5ea6\\u597d\",\"\\u7ecf\\u5178\\u3001\\u767e\\u642d\"]",
+            "group": {
+                "price": "3390",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/5766613959\/310\/310\/1d31fbce36320e0270da8e38062a2a8c.jpg",
+            "mall_id": "629",
+            "time": 1461135553
+        },
+        {
+            "goods_id": "47397",
+            "goods_name": "25\u5143\u97e9\u7248\u767e\u642d\u8212\u9002\u5761\u8ddf\u62d6\u978b",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f06a47cd9be20f6a4d4774912f5e48482.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fd01fa15e8f2e2efcf40e424034e610bc.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f4b4ac2d26f9f19cf3e0f63db348d0601.jpg",
+            "market_price": "18800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u7248\\u578b\\u597d\\uff0c\\u4e0a\\u811a\\u597d\\u770b\",\"\\u6b3e\\u5f0f\\u65f6\\u5c1a\\u5ea6\\u9ad8\",\"\\u767e\\u642d\\uff0c\\u505a\\u5de5\\u7cbe\\u7ec6\"]",
+            "group": {
+                "price": "2500",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f8145b0c9b56dd8781917b40baefc28fa.jpg",
+            "mall_id": "1551",
+            "time": 1461134987
+        },
+        {
+            "goods_id": "47271",
+            "goods_name": "25.8\u5143 4\u6761\u88c5 \u3010\u5317\u6781\u7ed2\u65d7\u4e0b\u83ab\u4ee3\u5c14\u54c1\u724c\u4ea7\u54c1\u3011\u83ab\u4ee3\u5c14\u51b0\u4e1d\u4e00\u7247\u5f0f\u65e0\u75d5\u5185\u88e4\u5973\u4f4e\u8170\u6027\u611f\u5c0f\u5e73\u89d2\u7eaf\u8272\u5927\u7801\u590f\u5b63\u4e09\u89d2\u88e4\u88c6\u90e8\u7eaf\u68c9\u8584\u6625\u590f",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fd72e19faccfb4b5305d585245a8314cd.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fbe3b9ff5354fd3caf9ff043e6833b15b.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f1c4084fdce65c7a883fcb01e6da979d1.jpg",
+            "market_price": "9800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u4e00\\u7247\\u5f0f\\u51b0\\u4e1d\\u6027\\u611f\\u65e0\\u75d5\",\"\\u5065\\u5eb7\\u7eaf\\u68c9\\u88c6\\u90e8\\u8d85\\u8584\\u900f\\u6c14\",\"\\u72ec\\u7acb\\u5305\\u88c5\\u536b\\u751f\\u5927\\u6c14\"]",
+            "group": {
+                "price": "2580",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fff209c29848fb87dd2cc20835de0c581.jpg",
+            "mall_id": "1814",
+            "time": 1461133107
+        },
+        {
+            "goods_id": "47183",
+            "goods_name": "\u3010\u9999\u6e2f\u76f4\u90ae\u301159\u5143 MEDIHEAL\/\u7f8e\u8fea\u60e0\u5c14(\u53ef\u83b1\u4e1d\uff09line\u5361\u901a\u52a8\u7269N.M.F\u6c34\u6da6\u4fdd\u6e7f\u9488\u5242\u9762\u819c 10\u7247*27ml",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f823052a49e07208588998c9b68ace1a5.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f458fae878d3bb3a7c3d4a36062e94f81.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fb171dcb13fa5018ebad955ea35a843b8.jpg",
+            "market_price": "16000",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u97e9\\u56fd\\u539f\\u88c5\\u8fdb\\u53e3\",\"\\u9999\\u6e2f\\u76f4\\u90ae \\u6d77\\u5173\\u76d1\\u7ba1\",\"\\u4e00\\u8fb9\\u5356\\u840c \\u4e00\\u8fb9\\u8865\\u6c34\"]",
+            "group": {
+                "price": "5900",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f4ef049d34152ecab6162691640901a33.jpg",
+            "mall_id": "2975",
+            "time": 1461131257
+        },
+        {
+            "goods_id": "47141",
+            "goods_name": "38.9\u5143 \u97e9\u7248\u7537\u5973\u58eb\u771f\u76ae\u8f6f\u6728\u62d6\u978b\u60c5\u4fa3\u6c99\u6ee9\u5939\u811a\u4eba\u5b57\u62d6\u9632\u6ed1 \u8212\u9002 \u900f\u6c14 \u590f",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f638ce0040430c8ee63a4ee2e98accdbf.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f034517fd57628b3856b96c89b28047d6.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fafadf02d5d69fa825f1e7d9b04a89356.jpg",
+            "market_price": "32900",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u91c7\\u7528\\u4f18\\u8d28\\u771f\\u76ae\",\"EVA\\u8f6f\\u6728\\u6a61\\u80f6\\u5927\\u5e95\",\"\\u8212\\u9002\\u900f\\u6c14 \\u51fa\\u884c\\u5fc5\\u5907\"]",
+            "group": {
+                "price": "3890",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f6969dbae2702061bb3ea4f5f7c7685d3.jpg",
+            "mall_id": "1865",
+            "time": 1461130525
+        },
+        {
+            "goods_id": "47111",
+            "goods_name": "\u3010\u65e5\u672c\u8fdb\u53e3\u301121.7\u5143\/\u888b \u9f99\u89d2\u6563 \u9f99\u89d2\u6563\u7cd6 \u6da6\u5589\u7cd6 \u6e05\u51c9\u7cd6 5\u6b3e\u53ef\u9009",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98ff2bb87677c14f9395a4d4c5075f6ba55.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f7beedc11c762c4cfbd42bab0aba471c8.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f4fc6a26244f0d8053dd4c457e9d6cc9b.jpg",
+            "market_price": "5980",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u5bcc\\u542b\\u7ef4\\u4ed6\\u547dC\",\"\\u6da6\\u5589\\u6e05\\u5589\\u6b62\\u54b3\",\"\\u5185\\u6db5\\u6b62\\u54b3\\u7c89\\u672b\"]",
+            "group": {
+                "price": "2170",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/5fdee5a68b5fbd618121bdc278b7f21e\/c81ad74a83e3795ce3f840236ba38f20.jpg",
+            "mall_id": "405",
+            "time": 1461129673
+        },
+        {
+            "goods_id": "47088",
+            "goods_name": "\u3010\u97e9\u56fd\u8fdb\u53e3\u301192\u5143\u97e9\u56fdJAYJUN\u6c34\u5149\u65b0\u751f\u7115\u767d\u9762\u819c\u6c34\u5149\u4e09\u90e8\u66f2\u6a31\u82b1\u6e10\u53d8\u7cfb\u9762\u819c10\u7247\/\u76d2\u3010\u9884\u552e\uff0c4\u670824\u65e5\u53d1\u5b8c\u3011",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fec7f30eb170aed22aa0fc070e11d9c93.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f8924b2ffaadee8db88ca1304a1f76753.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f7a9771e3b0e088c17450564733c29574.jpg",
+            "market_price": "20800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u97e9\\u56fd\\u56fd\\u6c11\\u9762\\u819c\",\"\\u5bcc\\u542b\\u5927\\u91cf\\u9aa8\\u80f6\\u539f\\u86cb\\u767d\",\"\\u65b0\\u6b3e\\u81ea\\u5e26\\u773c\\u971c\"]",
+            "group": {
+                "price": "9200",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/c3f1046a61\/310\/310\/f6688ac3f1784e6602d355c34cda48fb.jpg",
+            "mall_id": "824",
+            "time": 1461128904
+        },
+        {
+            "goods_id": "47061",
+            "goods_name": "28\u5143\u3010\u5bcc\u542b\u7ef4C\u3011\u827a\u798f\u5802 \u871c\u604b\u65f6\u5149\u82b1\u679c\u8336220g \u6c34\u871c\u6843\u5473\u6c34\u679c\u8336 \u679c\u5473\u679c\u7c92\u8336\u3010\u7f8e\u5bb9\u517b\u989c\u3011",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f36d9893891a090e73bc47dbf01b042d2.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fc3905f6e60619320f87a4206d8170950.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f04980642e5e42063cb4f4a9816f13172.jpg",
+            "market_price": "5000",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u5bcc\\u542b\\u7ef4C\\uff0c\\u7f8e\\u5bb9\\u517b\\u989c\",\"\\u6c34\\u871c\\u6843\\u5473\\uff0c\\u9178\\u751c\\u7f8e\\u5473\",\"\\u516d\\u79cd\\u82b1\\u679c\\uff0c\\u679c\\u8089\\u7c92\\u5927\"]",
+            "group": {
+                "price": "2800",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/b3da740182\/200\/200\/387ce927f319f7afe707215f9554dc1d.jpg",
+            "mall_id": "753",
+            "time": 1461128562
+        },
+        {
+            "goods_id": "47006",
+            "goods_name": "9.9\u5143\u91ce\u751f\u76d8\u6843\u6838\u624b\u4e32 \u8f9f\u90aa\u6843\u80e1\u624b\u94fe \u6587\u73a9\u624b\u4e32\u76d8\u73a9\u624b\u94fe",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f036969e842adbb36d9acd711e915fd26.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f0b14965a43cdf743f5724234388f8969.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f2500802bb461514a8b22192747ca10df.jpg",
+            "market_price": "5300",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u9a71\\u90aa\\u907f\\u707e\",\"\\u4fdd\\u4f51\\u5e73\\u5b89\",\"\\u6cb9\\u6da6\\u5149\\u6ed1\"]",
+            "group": {
+                "price": "990",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fe0e19ed2e7b6e47fc0891464d0e557a5.jpg",
+            "mall_id": "1848",
+            "time": 1461127555
+        },
+        {
+            "goods_id": "46875",
+            "goods_name": "49.9\u5143 \u6da9\u742a\u5bb6\u5c45\u670d\u5b8b\u4f73\u540c\u6b3e\u95fa\u871c\u88c5\u7761\u8863\u77ed\u88e42\u4ef6\u5957",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f874ff94308ab7476da4cb8a2891a37e1.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fa6185fde8407e7e82e2188a8882e6511.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98ff293b0fa9348b9b0cf2c6f49b9bb7cd0.jpg",
+            "market_price": "19900",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u4f18\\u8d28\\u9762\\u6599\",\"\\u97e9\\u7248\\u8bbe\\u8ba1\",\"\\u8212\\u9002\\uff0c\\u767e\\u642d\"]",
+            "group": {
+                "price": "4990",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f6a54bdbde74c837d3e9dc089af06d6b4.jpg",
+            "mall_id": "2322",
+            "time": 1461124039
+        },
+        {
+            "goods_id": "46797",
+            "goods_name": "\u3010\u97e9\u56fd\u8fdb\u53e3\u301139.9\u5143 Innisfree\u60a6\u8bd7\u98ce\u541f\u7eff\u8336\u6d17\u9762\u5976150ml\u3010\u65b0\u6b3e\u6e05\u723d\u6d01\u9762\u5976\u3011",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f21e6363e7da77ce5b4299bb3a8ea7c93.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fd8b73f24b9e6e36e37acdd52e66b78ce.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f4d6e7cd5f6eb6cef875046dfd5308a5f.jpg",
+            "market_price": "5800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u6e05\\u723d\\u4e0d\\u7d27\\u7ef7\",\"\\u6df7\\u5408\\u6027\\u80a4\\u8d28\",\"\\u5929\\u7136\\u6e29\\u548c\\u65e0\\u523a\\u6fc0\"]",
+            "group": {
+                "price": "3990",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f305141d33416a28d78e7eae29db25797.jpg",
+            "mall_id": "2538",
+            "time": 1461123174
+        },
+        {
+            "goods_id": "46689",
+            "goods_name": "16.9\u5143 \u7f8e\u5b9d\u83b2 \u773c\u90e8\u53ca\u5507\u90e8\u5378\u5986\u6db240ML*2\u74f6\uff08\u4e2d\u5c0f\u6837\uff09",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fa4f0407127f54691dc8a693579dcbcf7.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fb6fb0021f823d3cb6227cadcade0c069.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f100e7cb57cef2249ae9932e87403b4a6.jpg",
+            "market_price": "3500",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u51c0\\u900f\\u5378\\u5986\",\"\\u6e05\\u723d\\u4fdd\\u6e7f\",\"\\u6e29\\u548c\\u65e0\\u523a\\u6fc0\"]",
+            "group": {
+                "price": "1690",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f004a09222978fd7c1c5244760f381071.jpg",
+            "mall_id": "1882",
+            "time": 1461122167
+        },
+        {
+            "goods_id": "46688",
+            "goods_name": "\u3010\u5fb7\u56fd\u8fdb\u53e3\u3011159\u5143 joydivision\u7f29\u9634\u7403\u9634\u9053\u54d1\u94c3 \u5973\u7528\u79c1\u5904\u7d27\u81f4\u7f29\u9634\u4ea7\u54c1[\u4ea7\u540e\u4fee\u590d\u7f29\u9634]",
+            "image_url": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/3426b30a248fdd4824eccb919267e656fdf0f3103a.jpg",
+            "thumb_url": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/3426b30a249804dd9238d6f42cfb308d7b340ba93c.jpg",
+            "hd_thumb_url": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/3426b30a24b84474d4320c659c632add85339457e2.jpg",
+            "market_price": "23400",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u7ea2\\u70b9\\u8bbe\\u8ba1\\u5927\\u5956\",\"\\u5e74\\u5ea6\\u6700\\u4f73\\u5973\\u6027\\u7528\\u54c1\\u5956 \",\"MSDS\\u4ee5\\u53caCE\\u8ba4\\u8bc1\"]",
+            "group": {
+                "price": "15900",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f24d977d296d6c2facfab7891a512d98d.jpg",
+            "mall_id": "2641",
+            "time": 1461122138
+        },
+        {
+            "goods_id": "46628",
+            "goods_name": "\u3010\u97e9\u56fd\u8fdb\u53e3\u30119.9\u5143\/2\u7247 SKIN9\u97e9\u56fd\u52a8\u7269\u9762\u819c\u4eac\u5267\u8138\u8c31\u9762\u819c\u8865\u6c34\u7f8e\u767d\uff08\u6b3e\u5f0f\u968f\u673a\u53d1\uff09",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f2d1deda0f50adb2ef277787577cbabc5.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f82f607f44105f31f1fa871689c4cc0c6.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f0a9d02a1ae266709c3f596e0f92e07ea.jpg",
+            "market_price": "4500",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u6e05\\u4ed3\\u5904\\u7406\\u4ef7\\u8d85\\u503c\",\"\\u8001\\u864e\\u718a\\u732b\\u5c0f\\u72d7\\u8c79\\u5b50\",\"\\u82b1\\u65e6\\u5c0f\\u751f\\u6b66\\u751f\\u6b66\\u65e6\"]",
+            "group": {
+                "price": "990",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/a74bb18c660f477edadc94762b908f312cd58e5277.jpg",
+            "mall_id": "1294",
+            "time": 1461120559
+        },
+        {
+            "goods_id": "46582",
+            "goods_name": "39.9\u5143 \u5468\u9ed1\u9e2d \u9501\u9c9c\u5364\u9e2d\u8116200g*2\u76d2 4\u670826\u65e5\u53d1\u5b8c \u6b66\u6c49\u7279\u4ea7\u65b0\u9c9c\u98df\u54c1\u96f6\u98df",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f3da82ca0f9a9e9d7060836aef8258d1e.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f18666c1749edd23e5d781d4c3ebc6695.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f05b25a7a83f930c1aaf2512ec3eba425.jpg",
+            "market_price": "4680",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u53e3\\u7891\\u7206\\u6b3e  \\u65b0\\u9c9c\\u719f\\u98df\",\"\\u9ebb\\u8fa3\\u5fae\\u751c \\u6df1\\u5165\\u9aa8\\u9ad3\",\"\\u51b0\\u888b\\u4fdd\\u9a7e\\u62a4\\u822a\\u65b0\\u9c9c\\u76f4\\u8fbe\"]",
+            "group": {
+                "price": "3990",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fe90d5e43197099991c8ec8da312af7c0.jpg",
+            "mall_id": "2788",
+            "time": 1461117498
+        },
+        {
+            "goods_id": "46578",
+            "goods_name": "\u3010\u97e9\u56fd\u8fdb\u53e3\u301159.8\u5143Dr.Jart+\/\u8482\u4f73\u5a77\u836f\u4e38\u9762\u819c\u56db\u8272\u53ef\u9009\u4fdd\u6e7f\u8865\u6c34\u7f8e\u767d\u63d0\u4eae\u80a4\u8272\u62975\u7247\u88c5",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f178229902de04246f24bca8af02456f3.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f8cb029586d782e630d25fac6b5c3b98c.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fb28c205d956524296551ab2f4270158e.jpg",
+            "market_price": "10800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"Dr.Jar\\u836f\\u4e38\\u9762\\u819c\",\"\\u9488\\u5bf9\\u6027\\u9009\\u62e9\\u989c\\u8272\",\"\\u8d85\\u670d\\u5e16\\u8f7b\\u8584\"]",
+            "group": {
+                "price": "5980",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f74dd431034ad5d57d4438d2c9caf9c67.jpg",
+            "mall_id": "887",
+            "time": 1461078242
+        },
+        {
+            "goods_id": "46534",
+            "goods_name": "29.5\u5143 \u66fc\u79c0\u96f7\u6566\u7537\u58eb \u6d01\u9762\u4e73\u7cfb\u5217 150ml \u4e09\u6b3e\u53ef\u9009",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f863c819503e5a57c4ba58bf407c564e6.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fb780093aea73a402b0acf91ae4e262a4.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98ff223eb98829a88cb5605759e178ccd68.jpg",
+            "market_price": "4390",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u77ac\\u95f4\\u63a7\\u6cb9\",\"\\u6d01\\u9762\\u4fdd\\u6e7f\",\"\\u63a7\\u6cb9\\u6297\\u75d8\"]",
+            "group": {
+                "price": "2950",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f004a09222978fd7c1c5244760f381071.jpg",
+            "mall_id": "1882",
+            "time": 1461072928
+        },
+        {
+            "goods_id": "46426",
+            "goods_name": "13.9\u5143\/20\u53cc\uff08\u591a\u8272\u53ef\u9009\uff09 \u590f\u5b63\u7537\u58eb\u8584\u6b3e\u889c\u5b50 \u7af9\u7ea4\u7ef4\u4e1d\u889c ",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fe39023d47142911d64ceebefda5fa7dd.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fdc2602c5486f1a164563dc194688b2c8.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f7f88fcce75a0f3f450576d929884cabd.jpg",
+            "market_price": "2800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u8d85\\u503c20\\u53cc\\uff0c\\u591a\\u8272\\u53ef\\u9009\",\"\\u51b0\\u723d\\u8212\\u9002\\uff0c\\u8d85\\u8584\\u900f\\u6c14\",\"\\u6297\\u83cc\\u9632\\u81ed\\uff0c\\u5438\\u6c57\\u6392\\u6e7f\"]",
+            "group": {
+                "price": "1390",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98ff77b20b01be5c9b4ef34629f84e29b5f.jpg",
+            "mall_id": "2306",
+            "time": 1461065920
+        },
+        {
+            "goods_id": "46421",
+            "goods_name": "\u3010\u65e5\u672c\u8fdb\u53e3\u301115.8\u5143  \u8d1d\u5370KAI  T+L\u4e0d\u9508\u94a2\u4fee\u7709\u5200\u5957\u88c5",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f8b9de113a02fb088997c46c014feb461.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f02809982a2507fe5fb8c5f166965ecdd.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fb3f2a73faf3bed1e02c2476458795848.jpg",
+            "market_price": "2590",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"T+L\\u4e0d\\u9508\\u94a2\\u4fee\\u7709\\u5200\\u5957\",\"\\u6e29\\u548c\\u522e\\u611f \\u950b\\u5229\\u8010\\u7528\",\"\\u5c0f\\u5de7\\u65b9\\u4fbf \\u4e0d\\u9508\\u94a2\\u6750\\u8d28\"]",
+            "group": {
+                "price": "1580",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/pinduoduo.b0.upaiyun.com\/2\/2015\/10\/lrvd117upndbdfab.jpg",
+            "mall_id": "67",
+            "time": 1461065865
+        },
+        {
+            "goods_id": "46238",
+            "goods_name": "39.9\u5143 \u68c9\u9ebb\u9762\u6599+\u751c\u7f8e\u98ce\u683c\u8fde\u8863\u88d9 \u7cbe\u81f4\u857e\u4e1d\u5143\u7d20\u8896\u53e3 \u5927\u683c\u7eb9A\u5b57\u6446\u6b3e#5016",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f00794595820fe5fea177c278dbfb237d.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98faa85b169bcc55fc5d065b8de3969da9e.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fdc8b4940ca1c6ca45dcab06b33931213.jpg",
+            "market_price": "8900",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u857e\\u4e1d\\u8896\\u53e3 \\u751c\\u7f8e\\u6c14\\u8d28\",\"\\u6e05\\u723d\\u9762\\u6599 \\u8f7b\\u76c8\\u8212\\u9002\",\"\\u6807\\u51c6\\u7248\\u578b \\u8212\\u9002\\u4fee\\u8eab\"]",
+            "group": {
+                "price": "3990",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/a74bb18c660b4a2727b247d2bdc4f4cc764ba48a8e.jpg",
+            "mall_id": "1428",
+            "time": 1461062582
+        },
+        {
+            "goods_id": "46104",
+            "goods_name": "29\u5143D2\u8fce\u590f\u5b63\u65b0\u6b3e\u900f\u6c14\u5b54\u51c9\u978b\u5355\u978b",
+            "image_url": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/128a500397f6279b2a1cad5e0d606181f5605096d9.jpg",
+            "thumb_url": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/128a500397a640ca223bbd5e68c28622f916ead890.jpg",
+            "hd_thumb_url": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/128a500397d3043245e7dc708817b770930e7f2b3f.jpg",
+            "market_price": "7900",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u590f\\u5b63\\u65b0\\u6b3e\",\"\\u4f18\\u8d28PU\\u9762\",\"\\u9632\\u81ed\\u6c57\\u900f\\u6c14\\u5b54\"]",
+            "group": {
+                "price": "2900",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/5766613959\/310\/310\/a3a4a8e94fafed52ec6ed21808096cc9.jpg",
+            "mall_id": "550",
+            "time": 1461059188
+        },
+        {
+            "goods_id": "46000",
+            "goods_name": "8.9\u5143\u7518\u6e90\u724c\u87f9\u9ec4\u5473\u6216\u9171\u6c41\u725b\u8089\u5473\u8695\u8c46285g",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f23c666414cc9843e112da91fa943e4a4.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f738e3fd3ec8a44f64da569513aa246a8.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f296b7d021407c16968ec5dc9b0fd7388.jpg",
+            "market_price": "1860",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u87f9\\u9ec4\\u5473\\u6216\\u9171\\u6c41\\u725b\\u8089\\u5473\",\"\\u8695\\u8c46\\u4e00\\u5927\\u5305285g\",\"\\u7ea620\\u5c0f\\u5305\"]",
+            "group": {
+                "price": "890",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fed98785355c821695ddb316392ab2189.jpg",
+            "mall_id": "2159",
+            "time": 1461058039
+        },
+        {
+            "goods_id": "45884",
+            "goods_name": "34\u5143\u53f0\u6e7e\u54c1\u724c\u552f\u8d443D\u6c14\u57ab\u7709\u7b14\u7709\u7c89\u5e26\u7709\u5237\u9632\u6c34\u9632\u6c57\u4e0d\u6655\u67d3\u9001\u7709\u53611\u652f",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fc885c19d9b20882eb8f205759f2abf99.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f10533db3fca99d7519f41821df06099d.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f3338874cb0d4352e653a32be7a618eed.jpg",
+            "market_price": "13800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"3\\u54081\",\"\\u7709\\u7b14+\\u7709\\u7c89+\\u7709\\u5237\",\"\\u9001\\u7709\\u5361\"]",
+            "group": {
+                "price": "3400",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/a74bb18c6695ad0f206365f66b97d6233daacf0dba.jpg",
+            "mall_id": "1323",
+            "time": 1461056217
+        },
+        {
+            "goods_id": "45810",
+            "goods_name": "24.8\u5143\u524d\u6263\u62c9\u94fe\u8fd0\u52a8\u6587\u80f8\u65e0\u94a2\u5708\u805a\u62e2\u8dd1\u6b65\u745c\u4f3d\u5065\u8eab\u9632\u9707\u80cc\u5fc3\u5f0f",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f762cfc8a749d1d6b4de491446359daf6.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fbc0f0d0dee19f1f4ce22b6ae7faa5c8a.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f021a0ffc725020745400444fa28e9968.jpg",
+            "market_price": "5600",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u524d\\u6263\\u62c9\\u94fe\\u8fd0\\u52a8\\u6587\\u80f8\",\" \\u745c\\u4f3d\\u5065\\u8eab\\u9632\\u9707\\u80cc\\u5fc3\",\"\\u805a\\u62e2+\\u9632\\u9707+\\u4e0d\\u675f\\u7f1a\"]",
+            "group": {
+                "price": "2480",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fe12134de13b4c7e4597ea904e488afad.jpg",
+            "mall_id": "1815",
+            "time": 1461055300
+        },
+        {
+            "goods_id": "45743",
+            "goods_name": "350\u5143 \u9752\u6a59 C1 \u53cc\u5361\u53cc\u5f85\u56db\u6838\u5b89\u5353\u667a\u80fd\u624b\u673a\u8001\u4eba\u673a \u91d1\u8272",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98faf861ab50cd5c344928f2df4de0158fb.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98ffe9713c058449526a7c9968debc7fb0f.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f7c39f6533d4a34231ef0ef34fe09d857.jpg",
+            "market_price": "39900",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"5\\u82f1\\u5bf8\\u5927\\u5c4f\",\"\\u79fb\\u52a8\\u8054\\u901a4G\",\"1G+8G\\u7ec4\\u5408\"]",
+            "group": {
+                "price": "35000",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/5635bbe7626fd2c9ee3b95366ad9ab39\/4383ff191684f684eb9e9ba335c75388.jpg",
+            "mall_id": "489",
+            "time": 1461054756
+        },
+        {
+            "goods_id": "45695",
+            "goods_name": "48\u5143\u5370\u82b1\u534a\u8eab\u88d9\u5957\u88c5\u4e00\u5957",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fce7f425029eea300c3d7a2b616db3085.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f69ce3fed74b8776ea765360571ff6802.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f7d47ff0288d4943ceb87d490ee125f5d.jpg",
+            "market_price": "18800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u590f\\u5b63\\u65f6\\u5c1a\\u767e\\u642d\\u6b3e\",\"\\u7ecf\\u5178\\u8377\\u53f6\\u8fb9\\u8896\\u53e3\\u8bbe\\u8ba1\",\"\\u4fee\\u8eab\\u6536\\u8170\\u5370\\u82b1\\u65f6\\u5c1a\"]",
+            "group": {
+                "price": "4800",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/d7c6a8a2f1\/310\/310\/99e6275e1f730b5d14f87e71b1722138.jpg",
+            "mall_id": "608",
+            "time": 1461054354
+        },
+        {
+            "goods_id": "45366",
+            "goods_name": "39\u5143 NUP\u65b0\u6b3e\u590d\u53e4\u773c\u955c\u5706\u5f62\u592a\u9633\u955c\u65f6\u5c1a\u6f6e\u6d41\u5973\u58eb\u592a\u9633\u955c3101N",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fa960b4080a06375b0bcee559f53e1f15.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fddff0f4e6f4e3c58401c3fe8ef42462e.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fa5891ee5b4dd9028485d1d9d9fafa316.jpg",
+            "market_price": "13900",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u65b0\\u6b3e\\u590d\\u53e4\\u773c\\u955c\",\"\\u4e2a\\u6027\\u5706\\u5f62\\u592a\\u9633\\u955c\",\"\\u65f6\\u5c1a\\u6f6e\\u6d41\\u5973\\u6027\\u58a8\\u955c\"]",
+            "group": {
+                "price": "3900",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/a74bb18c6681f363df2de2c82d77f2c67f8d9340c9.jpg",
+            "mall_id": "1208",
+            "time": 1461050418
+        },
+        {
+            "goods_id": "45288",
+            "goods_name": "29.9\u5143 baby\u540c\u6b3e\u77ed\u8896t\u6064\u5973\u6d77\u519b\u84dd\u6761\u7eb9\u5370\u82b1\u6253\u5e95\u4e0a\u8863\u5973",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f9b11084993bf5a90f45d9a5a166f1279.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f256f2cd8c31ec7aae1ba971f80fe18d8.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f0dc4f61a580632455a615056323d5c84.jpg",
+            "market_price": "8900",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u9ad8\\u7ea7\\u68c9\\u9762\\u6599 \\u8212\\u9002\\u900f\\u6c14\",\"\\u4e24\\u8272\\u53ef\\u9009 \\u4fee\\u8eab\\u77ed\\u6b3e\",\"\\u65f6\\u5c1a\\u6761\\u7eb9 \\u642d\\u914d\\u5355\\u54c1\"]",
+            "group": {
+                "price": "2990",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f0cdc844b44f3b768d7094bebcf1123d7.jpg",
+            "mall_id": "979",
+            "time": 1461049306
+        },
+        {
+            "goods_id": "45161",
+            "goods_name": "79\u5143\u5305\u90ae \u7f2a\u8bd7\u6027\u611f\u6df1V\u857e\u4e1d\u805a\u62e2\u6587\u80f8 \u7acb\u4f53\u676f\u6a21 \u4e00\u5b57\u7f8e\u80cc\u5185\u8863\u5973 \u4eb2\u80a4\u900f\u6c14\u80f8\u7f69 \u5a07\u7136\u82b1\u97f5",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fbf54519c5ec2b3d371ef2523d62c264d.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f6d049c4a32ce8b1de479aeccfc3190c8.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f08eebf92d30e98e6e819566e16107ae4.jpg",
+            "market_price": "49900",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u649e\\u8272\\u857e\\u4e1d \\u9b45\\u60d1\\u5973\\u4eba\\u5473\",\"\\u7acb\\u4f53\\u676f\\u6a21 \\u4e3a\\u80f8\\u578b\\u52a0\\u5206\",\"\\u6df1V\\u6027\\u611f\\u805a\\u62e2\"]",
+            "group": {
+                "price": "7900",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/a74bb18c66fd06f7ae7a10c6a3184f2eee0bfafaf1.jpg",
+            "mall_id": "1527",
+            "time": 1461047550
+        },
+        {
+            "goods_id": "45058",
+            "goods_name": "39\u5143 \u97e9\u7248\u9ad8\u8170\u5377\u8fb9\u725b\u4ed4\u77ed\u88e4\u9614\u817f\u88e4\u3010\u9001\u8170\u5e26S-L\u3011",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f5a7c96e23a937a6110a1814ec3550209.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f6ab8e91da70e2bdf40d3121745debe6c.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f5f70a563172eb79223c48a3446c21ceb.jpg",
+            "market_price": "11800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u65f6\\u5c1a\\u65b0\\u54c1\\u77ed\\u88e4\",\"\\u725b\\u4ed4\\u9762\\u6599\\u8212\\u9002\",\"\\u663e\\u7626\\u4fee\\u8eab\\u5927\\u6c14\"]",
+            "group": {
+                "price": "3900",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/06dae129a53a0abb49cc14a51a3c5502\/e337ed3a7901f99911687d16708d5248.jpg",
+            "mall_id": "381",
+            "time": 1461046130
+        },
+        {
+            "goods_id": "45052",
+            "goods_name": "29.9\u5143 \u6625\u590f\u65b0\u6b3e\u77ed\u6b3e\u62fc\u8272\u96ea\u7eba\u886b\u97e9\u7248\u77ed\u8896\u5bbd\u677e\u767e\u642d\u6253\u5e95\u886b\u5973\u4e0a\u8863\u6f6e",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fa962c4da029ade4794c69e8f0e892b71.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f5a704f0ca7118fdd08dd9a1a400a3cf7.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f7a91c94c2cb6429d1251a7ee43db8676.jpg",
+            "market_price": "12800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u7cbe\\u81f4H\\u7248\\u578b\",\"\\u4f18\\u8d28\\u7cbe\\u9009\\u9762\\u6599\",\"\\u5b8c\\u7f8e\\u4fee\\u9970\\u8eab\\u5f62\"]",
+            "group": {
+                "price": "2990",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f3ad70364f4ae6ff70685ae1c33c4f2ed.jpg",
+            "mall_id": "2101",
+            "time": 1461046011
+        },
+        {
+            "goods_id": "45040",
+            "goods_name": "25.8\u5143 \u677e\u82b1\u86cb\u76ae\u86cb65g*20\u53ea\u5b9e\u60e0\u88c5",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f7849e0a301f5ac35f6962e6d922b270c.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fa322fea614782c4e939b64f44227313a.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f417a39118b78b5f181b4c28fcc77b438.jpg",
+            "market_price": "3900",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u98ce\\u5473\\u72ec\\u7279\",\"\\u590f\\u5b63\\u5fc5\\u5907\",\"\\u65b9\\u4fbf\\u901f\\u98df\"]",
+            "group": {
+                "price": "2580",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/ef114d240f362755e8d3b8cc693f45ca33726a4d8a.jpg",
+            "mall_id": "1155",
+            "time": 1461045625
+        },
+        {
+            "goods_id": "44991",
+            "goods_name": "84.5\u5143\u95ed\u6708\u59ff \u8c37\u80f1\u7518\u80bd\u51b0\u6676 \u71ac\u591c\u4fee\u590d\u514d\u6d17\u7761\u7720\u9762\u819c\u8865\u6c34\u5ae9\u80a4\u7f8e\u767d\u6de1\u6591\u53bb\u9ec450g",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fa54b766824a70e3e48735c6d889276e3.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f309f130b2741459b860d430b001a1c82.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98ffa80048165ec9c80c2fe6c46ddb2b4c2.jpg",
+            "market_price": "16900",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u7f8e\\u767d\\u6de1\\u6591\\u53bb\\u9ec4\",\"\\u8865\\u6c34\\u4fdd\\u6e7f\",\"\\u63d0\\u4eae\\u80a4\\u8272\"]",
+            "group": {
+                "price": "8450",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/d06f144f1d\/310\/310\/f6305f01020156b7efb2df626c875b01.jpg",
+            "mall_id": "1098",
+            "time": 1461044926
+        },
+        {
+            "goods_id": "44785",
+            "goods_name": "29.9\u5143 \u6625\u5b632016\u706b\u7206\u65b0\u6b3e\u97e9\u7248\u65f6\u5c1a\u513f\u7ae5\u4f11\u95f2\u8fd0\u52a8\u5957\u88c5 \u4e24\u4ef6\u5957",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f59f5a6cb93793bf7683ecbeb8b19c486.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f50fd6940b8702a5b4bb7b9e1ec28f25c.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f815b5396a08df98eeec319926426bed2.jpg",
+            "market_price": "16800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u7279\\u4ef7\\u4e8f\\u672c \\u5168\\u56fd\\u5305\\u90ae\",\"\\u97e9\\u7248\\u65f6\\u5c1a\\u7ae5\\u88c5\",\"\\u9762\\u6599\\u4f18\\u8d28\\u4fdd\\u8bc1\"]",
+            "group": {
+                "price": "2990",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/005b3fb3d6\/200\/200\/225f068eefc1eac2ae810ac1e20d2891.jpg",
+            "mall_id": "800",
+            "time": 1461041985
+        },
+        {
+            "goods_id": "44757",
+            "goods_name": "42.9\u5143  2016\u6625\u590f\u65b0\u6b3e\u97e9\u5c0f\u6e05\u65b0\u590d\u53e4\u65f6\u5c1a\u5973\u5305\u659c\u630e\u5305\u5355\u80a9\u5305\u624b\u63d0\u5c0f\u65b9\u5305",
+            "image_url": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/531f3e199a715f9aceedbd2756362dcc497038bb47.jpg",
+            "thumb_url": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/531f3e199a26b16c48c41d3c66498a63b55aef161a.jpg",
+            "hd_thumb_url": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/531f3e199a3fecc69b400c96822e54e36f50b1cafc.jpg",
+            "market_price": "12800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u7b80\\u7ea6\\u98ce\\u683c\\uff0c\\u5b8c\\u7f8e\\u5305\\u578b\",\"\\u590f\\u5b63\\u65b0\\u65f6\\u5c1a\\uff0c4\\u8272\\u53ef\\u9009\",\"\\u7eaf\\u8272\\u8bbe\\u8ba1\\uff0c\\u65f6\\u5c1a\\u767e\\u642d\"]",
+            "group": {
+                "price": "4290",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fad940cca12536c2102b750c98cba41ae.jpg",
+            "mall_id": "2919",
+            "time": 1461039938
+        },
+        {
+            "goods_id": "44543",
+            "goods_name": "49.9\u5143 \u97e9\u56fd\u65b0\u6b3e\u767d\u8272\u7eaf\u68c9\u95fa\u871c\u5957\u88c5\u5bb6\u5c45\u670d\u7761\u8863 \u590f\u5b63\u516c\u4e3b\u98ce\u82b1\u8fb9\u8fde\u8863\u88d9\u7761\u88d9",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98feba6503581cdbbfa4cb9a014b987160f.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f780b06181c6f5a3c1448ab69c78f167c.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98ffab07524bf52938d1f2a8604f244d1c7.jpg",
+            "market_price": "18800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u767e\\u5206\\u767e\\u7eaf\\u68c9\",\"\\u97e9\\u56fd\\u65b0\\u6b3e\\u95fa\\u871c\\u88c5\",\"\\u4e0d\\u8d77\\u7403 \\u4e0d\\u53d8\\u5f62\"]",
+            "group": {
+                "price": "4990",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fbc4fa5f91509eaa43ed857225aa7c0a2.jpg",
+            "mall_id": "2433",
+            "time": 1460993745
+        },
+        {
+            "goods_id": "44542",
+            "goods_name": "25\u5143 \u9ad8\u54c1\u8d28\u9488\u7ec7\u68c9\u77ed\u88e4\u77ed\u8896\u7761\u8863\u4e0d\u8d77\u7403\u4e0d\u6389\u8272\u4e0d\u7f29\u6c34 \u65f6\u5c1a\u5361\u901a\u53ef\u5916\u7a7f\u5bb6\u5c45\u670d\u8fd0\u52a8\u5957\u88c5",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f4a9f02f34caef262cf0f078538ee8e1e.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fbbcfd002aa371f0b4e2f54207b206fbb.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f0888b7a459cd60a2077fbd680ad617a7.jpg",
+            "market_price": "6800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u4e0d\\u8d77\\u7403\\u4e0d\\u6389\\u8272\\u4e0d\\u7f29\\u6c34\",\"\\u65f6\\u5c1a\\u5361\\u901a\\u53ef\\u5916\\u7a7f\\u5bb6\\u5c45\\u670d\",\"\\u67d4\\u8f6f\\u8212\\u9002\"]",
+            "group": {
+                "price": "2500",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fbc4fa5f91509eaa43ed857225aa7c0a2.jpg",
+            "mall_id": "2433",
+            "time": 1460993713
+        },
+        {
+            "goods_id": "44522",
+            "goods_name": "38.2\u5143 \u539f\u88c5\u6b63\u54c1\u5ae9\u7ea2\u7d20\u79c1\u5904\u7f8e\u767d\u5507\u90e8\u4e73\u6655\u5ae9\u7ea2\u4fdd\u517b\u62a4\u7406\u7cbe\u534e\u6db230ml",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f770b31055c88aaf48ef8741fa06f20b9.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f2ba242e0f2345869410c088c36bfddae.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fbcb1ac5a18c1b983776469731616281b.jpg",
+            "market_price": "10800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u7f8e\\u767d\",\"\\u53bb\\u9664\\u9ed1\\u8272\\u7d20\",\"\\u5149\\u4eae\\u900f\\u6cfd\"]",
+            "group": {
+                "price": "3820",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f6ef676339927faa372ec9777a246aedc.jpg",
+            "mall_id": "2342",
+            "time": 1460989665
+        },
+        {
+            "goods_id": "44506",
+            "goods_name": "29.9\u5143    \u4e09\u5408\u4e00 \u591a\u529f\u80fd \u5377\u53d1\u5668 \u7f8e\u53d1\u68d2 \u76f4\u53d1 \u5377\u53d1 \u7389\u7c73\u70eb    1\u4ef6\u88c5",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f05d4b56d8577c134ca54ed2d3395931b.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f2a6b7fc2ce7caf6812ad9bb73629828a.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f41955771a904acff48c596360e44118a.jpg",
+            "market_price": "3800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u4e09\\u5408\\u4e00\\u5377\\u53d1\\u68d2\",\"\\u591a\\u529f\\u80fd\\u5377\\u53d1\\u68d2\",\" \\u7f8e\\u53d1\\u68d2 \\u76f4\\u53d1 \\u5377\\u53d1\"]",
+            "group": {
+                "price": "2990",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f6d54e89b4f30cbdddcfbcada7aa5aa74.jpg",
+            "mall_id": "1908",
+            "time": 1460988855
+        },
+        {
+            "goods_id": "44474",
+            "goods_name": "18.8\u5143\u590f\u5b63\u77ed\u8896T\u6064\u5b57\u6bcd\u62fc\u63a5\u5bbd\u677e\u663e\u7626\u5706\u9886\u4f53\u6064\u886b\u5927\u7801\u5973\u88c5\u97e9\u7248bf\u539f\u5bbf\u98ce\u62fc\u8272\u8fd0\u52a8\u4f11\u95f2\u5b66\u751f\u4e0a\u8863",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fb6854272daf491cb65ed6cebff83d4ed.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fbbfdc8b6afeca5ae877623c913460033.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fd8b3ca0f8b51a98097212f6c40956f15.jpg",
+            "market_price": "8200",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"180\\u514b\\u725b\\u5976\\u4e1d\\u5b9a\\u5236\",\"\\u8f7b\\u76c8\\u67d4\\u8f6f\\u6ed1\\u723d\\u60ac\\u5782\",\"\\u5b57\\u6bcd\\u62fc\\u63a5\\u8fd0\\u52a8\\u65f6\\u5c1a\"]",
+            "group": {
+                "price": "1880",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fc034e2c418af5bce94cfaa0ca5dfd15a.jpg",
+            "mall_id": "2373",
+            "time": 1460987251
+        },
+        {
+            "goods_id": "44405",
+            "goods_name": "29\u5143 \u7ad6\u6761\u7eb9\u8fde\u8863\u88d9\u5973\u590f\u5b63\u751c\u7f8e\u5b66\u751f\u97e9\u56fd\u6536\u8170\u663e\u7626\u77ed\u88d9\u5c0f\u6e05\u65b0\u886c\u886b\u5f0f\u4e2d\u88d9\u5b50",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fe5c2365229a6095303088475ed250d97.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fd24ad7a0e8935e04f8c2aa35c698e727.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fe5b14046195e218a53475b44db236d30.jpg",
+            "market_price": "15800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u4f18\\u8d28\\u7cbe\\u54c1 \\u5c0f\\u6e05\\u65b0\",\"\\u590f\\u65e5\\u5fc5\\u5907 \\u51cf\\u9f84\\u8fde\\u8863\\u88d9\",\"\\u6570\\u91cf\\u6709\\u9650 \\u62a2\\u5b8c\\u4e3a\\u6b62\"]",
+            "group": {
+                "price": "2900",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/a74bb18c66e9d49b48aa78b218e169084e8b9defe7.jpg",
+            "mall_id": "1317",
+            "time": 1460983113
+        },
+        {
+            "goods_id": "44402",
+            "goods_name": "29\u5143 BEELY\u6851\u845a\u679c\u53bb\u89d2\u8d28\u8db3\u819c\u793c\u76d2\/4\u888b\u88c5",
+            "image_url": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/b2d92d0283a1aa660fcff519f15836ab18abfae89c.jpg",
+            "thumb_url": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/b2d92d028365fbe6345dd2ff86fe64469cb04c388d.jpg",
+            "hd_thumb_url": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/b2d92d028324a703a7bd06dc93dae78f54faed5552.jpg",
+            "market_price": "15600",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u5ae9\\u6ed1\\u7389\\u8db3 \\u6e29\\u548c\\u4fee\\u62a4\",\"\\u8db3\\u90e8\\u517b\\u62a4 \\u8715\\u53d8\\u53bb\\u89d2\\u8d28\",\"HELLO Kitt\"]",
+            "group": {
+                "price": "2900",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f7c397385ce76cf5cc0f5230b4bb901ee.jpg",
+            "mall_id": "2770",
+            "time": 1460983020
+        },
+        {
+            "goods_id": "44399",
+            "goods_name": "24.5\u51432016\u6625\u590f\u65b0\u6b3e\u97e9\u7248\u767e\u642d\u516b\u5206\u88e4\u5916\u7a7f\u5c0f\u811a\u94c5\u7b14\u6253\u5e95\u88e4 \u9ad8\u5f39\u529b\u4fee\u8eab \u8d85\u663e\u7626\u597d\u54c1\u8d28",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f6e64e1b887b2676e77282424f08a3174.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fcdd078ae7e88fd4f884cb0509ccc9fd4.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98ff9a5c38d74e41486373ef1c49f26a05f.jpg",
+            "market_price": "8900",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u4e94\\u8272\\u53ef\\u9009  \\u5168\\u56fd\\u5305\\u90ae\",\"\\u5929\\u7136\\u9762\\u6599  \\u8212\\u9002\\u67d4\\u8f6f\",\"\\u8d85\\u9ad8\\u54c1\\u8d28  \\u65f6\\u5c1a\\u767e\\u642d\"]",
+            "group": {
+                "price": "2450",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/pinduoduo.b0.upaiyun.com\/2\/2015\/10\/ees70kyyha1gpzdq.jpg",
+            "mall_id": "85",
+            "time": 1460982845
+        },
+        {
+            "goods_id": "44378",
+            "goods_name": "9.8\u5143 BEELY\u4e73\u6728\u679c\u62a4\u624b\u971c40g\/\u652f 3\u652f\u88c5",
+            "image_url": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/b2d92d0283d3428394b6bc550a690946dd6f8c7108.jpg",
+            "thumb_url": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/b2d92d028323f75cd23d54139bcdf5d221bf4dd096.jpg",
+            "hd_thumb_url": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/b2d92d02835bfb046275ecd8d2e2cb87ca016d0ece.jpg",
+            "market_price": "5900",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u8865\\u6c34\\u4fdd\\u6e7f\",\"\\u6ecb\\u6da6\\u4fee\\u62a4\",\"\\u6297\\u5e72\\u71e5\\u624b\\u62a4\\u7f8e\\u4e3d\"]",
+            "group": {
+                "price": "980",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f7c397385ce76cf5cc0f5230b4bb901ee.jpg",
+            "mall_id": "2770",
+            "time": 1460982521
+        },
+        {
+            "goods_id": "44367",
+            "goods_name": "29\u5143 BEELY\u53bb\u9ed1\u5934\u6536\u7f29\u6bdb\u5b54\u4e09\u4ef6\u5957 ",
+            "image_url": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/b2d92d028344a1fda7898a2693a38d2037301a6378.jpg",
+            "thumb_url": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/b2d92d0283cc002d65aed1a87871ca53c7fc64cdd1.jpg",
+            "hd_thumb_url": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/b2d92d0283dff2efed07c7419f8f48410821c05ae6.jpg",
+            "market_price": "9800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u7ec6\\u81f4\\u53bb\\u9ed1\\u5934\",\"\\u6e05\\u6d01\\u6536\\u6bdb\\u5b54\",\"\\u53bb\\u9ed1\\u5934\\u65e0\\u9700\\u8fd9\\u4e48\\u8d39\\u529b \"]",
+            "group": {
+                "price": "2900",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f7c397385ce76cf5cc0f5230b4bb901ee.jpg",
+            "mall_id": "2770",
+            "time": 1460982240
+        },
+        {
+            "goods_id": "44315",
+            "goods_name": "19.9\u51432\u53cc 5D\u8d85\u8584\u4e0d\u8131\u4e1d\u6c34\u6676\u889c\u51b0\u6676\u889c\u4efb\u610f\u526a\u8fde\u88e4\u889c\u9632\u8131\u4e1d\u65e0\u75d5\u9ad8\u5f39\u9526",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fc419381210510702e92fc6e5f1a0ab3d.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fa54aa6313d647a26c5bbd43a14f474b6.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f43a1525bd46c459ec92c921e85adce98.jpg",
+            "market_price": "9800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"5D\\u8d85\\u8584\\u4e0d\\u8131\\u4e1d\\u6c34\\u6676\\u889c\",\"\\u4efb\\u610f\\u88c1\\u526a \\u7acb\\u4f53\\u51b0\\u6676\\u88c6\",\"\\u8d85\\u8584\\u8d85\\u900f \\u4e0d\\u6613\\u52fe\\u4e1d\"]",
+            "group": {
+                "price": "1990",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/pinduoduo.b0.upaiyun.com\/2\/2015\/10\/tunuq8byfnwtwscs.jpg",
+            "mall_id": "122",
+            "time": 1460981043
+        },
+        {
+            "goods_id": "44176",
+            "goods_name": "\u3010\u571f\u8033\u5176\u8fdb\u53e3\u301124.8\u5143\u5494\u5494\u838e\u7b11\u8138\u699b\u5b50\u5de7\u514b\u529b\u5939\u5fc3\u997c\u5e72400g*2\u76d2",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f2a4c8bcfd2b947d35377aaa87de9f4e5.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fa66487bbb3c6793da37a07f0c9de3630.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fae2bd543265d923f5500b5f1ca3874e8.jpg",
+            "market_price": "4880",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u6b27\\u6d32\\u8fdb\\u53e3 \\u7eaf\\u6b63\\u53ef\\u53ef\",\"\\u53cc\\u5c42\\u539a\\u5de7\\u514b\\u529b\\u5939\\u5fc3\\u997c\\u5e72\",\"\\u767e\\u53d8\\u5494\\u5494\\u838e\\u597d\\u5403\\u66f4\\u597d\\u73a9\"]",
+            "group": {
+                "price": "2480",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/d06f144f1d\/310\/310\/adff66c90b657587bbb475a37a512236.jpg",
+            "mall_id": "1021",
+            "time": 1460978945
+        },
+        {
+            "goods_id": "44167",
+            "goods_name": "55\u5143\u5170\u797a\u5bb6\u7eba\u51b0\u4e1d\u51c9\u5e2d\u4e09\u4ef6\u5957 \u53cc\u4eba\u6298\u53e0\u5e2d\u5b501.5\u7c73\/1.8\u7c73",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fcec9a5eb2ee83bd3f2fa7ac5c3e98a7a.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fe5699e483d0d34ec852788b988ee0dd8.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f2d6483853eddf8ad68bb900ac888efbc.jpg",
+            "market_price": "29900",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u51c9\\u800c\\u4e0d\\u51b0 \\u67d4\\u8f6f\\u4eb2\\u80a4\",\"\\u5438\\u6c57\\u900f\\u6c14 \\u9632\\u9709\\u6291\\u83cc\",\"\\u53ef\\u6298\\u53e0 \\u6613\\u6536\\u7eb3\"]",
+            "group": {
+                "price": "5500",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f9b934520b695505eec24c687de8639c7.jpg",
+            "mall_id": "2689",
+            "time": 1460978853
+        },
+        {
+            "goods_id": "43947",
+            "goods_name": "29.8\u5143 \u4e1c\u963f\u76f4\u53d1 \u7ea2\u67a3\u67b8\u675e\u5973\u58eb\u578b\u963f\u80f6\u7cd5 500g",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f06546d2a3621e5321f06ec6f230d3225.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fde91c494fd7836201cea174f09230dd2.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f954897c31ecf990dc22f1597827104fd.jpg",
+            "market_price": "12800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u4e1c\\u963f\\u76f4\\u53d1 \\u624b\\u5de5\\u73b0\\u505a \",\"\\u6e05\\u9999\\u6251\\u9f3b \\u8425\\u517b\\u597d\\u5403\",\"\\u54c1\\u8d28\\u4e0a\\u4f73 \\u8425\\u517b\\u4e30\\u5bcc\"]",
+            "group": {
+                "price": "2980",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f4defdaea436074817078f47f87c2899b.jpg",
+            "mall_id": "2283",
+            "time": 1460971094
+        },
+        {
+            "goods_id": "43900",
+            "goods_name": "9.9\u51435\u53cc\u6625\u590f\u79cb\u5b63\u8239\u889c\u5973\u4f4e\u5e2e\u7cd6\u679c\u889c\u9690\u5f62\u77ed\u4e1d\u889c\u7845\u80f6\u9632\u8131\u843d\u6d45\u53e3\u889c\u8239\u889c",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f270ed94f4e2725962bb0ac670d4190a6.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fa6cda8ce01b46da1e249be972fec2cff.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f1b1cbe59d0f5ead3b4419a822e25de6f.jpg",
+            "market_price": "1900",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u7845\\u80f6\\u8bbe\\u8ba1\\u9632\\u8131\\u843d\",\"\\u5929\\u9e45\\u7ed2\\u9ad8\\u5f39\\u529b\",\"\\u900f\\u6c14\\u6027\\u597d\"]",
+            "group": {
+                "price": "990",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98ffcaa763711d92b2c60d95589fd125860.jpg",
+            "mall_id": "2315",
+            "time": 1460970119
+        },
+        {
+            "goods_id": "43884",
+            "goods_name": "27.9\u514355\u5ea6\u676f\u6447\u6447\u53d8\u6e29\u676f\u5f00\u6c34\u964d\u6e29\u51b7\u6c34\u5347\u6e29\u53d8\u6e29\u676f\u975e\u4fdd\u6e29\u676f 280ml",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f2c65e368d636126a67975785b65d162a.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f8a06a550d079c33cea8b30b24eecaa05.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f60f36c15a008e6ab55fd44338781f61d.jpg",
+            "market_price": "39900",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u5feb\\u901f\\u5347\\u964d\\u6e29\",\"\\u9632\\u70eb\\u4f24 \",\"\\u968f\\u8eab\\u643a\\u5e26\"]",
+            "group": {
+                "price": "2790",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/a74bb18c66e9e626b9b0e1d3f6d0b177bf8839d950.jpg",
+            "mall_id": "1531",
+            "time": 1460969913
+        },
+        {
+            "goods_id": "43863",
+            "goods_name": "49\u5143 \u51b0\u4e1d\u5185\u88e44\u6761\u76d2\u88c5\u65e0\u75d5\u5e73\u89d2\u88e4\u6027\u611f\u4f4e\u8170\u56db\u89d2\u88e4\u8d85\u8584\u900f\u6c14\u8d85\u8584U\u51f8\u8bbe\u8ba1\u793c\u76d2\u4e8c",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f010e849ab697d514952a5b2ebba2726c.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fd38c08a959fb1cebda8262a10f7c5147.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f970fac1fab357a7fbc3fa6c6cd5a8a2b.jpg",
+            "market_price": "9900",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u7537\\u58eb\\u4e2d\\u8170\\u51b0\\u4e1d\\u9762\\u6599 \",\"\\u65f6\\u5c1a\\u5370\\u82b1 \\u4e0d\\u892a\\u8272\",\"U\\u578b\\u82313D\\u526a\\u88c1\"]",
+            "group": {
+                "price": "4900",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f5f88bad22f3f5347f28d67c7f1e80c73.jpg",
+            "mall_id": "2339",
+            "time": 1460969654
+        },
+        {
+            "goods_id": "43859",
+            "goods_name": "19.9\u5143\u536b\u9f99\u4eb2\u5634\u70e7 \u7ea2\u70e7\u725b\u8089\u547350\u6761100\u7247 2\u7247\/\u6761",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f5d3c532ff84970784ca9011fb7415c1e.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f6497579867f544d366b85f122a69fccc.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f91dd116c944dbcbb1fcb8de98dcf1d48.jpg",
+            "market_price": "3990",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u513f\\u65f6\\u7ecf\\u5178\\u96f6\\u98df\",\"\\u9999\\u8fa3\\u52b2\\u9053 \\u5473\\u9053\\u9c9c\\u7f8e\",\"\\u7ebf\\u4e0b\\u7545\\u950015\\u5e74\"]",
+            "group": {
+                "price": "1990",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/d06f144f1d\/310\/310\/adff66c90b657587bbb475a37a512236.jpg",
+            "mall_id": "1021",
+            "time": 1460969629
+        },
+        {
+            "goods_id": "43852",
+            "goods_name": "\u3010\u65e5\u672c\u8fdb\u53e3\u301139.9\u5143  \u65e5\u672c\u65e5\u5149\u732b\u820c\u997c\u5e72 \u62b9\u8336\u53e3\u5473 150g",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f6f28bb5ef077c00a2d9a742f852b0542.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fef592bf8cdf40d5efed9a9317d2bcf93.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f256ac49bc567c48a36e53b15a4963765.jpg",
+            "market_price": "4990",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u732b\\u820c\\u997c\\u5e72 \\u62b9\\u8336\\u53e3\\u5473 \",\"\\u7cbe\\u9009\\u539f\\u6599 \\u677e\\u8106\\u9999\\u751c\",\"\\u53e3\\u611f\\u6e05\\u65b0 \\u72ec\\u7acb\\u5305\\u88c5\"]",
+            "group": {
+                "price": "3990",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/pinduoduo.b0.upaiyun.com\/2\/2015\/10\/lrvd117upndbdfab.jpg",
+            "mall_id": "67",
+            "time": 1460969541
+        },
+        {
+            "goods_id": "43849",
+            "goods_name": "\u3010\u9a6c\u6765\u897f\u4e9a\u8fdb\u53e3\u301135\u5143  \u9a6c\u6765\u897f\u4e9a\u5361\u65af\u679c\u51bb\u5c71\u7af9\u5473 110g*18",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f7da13441a919a51e4d9c4eaa055e6dee.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f1945e1b0627aef5dc7c4e3b90a593ee8.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f018672d0f794101b2baf1543f4755c67.jpg",
+            "market_price": "4600",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u9a6c\\u6765\\u897f\\u4e9a\\u539f\\u88c5\\u8fdb\\u53e3\",\"Q\\u5f39\\u723d\\u6ed1 \\u6e05\\u751c\\u5c71\\u7af9\",\"\\u8d85\\u503c\\u5957\\u991018\\u4e2a\\u88c5\"]",
+            "group": {
+                "price": "3500",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/pinduoduo.b0.upaiyun.com\/2\/2015\/10\/lrvd117upndbdfab.jpg",
+            "mall_id": "67",
+            "time": 1460969503
+        },
+        {
+            "goods_id": "43848",
+            "goods_name": "9.9\u51433\u4e2a\u88c5 \u6d17\u6fa1\u62a4\u7406 \u6d77\u7ef5\u6c90\u6d74\u82b1\uff08217 \u6d77\u7ef5\u6d74\u82b13\u4e2a\u88c5\uff09",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f2428b3cc9eee581ef458543739238ffa.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fb8d183e5a8206045755f19aa6cfcd42d.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f16709d745f96b7d66c89bd2e1f911ed6.jpg",
+            "market_price": "1590",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u4e0d\\u6613\\u751f\\u6210\\u80cc\\u75d8\",\"\\u5177\\u53bb\\u89d2\\u8d28\\u6548\\u679c\",\"\\u8212\\u9002\\u7684\\u6c90\\u6d74\\u4f53\\u9a8c\"]",
+            "group": {
+                "price": "990",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98ff57f648bbe183f4c1ea77f3243a0bd43.jpg",
+            "mall_id": "1647",
+            "time": 1460969497
+        },
+        {
+            "goods_id": "43825",
+            "goods_name": "18.8\u51432016\u97e9\u7248\u590f\u88c5\u5c0f\u718a\u95fa\u871c\u5b66\u751f\u88c5\u767e\u642d\u4fee\u8eab\u5bbd\u677e\u5927\u7801T\u6064\u6253\u5e95\u886b\u77ed\u8896\u5973\u88c5",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f79b78b410a1e05478ecb654a41806ac6.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fc459975a2eb1454223a2dcec342ecdc7.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fa1234979b406a6a9626cb5d363baea2a.jpg",
+            "market_price": "7300",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u4eb2\\u80a4\\u8212\\u9002\\u4e0d\\u624e\\u4eba\",\"\\u590f\\u5b63\\u5fc5\\u5907\\u6027\\u4ef7\\u6bd4\\u8d85\\u9ad8\",\"\\u4e0d\\u53d8\\u5f62\\u4e0d\\u6389\\u8272\\u4e0d\\u8d77\\u7403\"]",
+            "group": {
+                "price": "1880",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fc034e2c418af5bce94cfaa0ca5dfd15a.jpg",
+            "mall_id": "2373",
+            "time": 1460969121
+        },
+        {
+            "goods_id": "43823",
+            "goods_name": "9.9\u51435\u53cc\u5747\u7801\u97e9\u56fd\u65f6\u5c1a\u7231\u5fc3\u70b9\u70b9\u5168\u68c9\u889c\u5b50 \u77ed\u889c \u8239\u889c ",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fb4d98c526eab06e0908af1e927c875ee.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f52404a1c3cfc2a6e8eb717af6f7fbe51.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fc9b4663df77f22a277a54b04971c1a6e.jpg",
+            "market_price": "2000",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u5747\\u7801\\u3001\\u7231\\u5fc3\\u70b9\\u70b9\\u8239\\u889c\",\"\\u900f\\u6c14\\u6392\\u6c57\",\"\\u8212\\u9002\\u4eb2\\u80a4\"]",
+            "group": {
+                "price": "990",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f4df957f4d27c0ff162a1d24792262292.jpg",
+            "mall_id": "2494",
+            "time": 1460969104
+        },
+        {
+            "goods_id": "43818",
+            "goods_name": "39\u5143 2016\u590f\u5b63\u65b0\u6b3e\u97e9\u7248\u6f6e\u6d41\u7537\u58eb\u5706\u9886\u7eaf\u8272\u5370\u82b1\u77ed\u8896T\u6064T07",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f7510ed9bfdf8fc9e4fb07c89c55e7a30.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f83801e69a53bbc105c0e21a465335584.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f260b159514c0d97c483a1ff30a31da0e.jpg",
+            "market_price": "19900",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"2016\\u590f\\u5b63\\u65b0\\u6b3e\",\"\\u97e9\\u7248\\u6f6e\\u6d41\\u4f11\\u95f2\\u4fee\\u8eab\",\"\\u5706\\u9886\\u7eaf\\u8272\\u5370\\u82b1T\\u6064\"]",
+            "group": {
+                "price": "3900",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/d7c6a8a2f1\/310\/310\/22a076e69b608944199f4f1fba2d1edd.jpg",
+            "mall_id": "936",
+            "time": 1460969015
+        },
+        {
+            "goods_id": "43578",
+            "goods_name": "\u3010\u65b0\u52a0\u5761\u76f4\u90ae\u301199\u5143 Neutrogena\u9732\u5f97\u6e05\u9632\u6652\u55b7\u96fe\u8f7b\u900f\u9632\u6652\u55b7\u96feSPF50\/PA+++\u9632\u6652\u7f8e\u56fd\u8fdb\u53e3",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f7af9cee5a328c5c19d2f5a7287a77beb.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f4a772b0ffd14e95cb420ad06d2e22118.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fd6729bcc48ec43b78f3b9cf1677040cd.jpg",
+            "market_price": "18800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u6d17\\u51c0\\u6e29\\u548c\",\"\\u6d3b\\u6c34\\u6e17\\u5165\",\"\\u65e0\\u9999\\u7cbe \\u96f6\\u8d1f\\u62c5\"]",
+            "group": {
+                "price": "9900",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/a74bb18c66caca51bf50d93647cc2429d3afde3ea7.jpg",
+            "mall_id": "1420",
+            "time": 1460965752
+        },
+        {
+            "goods_id": "43415",
+            "goods_name": "9.9\u51432\u4e2a\u88c5\u5c0f\u5154\u5b50\u73ca\u745a\u7ed2\u64e6\u624b\u5dfe\u53ef\u6302\u5f0f\u53ef\u7231\u5361\u901a\u624b\u5e15\u5438\u6c34\u64e6\u624b\u5e03\u6bdb\u5dfe\u643d\u624b\u5dfe",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f68d110a10985f11b050be933dcdfd494.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f22698db2d0fff10d74e7540eb2841fd6.jpg",
+            "hd_thumb_url": "",
+            "market_price": "3900",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u91c7\\u7528\\u4f18\\u8d28\\u73ca\\u745a\\u7ed2\\u6750\\u8d28\",\"\\u5438\\u6c34\\u6027\\u5f3a \\u900f\\u6c14\\u6027\\u597d\",\"\\u53ef\\u7231\\u5361\\u901a\\u52a8\\u7269\\u9020\\u578b\"]",
+            "group": {
+                "price": "990",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f64e8a544178b3f332ecec18ec14c0b29.jpg",
+            "mall_id": "1699",
+            "time": 1460961240
+        },
+        {
+            "goods_id": "43244",
+            "goods_name": "36\u5143\u65b0\u54c1\u53e3\u888b\u4f1enano\u8896\u73cd\u592a\u9633\u4f1e\u5c0f\u9ed1\u4f1e\u4e94\u6298\u906e\u9633\u4f1e\u9632\u6652\u4f1e\u9632\u7d2b\u5916\u7ebf",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f2e7c6481f4322ccd13ed168709cee3a5.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fc4e67947a50174351ba17cf485172afe.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fc41874e522011d90a96fddd0c733dc22.jpg",
+            "market_price": "16800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u6bd4\\u5c0f\\u66f4\\u5c0f \\u65b0\\u54c1\\u53e3\\u888b\\u4f1e\",\"\\u8896\\u73cd\\u592a\\u9633\\u4f1e 0\\u900f\\u5149\",\"\\u4e94\\u6298\\u4f1e \\u9632\\u7d2b\\u5916\\u7ebf\"]",
+            "group": {
+                "price": "3600",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/fd6598aa29\/310\/310\/79bc2b7e521a4f5dc5ce648e9e7dc594.jpg",
+            "mall_id": "868",
+            "time": 1460957497
+        },
+        {
+            "goods_id": "43224",
+            "goods_name": "38.5\u5143 \u97e9\u7248\u65f6\u5c1a\u7761\u8863\u5973\u590f\u68c9\u7761\u88d9\u5973\u58eb\u7eaf\u68c9\u77ed\u8896\u7761\u88d9\u5973\u4eba\u7761\u8863\u5bb6\u5c45\u88d9\u97e9\u7248\u77ed\u88d9",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f9918a43afd7ea91e79d2840e2ffee2c6.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f19e878b117a6f12c90204d7b8c39cfa2.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f9e54973ecbe90f0180d9966ce6de5242.jpg",
+            "market_price": "9600",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u53ef\\u5916\\u7a7f\\u6761\\u7eb9\\u5bb6\\u5c45\\u670d\",\"\\u65f6\\u5c1a\\u5361\\u901a\\uff0c\\u7ecf\\u5178\\u6761\\u7eb9\",\"\\u8212\\u9002\\u4f11\\u95f2\\uff0c\\u67d4\\u8f6f\\u4eb2\\u80a4\"]",
+            "group": {
+                "price": "3850",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/pinduoduo.b0.upaiyun.com\/2\/2015\/10\/tunuq8byfnwtwscs.jpg",
+            "mall_id": "122",
+            "time": 1460956941
+        },
+        {
+            "goods_id": "43206",
+            "goods_name": "14.6\u5143\u5a74\u513f\u5b9d\u5b9d\u6625\u590f\u5b63\u900f\u6c14\u63d0\u7bee\u5b66\u6b65\u5e26\u513f\u7ae5\u9632\u8d70\u5931\u5b66\u884c\u5e26\u5b66\u6b65\u5e26",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f6ea21024e4423b187a746ee4ec3e2c97.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fc19ef21b41418a3bb229b878ebc78930.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f1886c1c04e9c10ba1531ae6f525fb969.jpg",
+            "market_price": "4800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u900f\\u6c14\\u7f51\\u5e03\\u7eaf\\u68c9\\u6750\\u8d28\",\"\\u52a0\\u5927\\u80f8\\u56f4\\u4e0d\\u561e\\u814b\\u4e0b\",\"\\u63d0\\u7bee\\u5b66\\u6b65\\u5e26\"]",
+            "group": {
+                "price": "1460",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/a74bb18c663d0849180f2b232836bf67a6e63abeb1.jpg",
+            "mall_id": "1438",
+            "time": 1460955882
+        },
+        {
+            "goods_id": "43202",
+            "goods_name": "39.9\u5143 \u9ed1\u9f99\u6c5f\u4e94\u5e38\u957f\u7c92\u9999\u5927\u7c7310\u65a4 15\u5e74\u79cb\u6536\u65b0\u7c73\u9999\u8f6f\u8d28\u5730\u901a\u900f",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f9457cc9e5132299ed98048ebbd0c26ae.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fcba1c888ad777f1e54f4b06ba0812b0a.jpg",
+            "hd_thumb_url": "",
+            "market_price": "8800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u9999\\u8f6f\\u8d28\\u5730\\u901a\\u900f\",\"\\u6c34\\u7a3b\\u9897\\u7c92\\u9971\\u6ee1\",\"\\u5165\\u53e3\\u677e\\u8f6f\\u9999\\u751c\"]",
+            "group": {
+                "price": "3990",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/3aef4b2dfc08f53932ddaf8906473524\/a5472612add00743b2c19958c439a7b6.jpg",
+            "mall_id": "317",
+            "time": 1460955684
+        },
+        {
+            "goods_id": "43145",
+            "goods_name": "12.9\u5143 \u65b0\u6b3e\u8611\u83c7\u676f\u73bb\u7483\u676f280ml\uff08\u9001\u676f\u5957\u548c\u676f\u5237\uff09 \u989c\u8272\u968f\u673a\u3010\u9884\u552e4\u670824\u65e5\u53d1\u5b8c\u3011 ",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f45d0cbb58fb38cec0ebeb3983177e96e.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f2266884eb56293584ea235436d5d7d75.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98ffa6723d7d2f05fa42d2dc9b340f59a78.jpg",
+            "market_price": "2900",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u73bb\\u7483\\u6750\\u8d28\",\"\\u7cbe\\u7f8e\\u840c\\u7269\",\"\\u8d60\\u9001\\u676f\\u5237\"]",
+            "group": {
+                "price": "1290",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/pinduoduo.b0.upaiyun.com\/2\/2015\/09\/wh0rl9xg2oxif8nb.jpg",
+            "mall_id": "59",
+            "time": 1460951290
+        },
+        {
+            "goods_id": "43132",
+            "goods_name": "16.8\u5143 \u65b0\u7586\u7279\u4ea7\u548c\u7530\u67a3500g*3\u888b \u65b0\u7586\u5e72\u679c\u5927\u67a3",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f92136b1003a28b34f45920ae469f96f7.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f7d08e36f7d3fd50588487599f522993b.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f3c8b92ec55f2d4020add34eceace2c73.jpg",
+            "market_price": "2500",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u4e2a\\u5934\\u5927 \\u67a3\\u6838\\u5c0f\",\"\\u679c\\u76ae\\u8584 \\u8089\\u539a\\u5b9e\",\"\\u5473\\u7eaf\\u6b63 \\u6709\\u8425\\u517b\"]",
+            "group": {
+                "price": "1680",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/ef114d240f362755e8d3b8cc693f45ca33726a4d8a.jpg",
+            "mall_id": "1155",
+            "time": 1460951139
+        },
+        {
+            "goods_id": "43126",
+            "goods_name": "\u3010\u97e9\u56fd\u8fdb\u53e3\u301145\u5143 PONY Memebox\u53e3\u7ea2 \u6a31\u82b1\u6d6a\u6f2b\u5507\u818f\u54d1\u5149\u4fdd\u6e7f\u96fe\u9762\u53e3\u7ea24.5g\u30104\u670823\u53f7\u524d\u53d1\u5b8c\u3011",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98ff616880689073ff7783c782a660579c3.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fc593120086e1bd490701fbcf54a145ef.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f3854f73c4df49a4c2493021ee6182639.jpg",
+            "market_price": "12800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u8425\\u9020\\u81ea\\u7136\\u7684\\u73bb\\u7483\\u5149\",\"\\u50cf\\u82b1\\u74e3\\u4e00\\u6837\\u7684\\u8272\\u611f\",\"\\u6301\\u4e45\\u663e\\u8272\"]",
+            "group": {
+                "price": "4500",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/c3f1046a61\/310\/310\/f6688ac3f1784e6602d355c34cda48fb.jpg",
+            "mall_id": "824",
+            "time": 1460951025
+        },
+        {
+            "goods_id": "43084",
+            "goods_name": "12.9\u5143 \u9047\u6c34\u5f00\u82b1\u52a0\u539a\u96e8\u4f1e \u6674\u96e8\u4e24\u7528\u4f1e \u9632\u6652\u4f1e\u592a\u9633\u4f1e\u4e09\u6298\u4f1e\u9632\u7d2b\u5916\u7ebf\u6298\u53e0\u96e8\u4f1e\u906e\u9633\u4f1e",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f55e1c66889db4a940c36f9f66df66af3.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f758a6addc732e3ec7c888d1c003aa9bb.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f88a67b0795e72cb7075c4f56d64095df.jpg",
+            "market_price": "6900",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u9047\\u6c34\\u5f00\\u82b1 \\u6674\\u96e8\\u4e24\\u7528\",\"\\u9632\\u6652\\u5229\\u5668 \\u906e\\u98ce\\u6321\\u96e8\",\"\\u7eb3\\u7c73\\u9632\\u6c34 \\u4e00\\u7529\\u5373\\u5e72\"]",
+            "group": {
+                "price": "1290",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/pinduoduo.b0.upaiyun.com\/2\/2015\/10\/2g8v9v0qfew7v2xj.jpg",
+            "mall_id": "88",
+            "time": 1460950060
+        },
+        {
+            "goods_id": "42973",
+            "goods_name": "19.9\u5143  \u79d8\u5bc6\u82b1\u56ed\u513f\u7ae5\u624b\u7ed8\u586b\u8272\u6d82\u8272\u4e66\u3010\u4e00\u59574\u672c+\u9ad8\u6d53\u5ea612\u8272\u5916\u8d38\u5f69\u94c5\u3011",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f6781955a982861740e24dba93abf7aa8.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f7b39a8390e214fdb3c470d102fc6a2b2.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fbef3feb5f5ec989c8ce56330af69120e.jpg",
+            "market_price": "8900",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"4\\u672c\\u4e00\\u6574\\u5957\",\"\\u9001\\u9ad8\\u6d53\\u5ea612\\u8272\\u5916\\u8d38\\u5f69\",\"\\u51fa\\u53e3\\u54c1\\u8d28\"]",
+            "group": {
+                "price": "1990",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f5e9da8b4dc4223d2c35b2e07ca62458f.jpg",
+            "mall_id": "2016",
+            "time": 1460912105
+        },
+        {
+            "goods_id": "42893",
+            "goods_name": "39.9\u5143  2016\u6625\u590f\u97e9\u7248\u62c9\u94fe\u642d\u6263\u53cc\u80a9\u80cc\u5305",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fa73ac3ab4f285200ddf8395b61ba4fa0.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fd3426111c0f662b1fa49c8dc9ced4b74.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fa7b0d1dd1cb345b34b5feaa9c71e97de.jpg",
+            "market_price": "17900",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u7b80\\u7ea6\\u4f18\\u96c5\",\"\\u989c\\u8272\\u4eae\\u4e3d\\uff0c\\u591a\\u8272\\u53ef\\u9009\",\"\\u6f6e\\u6d41\\u7206\\u6b3e\"]",
+            "group": {
+                "price": "3990",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/a74bb18c66de078696aa7bd3dbf85f4467e463812d.jpg",
+            "mall_id": "1364",
+            "time": 1460898214
+        },
+        {
+            "goods_id": "42856",
+            "goods_name": "59\u5143 \u725b\u76ae\u62fc\u8272\u9542\u7a7a\u8212\u9002\u51c9\u62d6",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f13bedab83bdba01ec894f8facb15781f.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fc90caa66323c69903211512d29c5fd1c.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f7911b37dca44dd87a7e8975c9124912b.jpg",
+            "market_price": "31600",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u4f18\\u8d28\\u725b\\u76ae\\u6253\\u9020\",\"\\u8d85\\u8f7b\\u4fbf\\u8212\\u9002\",\"\\u725b\\u7b4b\\u9632\\u6ed1\\u5e95\"]",
+            "group": {
+                "price": "5900",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f6022531202fd6ed14c3fa6eee3c6e221.jpg",
+            "mall_id": "2212",
+            "time": 1460895270
+        },
+        {
+            "goods_id": "42643",
+            "goods_name": "88\u5143\u84dd\u7259\u667a\u80fd\u624b\u8868\u624b\u73af\u624b\u673a\u5b89\u5353\u82f9\u679c\u4e09\u661f\u7a7f\u6234\u63d2\u5361\u7535\u8bdd\u8fd0\u52a8\u9632\u6c34\u513f\u7ae5\u5b66\u751f",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f582b59cb8a88e1607dcf0700bfddcde1.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fd21c2ebe72d4bd64cbfd63c3d6bfa674.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f6c3d7e1f7e2374a0c0563dcbaaa10bf4.jpg",
+            "market_price": "16800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u6d4f\\u89c8\\u5668\\u4e0a\\u7f51\",\"\\u5fae\\u4fe1\\u767b\\u9646\",\"\\u8fdc\\u7a0b\\u62cd\\u7167\"]",
+            "group": {
+                "price": "8800",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f401e3abe945bc6e0e00e1e390023bef1.jpg",
+            "mall_id": "2448",
+            "time": 1460888068
+        },
+        {
+            "goods_id": "42493",
+            "goods_name": "25\u5143 \u8fd0\u52a8\u5973\u6b3e\u77ed\u8896\u77ed\u88e4\u8fd0\u52a8\u5957\u88c5 \u5bb6\u5c45\u6237\u5916\u8dd1\u6b65\u8fd0\u52a8\u6f6e\u6d41\u5957\u88c5 \u3010\u65b0\u54c1\u4e0a\u5e02\u3011",
+            "image_url": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/9975ac845ab1b2088c1438ca9d8181645cc62cd91b.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f2fce97d0da86f3a06dd29e35aa5bbb68.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98ff88665a7024b4f83cee320c2d94a5ee2.jpg",
+            "market_price": "5800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u83ab\\u4ee3\\u5c14\\u68c9\\u8d28\\u8fd0\\u52a8\\u5957\\u88c5\",\"\\u5c45\\u5bb6\\u6237\\u5916\\u5747\\u53ef\\u7a7f\\u7740\",\"\\u67d4\\u987a\\u4eb2\\u80a4 \\u4e0d\\u6389\\u8272\"]",
+            "group": {
+                "price": "2500",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f701ba7e6ac8bf2686d9dff92e72e240c.jpg",
+            "mall_id": "1659",
+            "time": 1460884447
+        },
+        {
+            "goods_id": "42344",
+            "goods_name": "39\u5143\u3010\u7eaf\u68c9POLO\u886b 11\u8272\u53ef\u9009\u3011\u90a6\u6c40\u4e16\u88d4 \u590f\u5b63\u7537\u58eb\u77ed\u8896T\u6064\u7eaf\u68c9\u4e0a\u8863\u670d\u9752\u5e74V\u9886polo\u886b\u4fee\u8eab\u6f6e LG1536",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fd5190348f521cb1b21cc6e6d839184c6.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98ffb7fac61d10955874bf375b005458f4e.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fda29354e80ff206f728fbd68fc370cea.jpg",
+            "market_price": "19800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u73a9\\u8f6c\\u8272\\u5f69 11\\u8272\\u53ef\\u9009\",\"\\u4e0d\\u8d77\\u7403 \\u4e0d\\u53d8\\u5f62 \\u8212\\u9002\",\"\\u7eaf\\u68c9\\u9762\\u6599 \\u65e0\\u7406\\u7531\\u9000\\u6362\"]",
+            "group": {
+                "price": "3900",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/7c68e721b1\/310\/310\/551213484dda4c9b4794d86e37a5aa27.jpg",
+            "mall_id": "914",
+            "time": 1460881997
+        },
+        {
+            "goods_id": "42121",
+            "goods_name": "\u3010\u65e5\u672c\u8fdb\u53e3\u301155\u5143\u5609\u5a1c\u5b9dKATE\u4e09\u8272\u7709\u7c893g\u53ef\u7528\u4f5c\u9f3b\u5f71\u773c\u5f71 \u4e24\u6b3e\u4efb\u9009",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fe38f47f95d45be68047c2722b795b1d8.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fe76e2838d65319cd4078ab09a372a980.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f5b742a410d61c4a6b9c76cb25a534adb.jpg",
+            "market_price": "19800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u6301\\u4e45\\u4e0a\\u5986\",\"\\u7ec6\\u81f4\\u7c89\\u8d28\",\"\\u9632\\u6c34\\u9632\\u6c57\"]",
+            "group": {
+                "price": "5500",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fe7a366b37ae76c131afad15f419296ec.jpg",
+            "mall_id": "1831",
+            "time": 1460876617
+        },
+        {
+            "goods_id": "41813",
+            "goods_name": "36\u5143 \u3010\u65f6\u9ae6\u663e\u7626\u3011\u9ed1\u767d\u7ad6\u6761\u7eb9\u68c9\u9ebb\u4e5d\u5206\u9614\u817f\u88e4 ",
+            "image_url": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/10fd55b4e981856594750055c209dab5588a70d662.jpg",
+            "thumb_url": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/10fd55b4e9f00d3f0b20604d0839ac026a476fce72.jpg",
+            "hd_thumb_url": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/10fd55b4e97d9baf9e2133835dff803950b84afc44.jpg",
+            "market_price": "12800",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u9ad8\\u6311\\u663e\\u7626 \\u624b\\u611f\\u597d\",\"\\u5bbd\\u677e\\u8212\\u9002 \\u4e0d\\u6311\\u4eba\",\"\\u7ad6\\u6761\\u7eb9\\u4e5d\\u5206\\u9614\\u817f\\u88e4\"]",
+            "group": {
+                "price": "3600",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/a74bb18c663c2f450b3642187951a479cb6c52f86f.jpg",
+            "mall_id": "1489",
+            "time": 1460867790
+        },
+        {
+            "goods_id": "41636",
+            "goods_name": "12.8\u5143 \u65b0\u7586\u963f\u514b\u82cf\u9a8f\u67a3250g*2\u888b  \u514d\u6d17\u7ea2\u67a3 \u6b63\u5b97\u56db\u661f\u548c\u7530\u9a8f\u67a3 \u4e8c\u7ea7\u7cbe\u54c1 ",
+            "image_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f6259562af8a19b0dabc34d26624de7eb.jpg",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fb533bbd05f278f0cd9296fd41ef8cd47.jpg",
+            "hd_thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f4100006db4b8ff980ede89eb752371ac.jpg",
+            "market_price": "2580",
+            "is_app": "0",
+            "event_type": "0",
+            "list_desc": "[\"\\u65b0\\u7586\\u76f4\\u90ae \\u4fdd\\u8bc1\\u6b63\\u5b97\",\"\\u7cbe\\u6311\\u7ec6\\u9009\\u8089\\u539a\\u6838\\u5c0f\\u76ae\\u8584\",\"\\u597d\\u5403\\u4e0d\\u8d35\\u542b\\u591a\\u79cd\\u7ef4\\u751f\\u7d20\"]",
+            "group": {
+                "price": "1280",
+                "customer_num": "2"
+            },
+            "logo": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/a74bb18c66f414f3b392bb74475d73a16a0747d2d2.jpg",
+            "mall_id": "1426",
+            "time": 1460862940
+        }
+    ],
+    "favorite_update_time": 0
+}

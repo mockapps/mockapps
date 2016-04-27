@@ -1,0 +1,427 @@
+{
+    "goods_id": "1",
+    "cat_id": "330",
+    "mall_id": "1738",
+    "goods_name": "测试商品1",
+    "is_app": "0",
+    "event_type": "0",
+    "goods_desc": "测试描述1",
+    "market_price": "5900",
+    "is_onsale": "1",
+    "thumb_url": "http:\/\/10.15.4.151\/xuehua\/xuehuagood750.jpg",
+    "allowed_region": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32",
+    "country": "",
+    "warehouse": "\u56fd\u5185\u4ed3",
+    "goods_type": "1",
+    "image_url": "http:\/\/10.15.4.151\/xuehua\/xuehuagood750.jpg",
+    "is_refundable": "1",
+    "is_pre_sale": "0",
+    "pre_sale_time": "0",
+    "share_desc": "测试分享描述1",
+    "cat_id_1": "210",
+    "cat_id_2": "231",
+    "cat_id_3": "330",
+    "skip_goods": "0",
+    "sku": [
+        {
+            "sku_id": "165299",
+            "goods_id": "41044",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f65995015e5945e5c8c97eff3d6a70d26.jpg",
+            "quantity": "48",
+            "limit_quantity": "0",
+            "sold_quantity": "1",
+            "init_quantity": "0",
+            "is_onsale": "1",
+            "spec": "11978,1478",
+            "specs": [
+                {
+                    "spec_key": "\u989c\u8272",
+                    "spec_value": "\u6f02\u767d"
+                },
+                {
+                    "spec_key": "\u5c3a\u7801",
+                    "spec_value": "S"
+                }
+            ]
+        },
+        {
+            "sku_id": "165300",
+            "goods_id": "41044",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f78171ff9130eba2c05203d03e6c63f21.jpg",
+            "quantity": "77",
+            "limit_quantity": "0",
+            "sold_quantity": "3",
+            "init_quantity": "0",
+            "is_onsale": "1",
+            "spec": "11978,1479",
+            "specs": [
+                {
+                    "spec_key": "\u989c\u8272",
+                    "spec_value": "\u6f02\u767d"
+                },
+                {
+                    "spec_key": "\u5c3a\u7801",
+                    "spec_value": "M"
+                }
+            ]
+        },
+        {
+            "sku_id": "165301",
+            "goods_id": "41044",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f48e23cba9f64839b49c0957e7a97b65c.jpg",
+            "quantity": "77",
+            "limit_quantity": "0",
+            "sold_quantity": "3",
+            "init_quantity": "0",
+            "is_onsale": "1",
+            "spec": "11978,1227",
+            "specs": [
+                {
+                    "spec_key": "\u989c\u8272",
+                    "spec_value": "\u6f02\u767d"
+                },
+                {
+                    "spec_key": "\u5c3a\u7801",
+                    "spec_value": "L"
+                }
+            ]
+        },
+        {
+            "sku_id": "165302",
+            "goods_id": "41044",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f0d29a1f1d52fe03bfd79fac70a3b31b7.jpg",
+            "quantity": "45",
+            "limit_quantity": "0",
+            "sold_quantity": "5",
+            "init_quantity": "0",
+            "is_onsale": "1",
+            "spec": "11978,1228",
+            "specs": [
+                {
+                    "spec_key": "\u989c\u8272",
+                    "spec_value": "\u6f02\u767d"
+                },
+                {
+                    "spec_key": "\u5c3a\u7801",
+                    "spec_value": "XL"
+                }
+            ]
+        },
+        {
+            "sku_id": "165303",
+            "goods_id": "41044",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f6facdf4c4f0e0366a6701da791aa7f73.jpg",
+            "quantity": "50",
+            "limit_quantity": "0",
+            "sold_quantity": "0",
+            "init_quantity": "0",
+            "is_onsale": "1",
+            "spec": "21705,1478",
+            "specs": [
+                {
+                    "spec_key": "\u989c\u8272",
+                    "spec_value": "\u4e2d\u82b1\u7070"
+                },
+                {
+                    "spec_key": "\u5c3a\u7801",
+                    "spec_value": "S"
+                }
+            ]
+        },
+        {
+            "sku_id": "165304",
+            "goods_id": "41044",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f7aeacf14e9571497e7d3fc821bd1d87a.jpg",
+            "quantity": "79",
+            "limit_quantity": "0",
+            "sold_quantity": "1",
+            "init_quantity": "0",
+            "is_onsale": "1",
+            "spec": "21705,1479",
+            "specs": [
+                {
+                    "spec_key": "\u989c\u8272",
+                    "spec_value": "\u4e2d\u82b1\u7070"
+                },
+                {
+                    "spec_key": "\u5c3a\u7801",
+                    "spec_value": "M"
+                }
+            ]
+        },
+        {
+            "sku_id": "165305",
+            "goods_id": "41044",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fabd89d817dbc08c4e85ef21491b03f34.jpg",
+            "quantity": "78",
+            "limit_quantity": "0",
+            "sold_quantity": "2",
+            "init_quantity": "0",
+            "is_onsale": "1",
+            "spec": "21705,1227",
+            "specs": [
+                {
+                    "spec_key": "\u989c\u8272",
+                    "spec_value": "\u4e2d\u82b1\u7070"
+                },
+                {
+                    "spec_key": "\u5c3a\u7801",
+                    "spec_value": "L"
+                }
+            ]
+        },
+        {
+            "sku_id": "165306",
+            "goods_id": "41044",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f24584e809111466ea9e003b8920a15f7.jpg",
+            "quantity": "47",
+            "limit_quantity": "0",
+            "sold_quantity": "3",
+            "init_quantity": "0",
+            "is_onsale": "1",
+            "spec": "21705,1228",
+            "specs": [
+                {
+                    "spec_key": "\u989c\u8272",
+                    "spec_value": "\u4e2d\u82b1\u7070"
+                },
+                {
+                    "spec_key": "\u5c3a\u7801",
+                    "spec_value": "XL"
+                }
+            ]
+        },
+        {
+            "sku_id": "165307",
+            "goods_id": "41044",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f29e58f6380d7a4a73cb4d29fd76821b8.jpg",
+            "quantity": "49",
+            "limit_quantity": "0",
+            "sold_quantity": "1",
+            "init_quantity": "0",
+            "is_onsale": "1",
+            "spec": "136,1478",
+            "specs": [
+                {
+                    "spec_key": "\u989c\u8272",
+                    "spec_value": "\u6df1\u84dd"
+                },
+                {
+                    "spec_key": "\u5c3a\u7801",
+                    "spec_value": "S"
+                }
+            ]
+        },
+        {
+            "sku_id": "165308",
+            "goods_id": "41044",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98ff91d771b792f9b02745b5750ed2b579f.jpg",
+            "quantity": "80",
+            "limit_quantity": "0",
+            "sold_quantity": "0",
+            "init_quantity": "0",
+            "is_onsale": "1",
+            "spec": "136,1479",
+            "specs": [
+                {
+                    "spec_key": "\u989c\u8272",
+                    "spec_value": "\u6df1\u84dd"
+                },
+                {
+                    "spec_key": "\u5c3a\u7801",
+                    "spec_value": "M"
+                }
+            ]
+        },
+        {
+            "sku_id": "165309",
+            "goods_id": "41044",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f1b1f07ac20d324b79c6371b6a2fc9d71.jpg",
+            "quantity": "77",
+            "limit_quantity": "0",
+            "sold_quantity": "3",
+            "init_quantity": "0",
+            "is_onsale": "1",
+            "spec": "136,1227",
+            "specs": [
+                {
+                    "spec_key": "\u989c\u8272",
+                    "spec_value": "\u6df1\u84dd"
+                },
+                {
+                    "spec_key": "\u5c3a\u7801",
+                    "spec_value": "L"
+                }
+            ]
+        },
+        {
+            "sku_id": "165310",
+            "goods_id": "41044",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f683bc259f6d388685d3d24e959f2680d.jpg",
+            "quantity": "25",
+            "limit_quantity": "0",
+            "sold_quantity": "5",
+            "init_quantity": "0",
+            "is_onsale": "1",
+            "spec": "136,1228",
+            "specs": [
+                {
+                    "spec_key": "\u989c\u8272",
+                    "spec_value": "\u6df1\u84dd"
+                },
+                {
+                    "spec_key": "\u5c3a\u7801",
+                    "spec_value": "XL"
+                }
+            ]
+        },
+        {
+            "sku_id": "165311",
+            "goods_id": "41044",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fa542fee70d1042921b1c043b781e8656.jpg",
+            "quantity": "50",
+            "limit_quantity": "0",
+            "sold_quantity": "0",
+            "init_quantity": "0",
+            "is_onsale": "1",
+            "spec": "21,1478",
+            "specs": [
+                {
+                    "spec_key": "\u989c\u8272",
+                    "spec_value": "\u73ab\u7ea2"
+                },
+                {
+                    "spec_key": "\u5c3a\u7801",
+                    "spec_value": "S"
+                }
+            ]
+        },
+        {
+            "sku_id": "165312",
+            "goods_id": "41044",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f1b6a55bf6926ed9027f7cfb9c9217b80.jpg",
+            "quantity": "72",
+            "limit_quantity": "0",
+            "sold_quantity": "8",
+            "init_quantity": "0",
+            "is_onsale": "1",
+            "spec": "21,1479",
+            "specs": [
+                {
+                    "spec_key": "\u989c\u8272",
+                    "spec_value": "\u73ab\u7ea2"
+                },
+                {
+                    "spec_key": "\u5c3a\u7801",
+                    "spec_value": "M"
+                }
+            ]
+        },
+        {
+            "sku_id": "165313",
+            "goods_id": "41044",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98f2fd7adfcbbedfa35ceb1c004345e0e2c.jpg",
+            "quantity": "71",
+            "limit_quantity": "0",
+            "sold_quantity": "9",
+            "init_quantity": "0",
+            "is_onsale": "1",
+            "spec": "21,1227",
+            "specs": [
+                {
+                    "spec_key": "\u989c\u8272",
+                    "spec_value": "\u73ab\u7ea2"
+                },
+                {
+                    "spec_key": "\u5c3a\u7801",
+                    "spec_value": "L"
+                }
+            ]
+        },
+        {
+            "sku_id": "165314",
+            "goods_id": "41044",
+            "thumb_url": "http:\/\/testpdd.b0.upaiyun.com\/goods\/d41d8cd98fb135fdde689d20390bf4dca00afd308e.jpg",
+            "quantity": "23",
+            "limit_quantity": "0",
+            "sold_quantity": "7",
+            "init_quantity": "0",
+            "is_onsale": "1",
+            "spec": "21,1228",
+            "specs": [
+                {
+                    "spec_key": "\u989c\u8272",
+                    "spec_value": "\u73ab\u7ea2"
+                },
+                {
+                    "spec_key": "\u5c3a\u7801",
+                    "spec_value": "XL"
+                }
+            ]
+        }
+    ],
+    "gallery": [
+
+        {
+            "id": "2",
+            "goods_id": "1",
+            "url": "http:\/\/10.15.4.151\/xuehua\/xuehuadesc1.jpg",
+            "width": "640",
+            "height": "560",
+            "priority": "8",
+            "type": "2"
+        },
+        {
+            "id": "3",
+            "goods_id": "1",
+            "url": "http:\/\/10.15.4.151\/xuehua\/xuehuadesc2.jpg",
+            "width": "640",
+            "height": "933",
+            "priority": "7",
+            "type": "2"
+        },
+        {
+            "id": "1",
+            "goods_id": "1",
+            "url": "http:\/\/10.15.4.151\/xuehua\/xuehuaslide1.jpg",
+            "width": "640",
+            "height": "400",
+            "priority": "2",
+            "type": "1"
+        }
+    ],
+    "group": [
+        {
+            "id": "88772",
+            "group_id": "88772",
+            "goods_id": "41044",
+            "price": "5590",
+            "customer_num": "1",
+            "start_time": "1451577600",
+            "end_time": "2082729600",
+            "duration": "86400",
+            "buy_limit": "999",
+            "order_limit": "99",
+            "is_open": "1"
+        },
+        {
+            "id": "88773",
+            "group_id": "88773",
+            "goods_id": "41044",
+            "price": "4990",
+            "customer_num": "2",
+            "start_time": "1451577600",
+            "end_time": "2082729600",
+            "duration": "86400",
+            "buy_limit": "999",
+            "order_limit": "99",
+            "is_open": "1"
+        }
+    ],
+    "local_group": [
+        "{\"group_order_id\":\"160421502185156\",\"goods_id\":\"41044\",\"city_name\":\"\\u6f33\\u5dde\",\"nickname\":\"\\u82bd\",\"avatar\":\"http:\\\/\\\/wx.qlogo.cn\\\/mmopen\\\/giajgKkJGkbInBbFyJknJRS2rJh4t3tkraQAOVHdIA0A1dwiaNgrV8sdptzfcDUD4BoqWLUjakQooveS41wdI3htvS5CqxiaJTR\\\/0\",\"expire_time\":\"1461304618\"}"
+    ],
+    "server_time": 1461225645,
+    "sales": "51",
+    "gpv": 1
+}
