@@ -33,7 +33,7 @@
         {
             "goods_id": "3",
             "goods_name": "测试3",
-            "image_url": "http:\/\/omsproduction.b0.upaiyun.com\/goods\/4a607329a8aa1065683e8d474e487de758becdbefd.jpg",
+            "image_url": "http:\/\/10.15.4.151\/duck\/duckgoods.jpg",
             "market_price": "3900",
             "is_app": "1",
             "event_type": "1",

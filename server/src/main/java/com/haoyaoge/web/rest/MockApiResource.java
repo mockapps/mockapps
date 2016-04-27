@@ -45,9 +45,14 @@ public class MockApiResource {
         return IOUtils.toString(resourceLoader.getResource("classpath:/json/subjects.json").getInputStream(),"UTF-8");
     }
 
-    @RequestMapping(value = "/t.gif", produces = MediaType.APPLICATION_OCTET_STREAM_VALUE)
-    public String t() throws Exception{
-        return "";
+    @RequestMapping(value = "/subject/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public String subjectById(@PathVariable Long id) throws Exception{
+        return IOUtils.toString(resourceLoader.getResource("classpath:/json/subject.json").getInputStream(),"UTF-8");
+    }
+
+    @RequestMapping(value = "/v2/subject/{id}/goods", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public String subjectGoods(@PathVariable Long id) throws Exception{
+        return IOUtils.toString(resourceLoader.getResource("classpath:/json/subject_goods.json").getInputStream(),"UTF-8");
     }
 
     @RequestMapping(value = "/v2/randlist", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
