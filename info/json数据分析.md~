@@ -59,7 +59,7 @@ home_banner: 640 X 352
 subject图片是640 X 352，没有slide
 多两个thumb_url 和 hd_thumb_url，没有些显示
 image_url: 750 x 352
-thumb_url:　200 X 200 显示在秒杀页和其他搜索，category页
+thumb_url:　200 X 200 显示在秒杀页面
 
 {  
    "goods_list":[  

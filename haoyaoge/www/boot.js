@@ -116,12 +116,12 @@
                 logo: "http://pinduoduo.b0.upaiyun.com/base/logo.jpg",
                 weChatTimelineShareDisabled: !0
             },
-            apiDomain: "http://localhost:9000/mock/",
+            apiDomain: "http://10.15.4.151:9000/mock/",
              //apiDomain: "http://apiv2.yangkeduo.com/",
             //apiDomainNew: "http://apiv2.yangkeduo.com/",
-            apiDomainNew: "http://localhost:9000/mock/",
+            apiDomainNew: "http://10.15.4.151:9000/mock/",
 
-            loggingURL: "http://localhost:9000/t.gif",
+            loggingURL: "http://10.15.4.151:9000/t.gif",
             pushDomain: "ws://ws.yangkeduo.com/",
             AppID: {
                 WeChat: 4,
