@@ -1,16 +1,14 @@
 package com.haoyaoge.web.rest;
 
 import com.fasterxml.jackson.core.JsonGenerator;
+import com.haoyaoge.service.UserService;
+import com.haoyaoge.web.rest.dto.UserLoginDTO;
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -20,9 +18,12 @@ import java.util.Map;
 public class MockApiResource {
     @Autowired
     private ResourceLoader resourceLoader;
+
+    @Autowired
+    private UserService userService;
     @RequestMapping(value = "/login", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
-    public String login() {
-        return "{\"access_token\":\"7d07ca9bd198b6c49be865e66f8767c0e13b6160\"}";
+    public String login(@RequestBody UserLoginDTO user) {
+        return userService.login(user.getMobile(),user.getCode());
     }
 
     @RequestMapping(value = "/user/me", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)

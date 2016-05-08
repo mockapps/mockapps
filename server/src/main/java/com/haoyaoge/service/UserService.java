@@ -192,4 +192,8 @@ public class UserService {
             userRepository.delete(user);
         }
     }
+
+    public String login(String mobile,String code){
+        return "{\"access_token\":\"7d07ca9bd198b6c49be865e66f8767c0e13b6160\"}";
+    }
 }
