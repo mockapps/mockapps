@@ -1,0 +1,9 @@
+version: '2'
+services:
+    haoyaoge-mongodb:
+        container_name: haoyaoge-mongodb
+        image: mongo:3.2.3
+        ports:
+            - "27017:27017"
+        # volumes:
+        #     - ~/volumes/jhipster/haoyaoge/mongodb/:/data/db/

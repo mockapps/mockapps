@@ -7,15 +7,14 @@ import com.haoyaoge.repository.UserRepository;
 import com.haoyaoge.security.SecurityUtils;
 import com.haoyaoge.service.util.RandomUtil;
 import com.haoyaoge.web.rest.dto.ManagedUserDTO;
-import java.time.ZonedDateTime;
-import java.time.LocalDate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
+
+import java.time.LocalDate;
 import java.time.ZonedDateTime;
 import javax.inject.Inject;
 import java.util.*;
@@ -24,7 +23,6 @@ import java.util.*;
  * Service class for managing users.
  */
 @Service
-@Transactional
 public class UserService {
 
     private final Logger log = LoggerFactory.getLogger(UserService.class);
@@ -112,7 +110,7 @@ public class UserService {
         user.setLastName(managedUserDTO.getLastName());
         user.setEmail(managedUserDTO.getEmail());
         if (managedUserDTO.getLangKey() == null) {
-            user.setLangKey("en"); // default language
+            user.setLangKey("zh"); // default language
         } else {
             user.setLangKey(managedUserDTO.getLangKey());
         }
@@ -160,7 +158,6 @@ public class UserService {
         });
     }
 
-    @Transactional(readOnly = true)
     public Optional<User> getUserWithAuthoritiesByLogin(String login) {
         return userRepository.findOneByLogin(login).map(u -> {
             u.getAuthorities().size();
@@ -168,14 +165,12 @@ public class UserService {
         });
     }
 
-    @Transactional(readOnly = true)
-    public User getUserWithAuthorities(Long id) {
+    public User getUserWithAuthorities(String id) {
         User user = userRepository.findOne(id);
         user.getAuthorities().size(); // eagerly load the association
         return user;
     }
 
-    @Transactional(readOnly = true)
     public User getUserWithAuthorities() {
         User user = userRepository.findOneByLogin(SecurityUtils.getCurrentUserLogin()).get();
         user.getAuthorities().size(); // eagerly load the association

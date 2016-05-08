@@ -17,26 +17,10 @@ spring:
             enabled: false
         livereload:
             enabled: false
-    datasource:
-        url: jdbc:mysql://localhost:3306/haoyaoge?useUnicode=true&characterEncoding=utf8&useSSL=false
-        name:
-        username: root
-        password:
-        hikari:
-            data-source-properties:
-                cachePrepStmts: true
-                prepStmtCacheSize: 250
-                prepStmtCacheSqlLimit: 2048
-                useServerPrepStmts: true
-    jpa:
-        database-platform: org.hibernate.dialect.MySQLInnoDBDialect
-        database: MYSQL
-        show_sql: false
-        properties:
-            hibernate.cache.use_second_level_cache: true
-            hibernate.cache.use_query_cache: false
-            hibernate.generate_statistics: false
-            hibernate.cache.region.factory_class: org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory
+    data:
+        mongodb:
+            uri: mongodb://localhost:27017
+            database: haoyaoge
     mail:
         host: localhost
         port: 25
@@ -53,6 +37,7 @@ server:
     compression:
         enabled: true
         mime-types: text/html,text/xml,text/plain,text/css, application/javascript, application/json
+        min-response-size: 1024
 
 # ===================================================================
 # JHipster specific properties
@@ -62,10 +47,12 @@ jhipster:
     http:
         cache: # Used by the CachingHttpHeadersFilter
             timeToLiveInDays: 1461
-    cache: # Hibernate 2nd level cache, used by CacheConfiguration
-        timeToLiveSeconds: 3600
-        ehcache:
-            maxBytesLocalHeap: 256M
+    security:
+        authentication:
+            jwt:
+                secret: d0a9d592a4658a33a8822a6456085563d8ad14bf
+                # Token is valid 24 hours
+                tokenValidityInSeconds: 86400
     mail: # specific JHipster mail property, for standard properties see MailProperties
         from: haoyaoge@localhost
     metrics: # DropWizard Metrics configuration, used by MetricsConfiguration
@@ -79,7 +66,7 @@ jhipster:
             host: localhost
             port: 2003
             prefix: haoyaoge
-        logs: # report metrics in the logs
+        logs: # Reports Dropwizard metrics in the logs
             enabled: false
             reportFrequency: 60 # in seconds
     logging:
@@ -88,3 +75,5 @@ jhipster:
             host: localhost
             port: 5000
             queueSize: 512
+    swagger: # swagger is disabled. It can be disabled by pasing 'no-swagger' profile at run time as well
+        enabled: false

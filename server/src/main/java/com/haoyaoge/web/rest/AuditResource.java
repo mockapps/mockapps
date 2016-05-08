@@ -22,7 +22,7 @@ import java.util.List;
  * REST controller for getting the audit events.
  */
 @RestController
-@RequestMapping(value = "/api/audits", produces = MediaType.APPLICATION_JSON_VALUE)
+@RequestMapping(value = "/management/jhipster/audits", produces = MediaType.APPLICATION_JSON_VALUE)
 public class AuditResource {
 
     private AuditEventService auditEventService;
@@ -76,7 +76,7 @@ public class AuditResource {
      */
     @RequestMapping(value = "/{id:.+}",
         method = RequestMethod.GET)
-    public ResponseEntity<AuditEvent> get(@PathVariable Long id) {
+    public ResponseEntity<AuditEvent> get(@PathVariable String id) {
         return auditEventService.find(id)
                 .map((entity) -> new ResponseEntity<>(entity, HttpStatus.OK))
                 .orElse(new ResponseEntity<>(HttpStatus.NOT_FOUND));

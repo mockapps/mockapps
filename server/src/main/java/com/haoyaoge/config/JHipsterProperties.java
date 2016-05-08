@@ -31,6 +31,8 @@ public class JHipsterProperties {
 
     private final CorsConfiguration cors = new CorsConfiguration();
 
+    private final Ribbon ribbon = new Ribbon();
+
     public Async getAsync() {
         return async;
     }
@@ -61,6 +63,10 @@ public class JHipsterProperties {
 
     public CorsConfiguration getCors() {
         return cors;
+    }
+
+    public Ribbon getRibbon() {
+        return ribbon;
     }
 
     public static class Async {
@@ -122,31 +128,12 @@ public class JHipsterProperties {
 
         private int timeToLiveSeconds = 3600;
 
-        private final Ehcache ehcache = new Ehcache();
-
         public int getTimeToLiveSeconds() {
             return timeToLiveSeconds;
         }
 
         public void setTimeToLiveSeconds(int timeToLiveSeconds) {
             this.timeToLiveSeconds = timeToLiveSeconds;
-        }
-
-        public Ehcache getEhcache() {
-            return ehcache;
-        }
-
-        public static class Ehcache {
-
-            private String maxBytesLocalHeap = "16M";
-
-            public String getMaxBytesLocalHeap() {
-                return maxBytesLocalHeap;
-            }
-
-            public void setMaxBytesLocalHeap(String maxBytesLocalHeap) {
-                this.maxBytesLocalHeap = maxBytesLocalHeap;
-            }
         }
     }
 
@@ -173,27 +160,18 @@ public class JHipsterProperties {
 
         public static class Authentication {
 
-            private final Oauth oauth = new Oauth();
+            private final Jwt jwt = new Jwt();
 
-            public Oauth getOauth() {
-                return oauth;
+            public Jwt getJwt() {
+                return jwt;
             }
 
-            public static class Oauth {
-
-                private String clientid;
+            public static class Jwt {
 
                 private String secret;
 
-                private int tokenValidityInSeconds = 1800;
-
-                public String getClientid() {
-                    return clientid;
-                }
-
-                public void setClientid(String clientid) {
-                    this.clientid = clientid;
-                }
+                private long tokenValidityInSeconds = 1800;
+                private long tokenValidityInSecondsForRememberMe = 2592000;
 
                 public String getSecret() {
                     return secret;
@@ -203,12 +181,20 @@ public class JHipsterProperties {
                     this.secret = secret;
                 }
 
-                public int getTokenValidityInSeconds() {
+                public long getTokenValidityInSeconds() {
                     return tokenValidityInSeconds;
                 }
 
-                public void setTokenValidityInSeconds(int tokenValidityInSeconds) {
+                public void setTokenValidityInSeconds(long tokenValidityInSeconds) {
                     this.tokenValidityInSeconds = tokenValidityInSeconds;
+                }
+
+                public long getTokenValidityInSecondsForRememberMe() {
+                    return tokenValidityInSecondsForRememberMe;
+                }
+
+                public void setTokenValidityInSecondsForRememberMe(long tokenValidityInSecondsForRememberMe) {
+                    this.tokenValidityInSecondsForRememberMe = tokenValidityInSecondsForRememberMe;
                 }
             }
         }
@@ -233,6 +219,8 @@ public class JHipsterProperties {
         private String license;
 
         private String licenseUrl;
+
+        private Boolean enabled;
 
         public String getTitle() {
             return title;
@@ -304,6 +292,14 @@ public class JHipsterProperties {
 
         public void setLicenseUrl(String licenseUrl) {
             this.licenseUrl = licenseUrl;
+        }
+
+        public Boolean isEnabled() {
+            return enabled;
+        }
+
+        public void setEnabled(Boolean enabled) {
+            this.enabled = enabled;
         }
     }
 
@@ -483,6 +479,20 @@ public class JHipsterProperties {
 
             public void setQueueSize(int queueSize) { this.queueSize = queueSize; }
         }
+
     }
+
+    public static class Ribbon {
+
+        private String[] displayOnActiveProfiles;
+
+        public String[] getDisplayOnActiveProfiles() {
+            return displayOnActiveProfiles;
+        }
+        
+        public void setDisplayOnActiveProfiles(String[] displayOnActiveProfiles) {
+            this.displayOnActiveProfiles = displayOnActiveProfiles;
+        }
+    }  
 
 }

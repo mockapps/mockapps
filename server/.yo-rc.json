@@ -1,17 +1,16 @@
 {
   "generator-jhipster": {
-    "jhipsterVersion": "3.0.0",
+    "jhipsterVersion": "3.2.0",
     "baseName": "haoyaoge",
     "packageName": "com.haoyaoge",
     "packageFolder": "com/haoyaoge",
     "serverPort": "8080",
-    "authenticationType": "oauth2",
-    "hibernateCache": "ehcache",
+    "authenticationType": "jwt",
     "clusteredHttpSession": "no",
     "websocket": "no",
-    "databaseType": "sql",
-    "devDatabaseType": "h2Disk",
-    "prodDatabaseType": "mysql",
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "prodDatabaseType": "mongodb",
     "searchEngine": "no",
     "buildTool": "gradle",
     "useSass": true,
@@ -23,6 +22,10 @@
     "nativeLanguage": "zh-cn",
     "languages": [
       "zh-cn"
-    ]
+    ],
+    "hibernateCache": "no",
+    "enableSocialSignIn": false,
+    "jwtSecretKey": "d0a9d592a4658a33a8822a6456085563d8ad14bf",
+    "jhiPrefix": "jhi"
   }
 }

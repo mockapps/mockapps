@@ -1,5 +1,6 @@
 package com.haoyaoge.web.rest;
 
+import com.haoyaoge.config.Constants;
 import com.codahale.metrics.annotation.Timed;
 import com.haoyaoge.domain.Authority;
 import com.haoyaoge.domain.User;
@@ -9,7 +10,6 @@ import com.haoyaoge.security.AuthoritiesConstants;
 import com.haoyaoge.service.MailService;
 import com.haoyaoge.service.UserService;
 import com.haoyaoge.web.rest.dto.ManagedUserDTO;
-import com.haoyaoge.web.rest.dto.UserDTO;
 import com.haoyaoge.web.rest.util.HeaderUtil;
 import com.haoyaoge.web.rest.util.PaginationUtil;
 import org.slf4j.Logger;
@@ -21,7 +21,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.annotation.Secured;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 import javax.inject.Inject;
@@ -94,7 +93,9 @@ public class UserResource {
     @Secured(AuthoritiesConstants.ADMIN)
     public ResponseEntity<?> createUser(@RequestBody ManagedUserDTO managedUserDTO, HttpServletRequest request) throws URISyntaxException {
         log.debug("REST request to save User : {}", managedUserDTO);
-        if (userRepository.findOneByLogin(managedUserDTO.getLogin()).isPresent()) {
+
+        //Lowercase the user login before comparing with database
+        if (userRepository.findOneByLogin(managedUserDTO.getLogin().toLowerCase()).isPresent()) {
             return ResponseEntity.badRequest()
                 .headers(HeaderUtil.createFailureAlert("userManagement", "userexists", "Login already in use"))
                 .body(null);
@@ -129,7 +130,6 @@ public class UserResource {
         method = RequestMethod.PUT,
         produces = MediaType.APPLICATION_JSON_VALUE)
     @Timed
-    @Transactional
     @Secured(AuthoritiesConstants.ADMIN)
     public ResponseEntity<ManagedUserDTO> updateUser(@RequestBody ManagedUserDTO managedUserDTO) {
         log.debug("REST request to update User : {}", managedUserDTO);
@@ -137,7 +137,7 @@ public class UserResource {
         if (existingUser.isPresent() && (!existingUser.get().getId().equals(managedUserDTO.getId()))) {
             return ResponseEntity.badRequest().headers(HeaderUtil.createFailureAlert("userManagement", "emailexists", "E-mail already in use")).body(null);
         }
-        existingUser = userRepository.findOneByLogin(managedUserDTO.getLogin());
+        existingUser = userRepository.findOneByLogin(managedUserDTO.getLogin().toLowerCase());
         if (existingUser.isPresent() && (!existingUser.get().getId().equals(managedUserDTO.getId()))) {
             return ResponseEntity.badRequest().headers(HeaderUtil.createFailureAlert("userManagement", "userexists", "Login already in use")).body(null);
         }
@@ -155,6 +155,7 @@ public class UserResource {
                 managedUserDTO.getAuthorities().stream().forEach(
                     authority -> authorities.add(authorityRepository.findOne(authority))
                 );
+                userRepository.save(user);
                 return ResponseEntity.ok()
                     .headers(HeaderUtil.createAlert("userManagement.updated", managedUserDTO.getLogin()))
                     .body(new ManagedUserDTO(userRepository
@@ -175,7 +176,6 @@ public class UserResource {
         method = RequestMethod.GET,
         produces = MediaType.APPLICATION_JSON_VALUE)
     @Timed
-    @Transactional(readOnly = true)
     public ResponseEntity<List<ManagedUserDTO>> getAllUsers(Pageable pageable)
         throws URISyntaxException {
         Page<User> page = userRepository.findAll(pageable);
@@ -192,7 +192,7 @@ public class UserResource {
      * @param login the login of the user to find
      * @return the ResponseEntity with status 200 (OK) and with body the "login" user, or with status 404 (Not Found)
      */
-    @RequestMapping(value = "/users/{login:[_'.@a-z0-9-]+}",
+    @RequestMapping(value = "/users/{login:" + Constants.LOGIN_REGEX + "}",
         method = RequestMethod.GET,
         produces = MediaType.APPLICATION_JSON_VALUE)
     @Timed
@@ -209,7 +209,7 @@ public class UserResource {
      * @param login the login of the user to delete
      * @return the ResponseEntity with status 200 (OK)
      */
-    @RequestMapping(value = "/users/{login:[_'.@a-z0-9-]+}",
+    @RequestMapping(value = "/users/{login:" + Constants.LOGIN_REGEX + "}",
         method = RequestMethod.DELETE,
         produces = MediaType.APPLICATION_JSON_VALUE)
     @Timed

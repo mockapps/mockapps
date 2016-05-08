@@ -27,11 +27,12 @@ public interface UserMapper {
     @Mapping(target = "activationKey", ignore = true)
     @Mapping(target = "resetKey", ignore = true)
     @Mapping(target = "resetDate", ignore = true)
+    @Mapping(target = "password", ignore = true)
     User userDTOToUser(UserDTO userDTO);
 
     List<User> userDTOsToUsers(List<UserDTO> userDTOs);
 
-    default User userFromId(Long id) {
+    default User userFromId(String id) {
         if (id == null) {
             return null;
         }
@@ -40,7 +41,7 @@ public interface UserMapper {
         return user;
     }
 
-    default Set<String> stringsFromAuthorities (Set < Authority > authorities) {
+    default Set<String> stringsFromAuthorities (Set<Authority> authorities) {
         return authorities.stream().map(Authority::getName)
             .collect(Collectors.toSet());
     }

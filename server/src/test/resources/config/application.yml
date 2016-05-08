@@ -11,24 +11,13 @@
 # ===================================================================
 
 spring:
-    datasource:
-        url: jdbc:h2:mem:haoyaoge;DB_CLOSE_DELAY=-1
-        name:
-        username:
-        password:
-    jpa:
-        database-platform: com.haoyaoge.domain.util.FixedH2Dialect
-        database: H2
-        open-in-view: false
-        show_sql: true
-        hibernate:
-            ddl-auto: none
-            naming-strategy: org.springframework.boot.orm.jpa.hibernate.SpringNamingStrategy
-        properties:
-            hibernate.cache.use_second_level_cache: false
-            hibernate.cache.use_query_cache: false
-            hibernate.generate_statistics: true
-            hibernate.hbm2ddl.auto: validate
+    application:
+        name: haoyaoge
+    data:
+        mongodb:
+            host: localhost
+            port: 27117
+            database: haoyaoge
     mail:
         host: localhost
     mvc:
@@ -59,11 +48,10 @@ jhipster:
         queueCapacity: 10000
     security:
         authentication:
-            oauth:
-                clientid: haoyaogeapp
-                secret: mySecretOAuthSecret
-                # Token is valid 30 minutes
-                tokenValidityInSeconds: 1800
+            jwt:
+                secret: d0a9d592a4658a33a8822a6456085563d8ad14bf
+                # Token is valid 24 hours
+                tokenValidityInSeconds: 86400
     metrics: # DropWizard Metrics configuration, used by MetricsConfiguration
         jmx.enabled: true
     swagger:
@@ -76,3 +64,4 @@ jhipster:
         contactEmail:
         license:
         licenseUrl:
+        enabled: false

@@ -17,30 +17,16 @@ spring:
             enabled: true
         livereload:
             enabled: false # we use gulp + BrowserSync for livereload
-    datasource:
-        url: jdbc:h2:file:./target/h2db/db/haoyaoge;DB_CLOSE_DELAY=-1
-        name:
-        username: haoyaoge
-        password:
-    h2:
-        console:
-            enabled: false
-    jpa:
-        database-platform: com.haoyaoge.domain.util.FixedH2Dialect
-        database: H2
-        show_sql: true
-        properties:
-            hibernate.cache.use_second_level_cache: true
-            hibernate.cache.use_query_cache: false
-            hibernate.generate_statistics: true
-            hibernate.cache.region.factory_class: org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory
+    data:
+        mongodb:
+            uri: mongodb://localhost:27017
+            database: haoyaoge
     mail:
         host: localhost
     messages:
         cache-seconds: 1
     thymeleaf:
         cache: false
-    jackson.generator.ESCAPE_NON_ASCII: true
 
 liquibase:
     contexts: dev
@@ -53,10 +39,12 @@ server:
 # ===================================================================
 
 jhipster:
-    cache: # Hibernate 2nd level cache, used by CacheConfiguration
-        timeToLiveSeconds: 3600
-        ehcache:
-            maxBytesLocalHeap: 16M
+    security:
+        authentication:
+            jwt:
+                secret: my-secret-token-to-change-in-production
+                # Token is valid 24 hours
+                tokenValidityInSeconds: 86400
     mail: # specific JHipster mail property, for standard properties see MailProperties
         from: haoyaoge@localhost
     metrics: # DropWizard Metrics configuration, used by MetricsConfiguration
@@ -70,7 +58,7 @@ jhipster:
             host: localhost
             port: 2003
             prefix: haoyaoge
-        logs: # report metrics in the logs
+        logs: # Reports Dropwizard metrics in the logs
             enabled: false
             reportFrequency: 60 # in seconds
     logging:
@@ -79,3 +67,5 @@ jhipster:
             host: localhost
             port: 5000
             queueSize: 512
+    swagger: # swagger is enabled. It can be disabled by pasing 'no-swagger' profile at run time as well
+        enabled: true

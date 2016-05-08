@@ -83,12 +83,11 @@
                 function addApiKeyAuthorization(){
                 
                 
-                    var authToken = JSON.parse(localStorage.getItem("jhi-authenticationToken")).access_token;
-                    var apiKeyAuth = new SwaggerClient.ApiKeyAuthorization("Authorization",
-                            "Bearer " + authToken, "header");
-                    window.swaggerUi.api.clientAuthorizations.add("key", apiKeyAuth);
                 
                 
+                    var authToken = JSON.parse(localStorage.getItem("jhi-authenticationToken") || sessionStorage.getItem("jhi-authenticationToken"));
+                    var apiKeyAuth = new SwaggerClient.ApiKeyAuthorization("Authorization", "Bearer " + authToken, "header");
+                    window.swaggerUi.api.clientAuthorizations.add("bearer", apiKeyAuth);
                 
                 }
 
@@ -167,7 +166,7 @@
 
         <form id='api_selector'>
             <div class='input'>
-                <select id="select_baseUrl" name="select_baseUrl"/>
+                <select id="select_baseUrl" name="select_baseUrl"></select>
             </div>
             <div class='input'><input placeholder="http://example.com/api" id="input_baseUrl" name="baseUrl" type="text"/>
             </div>

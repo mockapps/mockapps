@@ -7,10 +7,8 @@ import org.springframework.boot.actuate.audit.AuditEvent;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import javax.inject.Inject;
-import java.util.List;
 import java.util.Optional;
 
 /**
@@ -20,7 +18,6 @@ import java.util.Optional;
  * </p>
  */
 @Service
-@Transactional
 public class AuditEventService {
 
     private PersistenceAuditEventRepository persistenceAuditEventRepository;
@@ -46,7 +43,7 @@ public class AuditEventService {
             .map(persistentAuditEvents -> auditEventConverter.convertToAuditEvent(persistentAuditEvents));
     }
 
-    public Optional<AuditEvent> find(Long id) {
+    public Optional<AuditEvent> find(String id) {
         return Optional.ofNullable(persistenceAuditEventRepository.findOne(id)).map
             (auditEventConverter::convertToAuditEvent);
     }

@@ -20,7 +20,7 @@
             },
             "admin": {
                 "main": "管理",
-                "userManagement": "User management",
+                "userManagement": "用户管理",
                 "tracker": "追踪使用者",
                 "metrics": "资源监控",
                 "health": "服务状态",
@@ -46,7 +46,7 @@
         "messages": {
             "info": {
                 "authenticated": "如果您要<a class=\"alert-link\" href=\"\" ng-click=\"vm.login()\">登录</a>, 您可以使用默认账号:<br/>- 管理员 (账号=\"admin\"和密码=\"admin\") <br/>- 普通用户 (账号=\"user\"和密码=\"user\").",
-                "register": "您还没有账号？<a class=\"alert-link\" ui-sref=\"register\">注册一个新账号</a>"
+                "register": "您还没有账号？<a class=\"alert-link\" href=\"\" ng-click=\"vm.register()\">注册一个新账号</a>"
             },
             "error": {
                 "dontmatch" : "您输入的密码和确认确认密码不匹配!"
@@ -73,16 +73,20 @@
         },
         "field": {
             "id" : "ID"
+        },
+        "ribbon": {
+            "dev":"Development"
         }
     },
     "entity": {
         "action": {
-            "addblob": "Add blob",
-            "addimage": "Add image",
+            "addblob": "增加 BLOB",
+            "addimage": "增加图片",
             "back": "返回",
             "cancel": "取消",
             "delete": "删除",
             "edit": "编辑",
+            "open": "Open",
             "save": "保存",
             "view": "查看"
         },
@@ -99,20 +103,20 @@
             "maxlength": "本字段最大长度为 {{max}} 个字符.",
             "min": "本字段不能小于 {{min}}.",
             "max": "本字段不能大于 {{max}}.",
-            "minbytes": "This field should be more than {{min}} bytes.",
-            "maxbytes": "This field cannot be more than {{max}} bytes.",
+            "minbytes": "本字段不少于 {{min}} 字符.",
+            "maxbytes": "本字段不多余 {{max}} 字符.",
             "pattern": "本字段必须符合模式 {{pattern}}.",
             "number": "本字段必须为数字.",
             "datetimelocal": "本字段必须为日期和时间."
         }
     },
     "error": {
-        "server.not.reachable": "Server not reachable",
-        "NotNull": "Field {{fieldName}} cannot be empty!",
-        "Size": "Field {{fieldName}} does not meet min/max size requirements!",
-        "userexists": "Login name already used!",
-        "emailexists": "E-mail is already in use!",
-        "idexists": "A new {{entityName}} cannot already have an ID"
+        "server.not.reachable": "服务器不可达",
+        "NotNull": "域 {{fieldName}} 不能为空!",
+        "Size": "域 {{fieldName}} 不满足最大/最小值限制!",
+        "userexists": "该用户名已存在!",
+        "emailexists": "该邮箱已被使用!",
+        "idexists": "新建的 {{entityName}} 的ID已经存在"
     },
     "footer": "这里是页脚"
 }

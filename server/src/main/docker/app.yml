@@ -3,13 +3,14 @@ services:
     haoyaoge-app:
         image: haoyaoge
         external_links:
-            - haoyaoge-mysql:mysql
+            - haoyaoge-mongodb:mongodb
         environment:
             - SPRING_PROFILES_ACTIVE=prod
-            - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/haoyaoge?useUnicode=true&characterEncoding=utf8&useSSL=false
+            - SPRING_DATA_MONGODB_URI=mongodb://mongodb:27017
+            - SPRING_DATA_MONGODB_DATABASE=haoyaoge
         ports:
             - 8080:8080
-    haoyaoge-mysql:
+    haoyaoge-mongodb:
         extends:
-            file: mysql.yml
-            service: haoyaoge-mysql
+            file: mongodb.yml
+            service: haoyaoge-mongodb
