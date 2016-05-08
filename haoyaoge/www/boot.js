@@ -116,12 +116,12 @@
                 logo: "http://pinduoduo.b0.upaiyun.com/base/logo.jpg",
                 weChatTimelineShareDisabled: !0
             },
-            apiDomain: "http://10.15.4.151:9000/mock/",
+            apiDomain: "http://localhost:9000/mock/",
              //apiDomain: "http://apiv2.yangkeduo.com/",
             //apiDomainNew: "http://apiv2.yangkeduo.com/",
-            apiDomainNew: "http://10.15.4.151:9000/mock/",
+            apiDomainNew: "http://localhost:9000/mock/",
 
-            loggingURL: "http://10.15.4.151:9000/t.gif",
+            loggingURL: "http://localhost:9000/t.gif",
             pushDomain: "ws://ws.yangkeduo.com/",
             AppID: {
                 WeChat: 4,
@@ -323,8 +323,9 @@
                 LastViewOverseaDateKey: "LastViewOverseaDate",
                 enable: function(n) {
                     e(function(e, t) {
-                        e.onclick = function() {
-                            event && event.preventDefault(), t[2] && localStorage.setItem("LastViewOverseaDate", (new Date).getDate().toString()), null == n ? location.href = t[0] : n.apply(null, t)
+                        e.onclick = function(e) {
+                            var ev=e||event;
+                            ev && ev.preventDefault(), t[2] && localStorage.setItem("LastViewOverseaDate", (new Date).getDate().toString()), null == n ? location.href = t[0] : n.apply(null, t)
                         }
                     })
                 },
