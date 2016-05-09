@@ -35,7 +35,7 @@
         <div class="form-group">
             <label class="control-label" translate="userManagement.firstName">First Name</label>
             <input type="text" class="form-control" name="firstName"
-                   ng-model="vm.user.firstName" ng-maxlength="50">
+                   ng-model="vm.user.first_name" ng-maxlength="50">
 
             <div ng-show="editForm.firstName.$invalid">
                 <p class="help-block"
@@ -48,7 +48,7 @@
         <div class="form-group">
             <label translate="userManagement.lastName">Last Name</label>
             <input type="text" class="form-control" name="lastName"
-                   ng-model="vm.user.lastName" ng-maxlength="50">
+                   ng-model="vm.user.last_name" ng-maxlength="50">
 
             <div ng-show="editForm.lastName.$invalid">
                 <p class="help-block"
@@ -89,7 +89,7 @@
 
         <div class="form-group">
             <label translate="userManagement.langKey">Lang Key</label>
-            <select class="form-control" name="langKey" ng-model="vm.user.langKey"
+            <select class="form-control" name="langKey" ng-model="vm.user.lang_key"
                     ng-options="language as language for language in vm.languages track by language">
             </select>
         </div>
