@@ -1,0 +1,90 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()" show-validation>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="mySubjectLabel" translate="haoyaogeApp.subject.home.createOrEditLabel">Create or edit a Subject</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.subject.id">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.subject.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="haoyaogeApp.subject.subject" for="field_subject">Subject</label>
+            <input type="text" class="form-control" name="subject" id="field_subject"
+                    ng-model="vm.subject.subject"
+                    required />
+            <div ng-show="editForm.subject.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.subject.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="haoyaogeApp.subject.second_name" for="field_second_name">Second Name</label>
+            <input type="text" class="form-control" name="second_name" id="field_second_name"
+                    ng-model="vm.subject.second_name"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="haoyaogeApp.subject.desc" for="field_desc">Desc</label>
+            <input type="text" class="form-control" name="desc" id="field_desc"
+                    ng-model="vm.subject.desc"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="haoyaogeApp.subject.home_banner" for="field_home_banner">Home Banner</label>
+            <input type="text" class="form-control" name="home_banner" id="field_home_banner"
+                    ng-model="vm.subject.home_banner"
+                    required ng-pattern="/^(https?|ftp|file)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]/" />
+            <div ng-show="editForm.home_banner.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.home_banner.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.home_banner.$error.pattern" translate="entity.validation.pattern" translate-value-pattern="^(https?|ftp|file)://[-a-zA-Z0-9+&amp;@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&amp;@#/%=~_|]">
+                    This field should follow pattern "^(https?|ftp|file)://[-a-zA-Z0-9+&amp;@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&amp;@#/%=~_|]".
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="haoyaogeApp.subject.type" for="field_type">Type</label>
+            <input type="text" class="form-control" name="type" id="field_type"
+                    ng-model="vm.subject.type"
+                    required />
+            <div ng-show="editForm.type.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.type.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="haoyaogeApp.subject.position" for="field_position">Position</label>
+            <input type="number" class="form-control" name="position" id="field_position"
+                    ng-model="vm.subject.position"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="haoyaogeApp.subject.share_image" for="field_share_image">Share Image</label>
+            <input type="text" class="form-control" name="share_image" id="field_share_image"
+                    ng-model="vm.subject.share_image"
+                     />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

@@ -1,0 +1,42 @@
+{
+    "haoyaogeApp": {
+        "goods" : {
+            "home": {
+                "title": "Goods",
+                "createLabel": "Create a new Goods",
+                "createOrEditLabel": "Create or edit a Goods",
+                "search": "Search for Goods"
+            },
+            "created": "A new Goods is created with identifier {{ param }}",
+            "updated": "A Goods is updated with identifier {{ param }}",
+            "deleted": "A Goods is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Goods {{ id }}?"
+            },
+            "detail": {
+                "title": "Goods"
+            },
+            "cat_id": "Cat Id",
+            "mall_id": "Mall Id",
+            "goods_name": "Goods Name",
+            "is_app": "Is App",
+            "event_type": "Event Type",
+            "goods_desc": "Goods Desc",
+            "is_onsale": "Is Onsale",
+            "thumb_url": "Thumb Url",
+            "allowed_region": "Allowed Region",
+            "country": "Country",
+            "warehouse": "Warehouse",
+            "image_url": "Image Url",
+            "is_refundable": "Is Refundable",
+            "is_pre_sale": "Is Pre Sale",
+            "pre_sale_time": "Pre Sale Time",
+            "skip_goods": "Skip Goods",
+            "share_desc": "Share Desc",
+            "cat_id_1": "Cat Id 1",
+            "cat_id_2": "Cat Id 2",
+            "cat_id_3": "Cat Id 3",
+            "sku": "Sku"
+        }
+    }
+}

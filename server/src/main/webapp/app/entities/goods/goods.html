@@ -1,0 +1,96 @@
+<div>
+    <h2 translate="haoyaogeApp.goods.home.title">Goods</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="goods.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span  translate="haoyaogeApp.goods.home.createLabel">
+                        Create new Goods
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span translate="global.field.id">ID</span></th>
+                    <th><span translate="haoyaogeApp.goods.cat_id">Cat Id</span></th>
+                    <th><span translate="haoyaogeApp.goods.mall_id">Mall Id</span></th>
+                    <th><span translate="haoyaogeApp.goods.goods_name">Goods Name</span></th>
+                    <th><span translate="haoyaogeApp.goods.is_app">Is App</span></th>
+                    <th><span translate="haoyaogeApp.goods.event_type">Event Type</span></th>
+                    <th><span translate="haoyaogeApp.goods.goods_desc">Goods Desc</span></th>
+                    <th><span translate="haoyaogeApp.goods.is_onsale">Is Onsale</span></th>
+                    <th><span translate="haoyaogeApp.goods.thumb_url">Thumb Url</span></th>
+                    <th><span translate="haoyaogeApp.goods.allowed_region">Allowed Region</span></th>
+                    <th><span translate="haoyaogeApp.goods.country">Country</span></th>
+                    <th><span translate="haoyaogeApp.goods.warehouse">Warehouse</span></th>
+                    <th><span translate="haoyaogeApp.goods.image_url">Image Url</span></th>
+                    <th><span translate="haoyaogeApp.goods.is_refundable">Is Refundable</span></th>
+                    <th><span translate="haoyaogeApp.goods.is_pre_sale">Is Pre Sale</span></th>
+                    <th><span translate="haoyaogeApp.goods.pre_sale_time">Pre Sale Time</span></th>
+                    <th><span translate="haoyaogeApp.goods.skip_goods">Skip Goods</span></th>
+                    <th><span translate="haoyaogeApp.goods.share_desc">Share Desc</span></th>
+                    <th><span translate="haoyaogeApp.goods.cat_id_1">Cat Id 1</span></th>
+                    <th><span translate="haoyaogeApp.goods.cat_id_2">Cat Id 2</span></th>
+                    <th><span translate="haoyaogeApp.goods.cat_id_3">Cat Id 3</span></th>
+                    <th><span translate="haoyaogeApp.goods.sku">Sku</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="goods in vm.goods track by goods.id">
+                    <td><a ui-sref="goods-detail({id:goods.id})">{{goods.id}}</a></td>
+                    <td>{{goods.cat_id}}</td>
+                    <td>{{goods.mall_id}}</td>
+                    <td>{{goods.goods_name}}</td>
+                    <td>{{goods.is_app}}</td>
+                    <td>{{goods.event_type}}</td>
+                    <td>{{goods.goods_desc}}</td>
+                    <td>{{goods.is_onsale}}</td>
+                    <td>{{goods.thumb_url}}</td>
+                    <td>{{goods.allowed_region}}</td>
+                    <td>{{goods.country}}</td>
+                    <td>{{goods.warehouse}}</td>
+                    <td>{{goods.image_url}}</td>
+                    <td>{{goods.is_refundable}}</td>
+                    <td>{{goods.is_pre_sale}}</td>
+                        <td>{{goods.pre_sale_time | date:'mediumDate'}}</td>
+                    <td>{{goods.skip_goods}}</td>
+                    <td>{{goods.share_desc}}</td>
+                    <td>{{goods.cat_id_1}}</td>
+                    <td>{{goods.cat_id_2}}</td>
+                    <td>{{goods.cat_id_3}}</td>
+                    <td>{{goods.sku}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="goods-detail({id:goods.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.view"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="goods.edit({id:goods.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.edit"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="goods.delete({id:goods.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.delete"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

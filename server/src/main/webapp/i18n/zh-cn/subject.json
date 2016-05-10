@@ -1,0 +1,28 @@
+{
+    "haoyaogeApp": {
+        "subject" : {
+            "home": {
+                "title": "Subjects",
+                "createLabel": "Create a new Subject",
+                "createOrEditLabel": "Create or edit a Subject",
+                "search": "Search for Subject"
+            },
+            "created": "A new Subject is created with identifier {{ param }}",
+            "updated": "A Subject is updated with identifier {{ param }}",
+            "deleted": "A Subject is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Subject {{ id }}?"
+            },
+            "detail": {
+                "title": "Subject"
+            },
+            "subject": "Subject",
+            "second_name": "Second Name",
+            "desc": "Desc",
+            "home_banner": "Home Banner",
+            "type": "Type",
+            "position": "Position",
+            "share_image": "Share Image"
+        }
+    }
+}

@@ -25,6 +25,10 @@ spring:
             enabled: false
     thymeleaf:
         mode: XHTML
+    jackson:
+      property-naming-strategy: SNAKE_CASE
+      date-format: com.fasterxml.jackson.databind.util.ISO8601DateFormat
+      generator.ESCAPE_NON_ASCII: true
 
 liquibase:
     contexts: test

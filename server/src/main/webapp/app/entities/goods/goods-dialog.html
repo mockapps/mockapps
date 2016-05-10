@@ -1,0 +1,172 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()" show-validation>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myGoodsLabel" translate="haoyaogeApp.goods.home.createOrEditLabel">Create or edit a Goods</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.goods.id">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.goods.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="haoyaogeApp.goods.cat_id" for="field_cat_id">Cat Id</label>
+            <input type="text" class="form-control" name="cat_id" id="field_cat_id"
+                    ng-model="vm.goods.cat_id"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="haoyaogeApp.goods.mall_id" for="field_mall_id">Mall Id</label>
+            <input type="number" class="form-control" name="mall_id" id="field_mall_id"
+                    ng-model="vm.goods.mall_id"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="haoyaogeApp.goods.goods_name" for="field_goods_name">Goods Name</label>
+            <input type="text" class="form-control" name="goods_name" id="field_goods_name"
+                    ng-model="vm.goods.goods_name"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="haoyaogeApp.goods.is_app" for="field_is_app">Is App</label>
+            <input type="checkbox" class="form-control" name="is_app" id="field_is_app"
+                    ng-model="vm.goods.is_app"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="haoyaogeApp.goods.event_type" for="field_event_type">Event Type</label>
+            <input type="number" class="form-control" name="event_type" id="field_event_type"
+                    ng-model="vm.goods.event_type"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="haoyaogeApp.goods.goods_desc" for="field_goods_desc">Goods Desc</label>
+            <input type="text" class="form-control" name="goods_desc" id="field_goods_desc"
+                    ng-model="vm.goods.goods_desc"
+                    required />
+            <div ng-show="editForm.goods_desc.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.goods_desc.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="haoyaogeApp.goods.is_onsale" for="field_is_onsale">Is Onsale</label>
+            <input type="checkbox" class="form-control" name="is_onsale" id="field_is_onsale"
+                    ng-model="vm.goods.is_onsale"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="haoyaogeApp.goods.thumb_url" for="field_thumb_url">Thumb Url</label>
+            <input type="text" class="form-control" name="thumb_url" id="field_thumb_url"
+                    ng-model="vm.goods.thumb_url"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="haoyaogeApp.goods.allowed_region" for="field_allowed_region">Allowed Region</label>
+            <input type="text" class="form-control" name="allowed_region" id="field_allowed_region"
+                    ng-model="vm.goods.allowed_region"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="haoyaogeApp.goods.country" for="field_country">Country</label>
+            <input type="text" class="form-control" name="country" id="field_country"
+                    ng-model="vm.goods.country"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="haoyaogeApp.goods.warehouse" for="field_warehouse">Warehouse</label>
+            <input type="text" class="form-control" name="warehouse" id="field_warehouse"
+                    ng-model="vm.goods.warehouse"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="haoyaogeApp.goods.image_url" for="field_image_url">Image Url</label>
+            <input type="text" class="form-control" name="image_url" id="field_image_url"
+                    ng-model="vm.goods.image_url"
+                    required ng-pattern="/^[a-zA-Z0-9]*$/" />
+            <div ng-show="editForm.image_url.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.image_url.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.image_url.$error.pattern" translate="entity.validation.pattern" translate-value-pattern="^[a-zA-Z0-9]*$">
+                    This field should follow pattern "^[a-zA-Z0-9]*$".
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="haoyaogeApp.goods.is_refundable" for="field_is_refundable">Is Refundable</label>
+            <input type="checkbox" class="form-control" name="is_refundable" id="field_is_refundable"
+                    ng-model="vm.goods.is_refundable"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="haoyaogeApp.goods.is_pre_sale" for="field_is_pre_sale">Is Pre Sale</label>
+            <input type="checkbox" class="form-control" name="is_pre_sale" id="field_is_pre_sale"
+                    ng-model="vm.goods.is_pre_sale"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="haoyaogeApp.goods.pre_sale_time" for="field_pre_sale_time">Pre Sale Time</label>
+                <div class="input-group">
+                    <input id="field_pre_sale_time" type="text" class="form-control" name="pre_sale_time" uib-datepicker-popup="{{dateformat}}" ng-model="vm.goods.pre_sale_time" is-open="vm.datePickerOpenStatus.pre_sale_time"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('pre_sale_time')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="haoyaogeApp.goods.skip_goods" for="field_skip_goods">Skip Goods</label>
+            <input type="number" class="form-control" name="skip_goods" id="field_skip_goods"
+                    ng-model="vm.goods.skip_goods"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="haoyaogeApp.goods.share_desc" for="field_share_desc">Share Desc</label>
+            <input type="text" class="form-control" name="share_desc" id="field_share_desc"
+                    ng-model="vm.goods.share_desc"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="haoyaogeApp.goods.cat_id_1" for="field_cat_id_1">Cat Id 1</label>
+            <input type="number" class="form-control" name="cat_id_1" id="field_cat_id_1"
+                    ng-model="vm.goods.cat_id_1"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="haoyaogeApp.goods.cat_id_2" for="field_cat_id_2">Cat Id 2</label>
+            <input type="number" class="form-control" name="cat_id_2" id="field_cat_id_2"
+                    ng-model="vm.goods.cat_id_2"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="haoyaogeApp.goods.cat_id_3" for="field_cat_id_3">Cat Id 3</label>
+            <input type="number" class="form-control" name="cat_id_3" id="field_cat_id_3"
+                    ng-model="vm.goods.cat_id_3"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="haoyaogeApp.goods.sku" for="field_sku">Sku</label>
+            <input type="number" class="form-control" name="sku" id="field_sku"
+                    ng-model="vm.goods.sku"
+                     />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

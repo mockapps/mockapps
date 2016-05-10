@@ -1,5 +1,6 @@
 package com.haoyaoge.web.rest;
 
+import com.fasterxml.jackson.databind.PropertyNamingStrategy;
 import com.haoyaoge.domain.util.JSR310DateTimeSerializer;
 import com.haoyaoge.domain.util.JSR310LocalDateDeserializer;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -36,8 +37,8 @@ public class TestUtil {
     public static byte[] convertObjectToJsonBytes(Object object)
             throws IOException {
         ObjectMapper mapper = new ObjectMapper();
-        mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
-
+//        mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
+        mapper.setPropertyNamingStrategy(PropertyNamingStrategy.SNAKE_CASE);
         JavaTimeModule module = new JavaTimeModule();
         module.addSerializer(OffsetDateTime.class, JSR310DateTimeSerializer.INSTANCE);
         module.addSerializer(ZonedDateTime.class, JSR310DateTimeSerializer.INSTANCE);
