@@ -19,13 +19,6 @@ public class MockApiResource {
     @Autowired
     private ResourceLoader resourceLoader;
 
-    @Autowired
-    private UserService userService;
-    @RequestMapping(value = "/login", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
-    public String login(@RequestBody UserLoginDTO user) {
-        return userService.login(user.getMobile(),user.getCode());
-    }
-
     @RequestMapping(value = "/user/me", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public String userMe() throws Exception{
         return IOUtils.toString(resourceLoader.getResource("classpath:/json/user_me.json").getInputStream(),"UTF-8");

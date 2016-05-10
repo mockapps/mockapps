@@ -1,6 +1,7 @@
 package com.haoyaoge.security.jwt;
 
 import java.io.IOException;
+
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -47,13 +48,18 @@ public class JWTFilter extends GenericFilterBean {
         }
     }
 
-    private String resolveToken(HttpServletRequest request){
+    private String resolveToken(HttpServletRequest request) {
         String bearerToken = request.getHeader(JWTConfigurer.AUTHORIZATION_HEADER);
-        if(StringUtils.hasText(bearerToken) && bearerToken.startsWith("Bearer ")){
+        if (StringUtils.hasText(bearerToken) && bearerToken.startsWith("Bearer ")) {
             String jwt = bearerToken.substring(7, bearerToken.length());
             return jwt;
+        } else {
+            String mobileAccessToken = request.getHeader(JWTConfigurer.MOBILE_AUTHORIZATION_HEADER);
+            if (StringUtils.hasText(mobileAccessToken)) {
+                return mobileAccessToken;
+            }
         }
-        
+
         return null;
     }
 }

@@ -1,5 +1,6 @@
 package com.haoyaoge.service;
 
+import com.haoyaoge.domain.AccessToken;
 import com.haoyaoge.domain.Authority;
 import com.haoyaoge.domain.User;
 import com.haoyaoge.repository.AuthorityRepository;
@@ -193,7 +194,7 @@ public class UserService {
         }
     }
 
-    public String login(String mobile,String code){
-        return "{\"access_token\":\"7d07ca9bd198b6c49be865e66f8767c0e13b6160\"}";
+    public AccessToken login(String mobile, String code){
+        return new AccessToken("7d07ca9bd198b6c49be865e66f8767c0e13b6160");
     }
 }

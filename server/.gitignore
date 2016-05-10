@@ -133,3 +133,8 @@ Desktop.ini
 # ESLint
 ######################
 .eslintcache
+
+######################
+#Local SDKs
+######################
+!local_libs/*.jar

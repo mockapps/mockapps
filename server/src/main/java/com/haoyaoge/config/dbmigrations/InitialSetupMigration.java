@@ -2,6 +2,7 @@ package com.haoyaoge.config.dbmigrations;
 
 import com.github.mongobee.changeset.ChangeLog;
 import com.github.mongobee.changeset.ChangeSet;
+import com.mongodb.BasicDBObject;
 import com.mongodb.BasicDBObjectBuilder;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
@@ -100,5 +101,11 @@ public class InitialSetupMigration {
             .add("authorities", authoritiesUser)
             .get()
         );
+    }
+
+    @ChangeSet(order = "03", author = "initiator", id = "03-addSmsCodeValidation")
+    public void addSmsCodeValidation(DB db) {
+        DBCollection codeCollection = db.getCollection("jhi_sms_code_validation");
+        codeCollection.createIndex(new BasicDBObject("last_modified", 1), new BasicDBObject("expireAfterSeconds", 3600));
     }
 }
