@@ -16,10 +16,8 @@
                 <th translate="userManagement.login">Login</th>
                 <th translate="userManagement.email">Email</th>
                 <th></th>
-                <th translate="userManagement.langKey">Lang Key</th>
                 <th translate="userManagement.profiles">Profiles</th>
                 <th translate="userManagement.createdDate">Created Date</th>
-                <th translate="userManagement.lastModifiedBy">Last Modified By</th>
                 <th translate="userManagement.lastModifiedDate">Last Modified Date</th>
                 <th></th>
             </tr>
@@ -35,14 +33,12 @@
                     <span class="label label-success" ng-click="vm.setActive(user, false)" ng-show="user.activated"
                           translate="userManagement.activated" style="cursor: pointer;">Activated</span>
                 </td>
-                <td>{{user.langKey}}</td>
                 <td>
                     <div ng-repeat="authority in user.authorities">
                         <span class="label label-info">{{ authority }}</span>
                     </div>
                 </td>
                 <td>{{user.created_date | date:'dd/MM/yy HH:mm'}}</td>
-                <td>{{user.last_modified_by}}</td>
                 <td>{{user.last_modified_date | date:'dd/MM/yy HH:mm'}}</td>
                 <td class="text-right">
                     <div class="btn-group flex-btn-group-container">

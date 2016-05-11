@@ -20,12 +20,12 @@
         function getProfileInfo() {
             if (!angular.isDefined(dataPromise)) {
                 dataPromise = $http.get('api/profile-info').then(function(result) {
-                    if (result.data.activeProfiles) {
+                    if (result.data.active_profiles) {
                         var response = {};
-                        response.activeProfiles = result.data.activeProfiles;
+                        response.active_profiles = result.data.active_profiles;
                         response.ribbonEnv = result.data.ribbonEnv;
-                        response.inProduction = result.data.activeProfiles.indexOf("prod") !== -1;
-                        response.swaggerDisabled = result.data.activeProfiles.indexOf("no-swagger") !== -1;
+                        response.inProduction = result.data.active_profiles.indexOf("prod") !== -1;
+                        response.swaggerDisabled = result.data.active_profiles.indexOf("no-swagger") !== -1;
                         return response;
                     }
                 });

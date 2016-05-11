@@ -15,7 +15,7 @@
         vm.languages = null;
         vm.save = save;
         vm.user = entity;
-
+        vm.types =  ["sms","web"];
 
         JhiLanguageService.getAll().then(function (languages) {
             vm.languages = languages;

@@ -40,7 +40,7 @@ public class UserDTO {
 
     private Set<String> authorities;
     @Size(min = 2, max = 5)
-    private String type;
+    private String type="sms";
 
     public UserDTO() {
     }
