@@ -111,7 +111,7 @@ public class UserService {
         user.setLastName(managedUserDTO.getLastName());
         user.setEmail(managedUserDTO.getEmail());
         if (managedUserDTO.getLangKey() == null) {
-            user.setLangKey("zh"); // default language
+            user.setLangKey("zh-cn"); // default language
         } else {
             user.setLangKey(managedUserDTO.getLangKey());
         }
@@ -194,7 +194,8 @@ public class UserService {
         }
     }
 
-    public AccessToken login(String mobile, String code){
-        return new AccessToken("7d07ca9bd198b6c49be865e66f8767c0e13b6160");
+    public Optional<AccessToken> login(String mobile, String code){
+
+        return Optional.of(AccessToken.class).empty();
     }
 }
