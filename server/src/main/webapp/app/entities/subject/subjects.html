@@ -17,15 +17,15 @@
     <div class="table-responsive">
         <table class="jh-table table table-striped">
             <thead>
-                <tr>
-                    <th><span translate="global.field.id">ID</span></th>
-                    <th><span translate="haoyaogeApp.subject.subject">Subject</span></th>
-                    <th><span translate="haoyaogeApp.subject.second_name">Second Name</span></th>
-                    <th><span translate="haoyaogeApp.subject.desc">Desc</span></th>
-                    <th><span translate="haoyaogeApp.subject.home_banner">Home Banner</span></th>
-                    <th><span translate="haoyaogeApp.subject.type">Type</span></th>
-                    <th><span translate="haoyaogeApp.subject.position">Position</span></th>
-                    <th><span translate="haoyaogeApp.subject.share_image">Share Image</span></th>
+                <tr jh-sort="vm.predicate" ascending="vm.reverse" callback="vm.transition()">
+                    <th jh-sort-by="id"><span translate="global.field.id">ID</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="subject"><span translate="haoyaogeApp.subject.subject">Subject</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="second_name"><span translate="haoyaogeApp.subject.second_name">Second Name</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="desc"><span translate="haoyaogeApp.subject.desc">Desc</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="home_banner"><span translate="haoyaogeApp.subject.home_banner">Home Banner</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="type"><span translate="haoyaogeApp.subject.type">Type</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="position"><span translate="haoyaogeApp.subject.position">Position</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="share_image"><span translate="haoyaogeApp.subject.share_image">Share Image</span> <span class="glyphicon glyphicon-sort"></span></th>
                     <th></th>
                 </tr>
             </thead>

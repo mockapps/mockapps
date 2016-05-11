@@ -2,7 +2,9 @@ package com.haoyaoge.web.rest;
 
 import com.haoyaoge.HaoyaogeApp;
 import com.haoyaoge.domain.Subject;
+import com.haoyaoge.repository.GoodsRepository;
 import com.haoyaoge.repository.SubjectRepository;
+import com.haoyaoge.service.SubjectService;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -46,8 +48,8 @@ public class SubjectResourceIntTest {
     private static final String UPDATED_SECOND_NAME = "BBBBB";
     private static final String DEFAULT_DESC = "AAAAA";
     private static final String UPDATED_DESC = "BBBBB";
-    private static final String DEFAULT_HOME_BANNER = "AAAAA";
-    private static final String UPDATED_HOME_BANNER = "BBBBB";
+    private static final String DEFAULT_HOME_BANNER = "http://test.com/goods/e1a3a07e15/640/352/efd2215d9dbd7ab8ea9a6edb23010fb0.jpg";
+    private static final String UPDATED_HOME_BANNER = "http://test.com/goods/e1a3a07e15/640/352/efd2215d9dbd7ab8ea9a6edb23010fb1.jpg";
     private static final String DEFAULT_TYPE = "AAAAA";
     private static final String UPDATED_TYPE = "BBBBB";
 
@@ -84,12 +86,12 @@ public class SubjectResourceIntTest {
         subjectRepository.deleteAll();
         subject = new Subject();
         subject.setSubject(DEFAULT_SUBJECT);
-        subject.setSecond_name(DEFAULT_SECOND_NAME);
+        subject.setSecondName(DEFAULT_SECOND_NAME);
         subject.setDesc(DEFAULT_DESC);
-        subject.setHome_banner(DEFAULT_HOME_BANNER);
+        subject.setHomeBanner(DEFAULT_HOME_BANNER);
         subject.setType(DEFAULT_TYPE);
         subject.setPosition(DEFAULT_POSITION);
-        subject.setShare_image(DEFAULT_SHARE_IMAGE);
+        subject.setShareImage(DEFAULT_SHARE_IMAGE);
     }
 
     @Test
@@ -108,12 +110,12 @@ public class SubjectResourceIntTest {
         assertThat(subjects).hasSize(databaseSizeBeforeCreate + 1);
         Subject testSubject = subjects.get(subjects.size() - 1);
         assertThat(testSubject.getSubject()).isEqualTo(DEFAULT_SUBJECT);
-        assertThat(testSubject.getSecond_name()).isEqualTo(DEFAULT_SECOND_NAME);
+        assertThat(testSubject.getSecondName()).isEqualTo(DEFAULT_SECOND_NAME);
         assertThat(testSubject.getDesc()).isEqualTo(DEFAULT_DESC);
-        assertThat(testSubject.getHome_banner()).isEqualTo(DEFAULT_HOME_BANNER);
+        assertThat(testSubject.getHomeBanner()).isEqualTo(DEFAULT_HOME_BANNER);
         assertThat(testSubject.getType()).isEqualTo(DEFAULT_TYPE);
         assertThat(testSubject.getPosition()).isEqualTo(DEFAULT_POSITION);
-        assertThat(testSubject.getShare_image()).isEqualTo(DEFAULT_SHARE_IMAGE);
+        assertThat(testSubject.getShareImage()).isEqualTo(DEFAULT_SHARE_IMAGE);
     }
 
     @Test
@@ -137,7 +139,7 @@ public class SubjectResourceIntTest {
     public void checkHome_bannerIsRequired() throws Exception {
         int databaseSizeBeforeTest = subjectRepository.findAll().size();
         // set the field null
-        subject.setHome_banner(null);
+        subject.setHomeBanner(null);
 
         // Create the Subject, which fails.
 
@@ -182,7 +184,7 @@ public class SubjectResourceIntTest {
                 .andExpect(jsonPath("$.[*].desc").value(hasItem(DEFAULT_DESC.toString())))
                 .andExpect(jsonPath("$.[*].home_banner").value(hasItem(DEFAULT_HOME_BANNER.toString())))
                 .andExpect(jsonPath("$.[*].type").value(hasItem(DEFAULT_TYPE.toString())))
-                .andExpect(jsonPath("$.[*].position").value(hasItem(DEFAULT_POSITION)))
+                .andExpect(jsonPath("$.[*].position").value(hasItem(DEFAULT_POSITION.toString())))
                 .andExpect(jsonPath("$.[*].share_image").value(hasItem(DEFAULT_SHARE_IMAGE.toString())));
     }
 
@@ -201,7 +203,7 @@ public class SubjectResourceIntTest {
             .andExpect(jsonPath("$.desc").value(DEFAULT_DESC.toString()))
             .andExpect(jsonPath("$.home_banner").value(DEFAULT_HOME_BANNER.toString()))
             .andExpect(jsonPath("$.type").value(DEFAULT_TYPE.toString()))
-            .andExpect(jsonPath("$.position").value(DEFAULT_POSITION))
+            .andExpect(jsonPath("$.position").value(DEFAULT_POSITION.toString()))
             .andExpect(jsonPath("$.share_image").value(DEFAULT_SHARE_IMAGE.toString()));
     }
 
@@ -216,18 +218,19 @@ public class SubjectResourceIntTest {
     public void updateSubject() throws Exception {
         // Initialize the database
         subjectRepository.save(subject);
+
         int databaseSizeBeforeUpdate = subjectRepository.findAll().size();
 
         // Update the subject
         Subject updatedSubject = new Subject();
         updatedSubject.setId(subject.getId());
         updatedSubject.setSubject(UPDATED_SUBJECT);
-        updatedSubject.setSecond_name(UPDATED_SECOND_NAME);
+        updatedSubject.setSecondName(UPDATED_SECOND_NAME);
         updatedSubject.setDesc(UPDATED_DESC);
-        updatedSubject.setHome_banner(UPDATED_HOME_BANNER);
+        updatedSubject.setHomeBanner(UPDATED_HOME_BANNER);
         updatedSubject.setType(UPDATED_TYPE);
         updatedSubject.setPosition(UPDATED_POSITION);
-        updatedSubject.setShare_image(UPDATED_SHARE_IMAGE);
+        updatedSubject.setShareImage(UPDATED_SHARE_IMAGE);
 
         restSubjectMockMvc.perform(put("/api/subjects")
                 .contentType(TestUtil.APPLICATION_JSON_UTF8)
@@ -239,18 +242,19 @@ public class SubjectResourceIntTest {
         assertThat(subjects).hasSize(databaseSizeBeforeUpdate);
         Subject testSubject = subjects.get(subjects.size() - 1);
         assertThat(testSubject.getSubject()).isEqualTo(UPDATED_SUBJECT);
-        assertThat(testSubject.getSecond_name()).isEqualTo(UPDATED_SECOND_NAME);
+        assertThat(testSubject.getSecondName()).isEqualTo(UPDATED_SECOND_NAME);
         assertThat(testSubject.getDesc()).isEqualTo(UPDATED_DESC);
-        assertThat(testSubject.getHome_banner()).isEqualTo(UPDATED_HOME_BANNER);
+        assertThat(testSubject.getHomeBanner()).isEqualTo(UPDATED_HOME_BANNER);
         assertThat(testSubject.getType()).isEqualTo(UPDATED_TYPE);
         assertThat(testSubject.getPosition()).isEqualTo(UPDATED_POSITION);
-        assertThat(testSubject.getShare_image()).isEqualTo(UPDATED_SHARE_IMAGE);
+        assertThat(testSubject.getShareImage()).isEqualTo(UPDATED_SHARE_IMAGE);
     }
 
     @Test
     public void deleteSubject() throws Exception {
         // Initialize the database
         subjectRepository.save(subject);
+
         int databaseSizeBeforeDelete = subjectRepository.findAll().size();
 
         // Get the subject

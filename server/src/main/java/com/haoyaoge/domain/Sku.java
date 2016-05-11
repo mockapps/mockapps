@@ -1,6 +1,10 @@
 package com.haoyaoge.domain;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.haoyaoge.domain.util.NumericBooleanDeserializer;
+import com.haoyaoge.domain.util.NumericBooleanSerializer;
 import org.springframework.data.mongodb.core.mapping.Field;
 
 import javax.validation.constraints.NotNull;
@@ -31,6 +35,8 @@ public class Sku {
     private Integer initQuantity;
 
     @Field("is_onsale")
+    @JsonSerialize(using=NumericBooleanSerializer.class)
+    @JsonDeserialize(using=NumericBooleanDeserializer.class)
     private Boolean isOnsale;
 
     @Field("spec")

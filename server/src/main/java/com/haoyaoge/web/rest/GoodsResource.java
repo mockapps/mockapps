@@ -2,11 +2,12 @@ package com.haoyaoge.web.rest;
 
 import com.codahale.metrics.annotation.Timed;
 import com.haoyaoge.domain.Goods;
+import com.haoyaoge.web.rest.dto.GoodsDTO;
 import com.haoyaoge.repository.GoodsRepository;
+import com.haoyaoge.service.GoodsService;
 import com.haoyaoge.web.rest.util.HeaderUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -16,8 +17,7 @@ import javax.inject.Inject;
 import javax.validation.Valid;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 /**
  * REST controller for managing Goods.
@@ -27,10 +27,13 @@ import java.util.Optional;
 public class GoodsResource {
 
     private final Logger log = LoggerFactory.getLogger(GoodsResource.class);
-        
+
     @Inject
     private GoodsRepository goodsRepository;
-    
+
+    @Inject
+    private GoodsService goodsService;
+
     /**
      * POST  /goods : Create a new goods.
      *
@@ -73,16 +76,16 @@ public class GoodsResource {
         }
         Goods result = goodsRepository.save(goods);
         return ResponseEntity.ok()
-            .headers(HeaderUtil.createEntityUpdateAlert("goods", goods.getId().toString()))
+            .headers(HeaderUtil.createEntityUpdateAlert("goods", goods.getId()))
             .body(result);
     }
 
     /**
-     * GET  /goods : get all the goods.
+     * GET  /cgoods : get all the goods, include all fields
      *
      * @return the ResponseEntity with status 200 (OK) and the list of goods in body
      */
-    @RequestMapping(value = "/goods",
+    @RequestMapping(value = "/cgoods",
         method = RequestMethod.GET,
         produces = MediaType.APPLICATION_JSON_VALUE)
     @Timed
@@ -90,6 +93,36 @@ public class GoodsResource {
         log.debug("REST request to get all Goods");
         List<Goods> goods = goodsRepository.findAll();
         return goods;
+    }
+
+    /**
+     * GET  /goods : get all the goods, include only specified fields
+     *
+     * @return the ResponseEntity with status 200 (OK) and the list of goods in body
+     */
+    @RequestMapping(value = "/goods",
+        method = RequestMethod.GET,
+        produces = MediaType.APPLICATION_JSON_VALUE)
+    @Timed
+    public Map<String,List<GoodsDTO>> getSimpleGoods() {
+        log.debug("REST request to get all simple Goods");
+        List<Goods> goodsList = goodsRepository.findSimpleGoods();
+        return goodsService.getGoodsDTOMap(goodsList);
+    }
+
+    /**
+     * GET  /subject/{subjectId}/goods : get all the goods, include only specified fields
+     *
+     * @return the ResponseEntity with status 200 (OK) and the list of goods in body
+     */
+    @RequestMapping(value = "/subject/{subjectId}/goods",
+        method = RequestMethod.GET,
+        produces = MediaType.APPLICATION_JSON_VALUE)
+    @Timed
+    public Map<String,List<GoodsDTO>> getSimpleGoodsBySubject(@PathVariable String subjectId) {
+        log.debug("REST request to get all simple Goods by subject Id");
+        List<Goods> goodsList = goodsRepository.findBySubjectId(subjectId);
+        return goodsService.getGoodsDTOMap(goodsList);
     }
 
     /**

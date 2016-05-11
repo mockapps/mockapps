@@ -4,6 +4,7 @@ import com.haoyaoge.HaoyaogeApp;
 import com.haoyaoge.domain.*;
 import com.haoyaoge.repository.GoodsRepository;
 
+import com.haoyaoge.service.GoodsService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -40,8 +41,11 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @IntegrationTest
 public class GoodsResourceIntTest {
 
-    private static final Integer DEFAULT_SUBJECT_ID = 1;
-    private static final Integer UPDATED_SUBJECT_ID = 2;
+    private static final String JSON_FALSE_STRING = "0";
+    private static final String JSON_TRUE_STRING = "1";
+
+    private static final String DEFAULT_SUBJECT_ID = "1";
+    private static final String UPDATED_SUBJECT_ID = "2";
 
     private static final Integer DEFAULT_CAT_ID = 1;
     private static final Integer UPDATED_CAT_ID = 2;
@@ -120,6 +124,8 @@ public class GoodsResourceIntTest {
     private static final SkuSpec DEFAULT_SKU_SPEC = new SkuSpec(DEFAULT_SPEC_KEY, DEFAULT_SPEC_VALUE);
     private static final SkuSpec UPDATED_SKU_SPEC = new SkuSpec("\u54c1\u540d", "\u609f\u7a7a\u597d\u8fd0\u73bb\u7483\u6c34\u5177\u7ec4");
 
+    private static final Integer DEFAULT_MARKET_PRICE = 500;
+
     //gallery
     private static final Integer DEFAULT_GALLERY_ID = 1;
 
@@ -154,6 +160,9 @@ public class GoodsResourceIntTest {
     private GoodsRepository goodsRepository;
 
     @Inject
+    private GoodsService goodsService;
+
+    @Inject
     private MappingJackson2HttpMessageConverter jacksonMessageConverter;
 
     @Inject
@@ -174,6 +183,7 @@ public class GoodsResourceIntTest {
         MockitoAnnotations.initMocks(this);
         GoodsResource goodsResource = new GoodsResource();
         ReflectionTestUtils.setField(goodsResource, "goodsRepository", goodsRepository);
+        ReflectionTestUtils.setField(goodsResource, "goodsService", goodsService);
         this.restGoodsMockMvc = MockMvcBuilders.standaloneSetup(goodsResource)
             .setCustomArgumentResolvers(pageableArgumentResolver)
             .setMessageConverters(jacksonMessageConverter).build();
@@ -201,6 +211,7 @@ public class GoodsResourceIntTest {
         goods.setPreSaleTime(DEFAULT_PRE_SALE_TIME);
         goods.setSkipGoods(DEFAULT_SKIP_GOODS);
         goods.setShareDesc(DEFAULT_SHARE_DESC);
+        goods.setMarketPrice(DEFAULT_MARKET_PRICE);
         goods.setCatId1(DEFAULT_CAT_ID_1);
         goods.setCatId2(DEFAULT_CAT_ID_2);
         goods.setCatId3(DEFAULT_CAT_ID_3);
@@ -287,55 +298,55 @@ public class GoodsResourceIntTest {
         goodsRepository.save(goods);
 
         // Get all the goods
-        restGoodsMockMvc.perform(get("/api/goods?sort=id,desc"))
+        restGoodsMockMvc.perform(get("/api/cgoods?sort=id,desc"))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
                 .andExpect(jsonPath("$.[*].id").value(hasItem(goods.getId())))
-                .andExpect(jsonPath("$.[*].subject_id").value(hasItem(DEFAULT_SUBJECT_ID)))
-                .andExpect(jsonPath("$.[*].cat_id").value(hasItem(DEFAULT_CAT_ID)))
-                .andExpect(jsonPath("$.[*].mall_id").value(hasItem(DEFAULT_MALL_ID)))
+                .andExpect(jsonPath("$.[*].subject_id").value(hasItem(DEFAULT_SUBJECT_ID.toString())))
+                .andExpect(jsonPath("$.[*].cat_id").value(hasItem(DEFAULT_CAT_ID.toString())))
+                .andExpect(jsonPath("$.[*].mall_id").value(hasItem(DEFAULT_MALL_ID.toString())))
                 .andExpect(jsonPath("$.[*].goods_name").value(hasItem(DEFAULT_GOODS_NAME)))
-                .andExpect(jsonPath("$.[*].is_app").value(hasItem(DEFAULT_IS_APP)))
-                .andExpect(jsonPath("$.[*].event_type").value(hasItem(DEFAULT_EVENT_TYPE)))
+                .andExpect(jsonPath("$.[*].is_app").value(hasItem(JSON_FALSE_STRING)))
+                .andExpect(jsonPath("$.[*].event_type").value(hasItem(DEFAULT_EVENT_TYPE.toString())))
                 .andExpect(jsonPath("$.[*].goods_desc").value(hasItem(DEFAULT_GOODS_DESC)))
-                .andExpect(jsonPath("$.[*].is_onsale").value(hasItem(DEFAULT_IS_ONSALE)))
+                .andExpect(jsonPath("$.[*].is_onsale").value(hasItem(JSON_FALSE_STRING)))
                 .andExpect(jsonPath("$.[*].thumb_url").value(hasItem(DEFAULT_THUMB_URL)))
                 .andExpect(jsonPath("$.[*].allowed_region").value(hasItem(DEFAULT_ALLOWED_REGION)))
                 .andExpect(jsonPath("$.[*].country").value(hasItem(DEFAULT_COUNTRY)))
                 .andExpect(jsonPath("$.[*].warehouse").value(hasItem(DEFAULT_WAREHOUSE)))
                 .andExpect(jsonPath("$.[*].image_url").value(hasItem(DEFAULT_IMAGE_URL)))
-                .andExpect(jsonPath("$.[*].is_refundable").value(hasItem(DEFAULT_IS_REFUNDABLE)))
-                .andExpect(jsonPath("$.[*].is_pre_sale").value(hasItem(DEFAULT_IS_PRE_SALE)))
-                .andExpect(jsonPath("$.[*].pre_sale_time").value(hasItem(DEFAULT_PRE_SALE_TIME)))
-                .andExpect(jsonPath("$.[*].skip_goods").value(hasItem(DEFAULT_SKIP_GOODS)))
+                .andExpect(jsonPath("$.[*].is_refundable").value(hasItem(JSON_FALSE_STRING)))
+                .andExpect(jsonPath("$.[*].is_pre_sale").value(hasItem(JSON_FALSE_STRING)))
+                .andExpect(jsonPath("$.[*].pre_sale_time").value(hasItem(DEFAULT_PRE_SALE_TIME.toString())))
+                .andExpect(jsonPath("$.[*].skip_goods").value(hasItem(DEFAULT_SKIP_GOODS.toString())))
                 .andExpect(jsonPath("$.[*].share_desc").value(hasItem(DEFAULT_SHARE_DESC)))
-                .andExpect(jsonPath("$.[*].cat_id_1").value(hasItem(DEFAULT_CAT_ID_1)))
-                .andExpect(jsonPath("$.[*].cat_id_2").value(hasItem(DEFAULT_CAT_ID_2)))
-                .andExpect(jsonPath("$.[*].cat_id_3").value(hasItem(DEFAULT_CAT_ID_3)))
-                .andExpect(jsonPath("$.[*].sku[0].sku_id").value(hasItem(DEFAULT_SKU_ID)))
+                .andExpect(jsonPath("$.[*].cat_id_1").value(hasItem(DEFAULT_CAT_ID_1.toString())))
+                .andExpect(jsonPath("$.[*].cat_id_2").value(hasItem(DEFAULT_CAT_ID_2.toString())))
+                .andExpect(jsonPath("$.[*].cat_id_3").value(hasItem(DEFAULT_CAT_ID_3.toString())))
+                .andExpect(jsonPath("$.[*].sku[0].sku_id").value(hasItem(DEFAULT_SKU_ID.toString())))
                 .andExpect(jsonPath("$.[*].sku[0].thumb_url").value(hasItem(DEFAULT_THUMB_URL)))
-                .andExpect(jsonPath("$.[*].sku[0].quantity").value(hasItem(DEFAULT_QUANTITY)))
-                .andExpect(jsonPath("$.[*].sku[0].limit_quantity").value(hasItem(DEFAULT_LIMIT_QUANTITY)))
-                .andExpect(jsonPath("$.[*].sku[0].sold_quantity").value(hasItem(DEFAULT_SOLD_QUANTITY)))
-                .andExpect(jsonPath("$.[*].sku[0].init_quantity").value(hasItem(DEFAULT_INIT_QUANTITY)))
-                .andExpect(jsonPath("$.[*].sku[0].is_onsale").value(hasItem(DEFAULT_IS_ONSALE)))
-                .andExpect(jsonPath("$.[*].sku[0].spec").value(hasItem(DEFAULT_SPEC_ID)))
+                .andExpect(jsonPath("$.[*].sku[0].quantity").value(hasItem(DEFAULT_QUANTITY.toString())))
+                .andExpect(jsonPath("$.[*].sku[0].limit_quantity").value(hasItem(DEFAULT_LIMIT_QUANTITY.toString())))
+                .andExpect(jsonPath("$.[*].sku[0].sold_quantity").value(hasItem(DEFAULT_SOLD_QUANTITY.toString())))
+                .andExpect(jsonPath("$.[*].sku[0].init_quantity").value(hasItem(DEFAULT_INIT_QUANTITY.toString())))
+                .andExpect(jsonPath("$.[*].sku[0].is_onsale").value(hasItem(JSON_FALSE_STRING)))
+                .andExpect(jsonPath("$.[*].sku[0].spec").value(hasItem(DEFAULT_SPEC_ID.toString())))
                 .andExpect(jsonPath("$.[*].sku[0].specs[0].spec_key").value(hasItem(DEFAULT_SPEC_KEY)))
                 .andExpect(jsonPath("$.[*].sku[0].specs[0].spec_value").value(hasItem(DEFAULT_SPEC_VALUE)))
-                .andExpect(jsonPath("$.[*].gallery[0].id").value(hasItem(DEFAULT_GALLERY_ID)))
+                .andExpect(jsonPath("$.[*].gallery[0].id").value(hasItem(DEFAULT_GALLERY_ID.toString())))
                 .andExpect(jsonPath("$.[*].gallery[0].url").value(hasItem(DEFAULT_GALLERY_URL)))
-                .andExpect(jsonPath("$.[*].gallery[0].width").value(hasItem(DEFAULT_GALLERY_WIDTH)))
-                .andExpect(jsonPath("$.[*].gallery[0].height").value(hasItem(DEFAULT_GALLERY_HEIGHT)))
-                .andExpect(jsonPath("$.[*].gallery[0].priority").value(hasItem(DEFAULT_GALLERY_PRIORITY)))
-                .andExpect(jsonPath("$.[*].gallery[0].type").value(hasItem(DEFAULT_GALLERY_TYPE)))
-                .andExpect(jsonPath("$.[*].group[0].id").value(hasItem(DEFAULT_GALLERY_ID)))
-                .andExpect(jsonPath("$.[*].group[0].price").value(hasItem(DEFAULT_GROUP_PRICE)))
-                .andExpect(jsonPath("$.[*].group[0].customer_num").value(hasItem(DEFAULT_CUSTOMER_NUMBER)))
-                .andExpect(jsonPath("$.[*].group[0].start_time").value(hasItem(DEFAULT_START_TIME)))
-                .andExpect(jsonPath("$.[*].group[0].end_time").value(hasItem(DEFAULT_END_TIME)))
-                .andExpect(jsonPath("$.[*].group[0].buy_limit").value(hasItem(DEFAULT_BUY_LIMIT)))
-                .andExpect(jsonPath("$.[*].group[0].order_limit").value(hasItem(DEFAULT_ORDER_LIMIT)))
-                .andExpect(jsonPath("$.[*].group[0].is_open").value(hasItem(DEFAULT_IS_OPEN)));
+                .andExpect(jsonPath("$.[*].gallery[0].width").value(hasItem(DEFAULT_GALLERY_WIDTH.toString())))
+                .andExpect(jsonPath("$.[*].gallery[0].height").value(hasItem(DEFAULT_GALLERY_HEIGHT.toString())))
+                .andExpect(jsonPath("$.[*].gallery[0].priority").value(hasItem(DEFAULT_GALLERY_PRIORITY.toString())))
+                .andExpect(jsonPath("$.[*].gallery[0].type").value(hasItem(DEFAULT_GALLERY_TYPE.toString())))
+                .andExpect(jsonPath("$.[*].group[0].id").value(hasItem(DEFAULT_GALLERY_ID.toString())))
+                .andExpect(jsonPath("$.[*].group[0].price").value(hasItem(DEFAULT_GROUP_PRICE.toString())))
+                .andExpect(jsonPath("$.[*].group[0].customer_num").value(hasItem(DEFAULT_CUSTOMER_NUMBER.toString())))
+                .andExpect(jsonPath("$.[*].group[0].start_time").value(hasItem(DEFAULT_START_TIME.toString())))
+                .andExpect(jsonPath("$.[*].group[0].end_time").value(hasItem(DEFAULT_END_TIME.toString())))
+                .andExpect(jsonPath("$.[*].group[0].buy_limit").value(hasItem(DEFAULT_BUY_LIMIT.toString())))
+                .andExpect(jsonPath("$.[*].group[0].order_limit").value(hasItem(DEFAULT_ORDER_LIMIT.toString())))
+                .andExpect(jsonPath("$.[*].group[0].is_open").value(hasItem(JSON_TRUE_STRING)));
     }
 
     @Test
@@ -348,27 +359,27 @@ public class GoodsResourceIntTest {
             .andExpect(status().isOk())
             .andExpect(content().contentType(MediaType.APPLICATION_JSON))
             .andExpect(jsonPath("$.id").value(goods.getId()))
-            .andExpect(jsonPath("$.subject_id").value(DEFAULT_SUBJECT_ID))
-            .andExpect(jsonPath("$.cat_id").value(DEFAULT_CAT_ID))
-            .andExpect(jsonPath("$.mall_id").value(DEFAULT_MALL_ID))
+            .andExpect(jsonPath("$.subject_id").value(DEFAULT_SUBJECT_ID.toString()))
+            .andExpect(jsonPath("$.cat_id").value(DEFAULT_CAT_ID.toString()))
+            .andExpect(jsonPath("$.mall_id").value(DEFAULT_MALL_ID.toString()))
             .andExpect(jsonPath("$.goods_name").value(DEFAULT_GOODS_NAME))
-            .andExpect(jsonPath("$.is_app").value(DEFAULT_IS_APP))
-            .andExpect(jsonPath("$.event_type").value(DEFAULT_EVENT_TYPE))
+            .andExpect(jsonPath("$.is_app").value(JSON_FALSE_STRING))
+            .andExpect(jsonPath("$.event_type").value(DEFAULT_EVENT_TYPE.toString()))
             .andExpect(jsonPath("$.goods_desc").value(DEFAULT_GOODS_DESC))
-            .andExpect(jsonPath("$.is_onsale").value(DEFAULT_IS_ONSALE))
+            .andExpect(jsonPath("$.is_onsale").value(JSON_FALSE_STRING))
             .andExpect(jsonPath("$.thumb_url").value(DEFAULT_THUMB_URL))
             .andExpect(jsonPath("$.allowed_region").value(DEFAULT_ALLOWED_REGION))
             .andExpect(jsonPath("$.country").value(DEFAULT_COUNTRY))
             .andExpect(jsonPath("$.warehouse").value(DEFAULT_WAREHOUSE))
             .andExpect(jsonPath("$.image_url").value(DEFAULT_IMAGE_URL))
-            .andExpect(jsonPath("$.is_refundable").value(DEFAULT_IS_REFUNDABLE))
-            .andExpect(jsonPath("$.is_pre_sale").value(DEFAULT_IS_PRE_SALE))
-            .andExpect(jsonPath("$.pre_sale_time").value(DEFAULT_PRE_SALE_TIME))
-            .andExpect(jsonPath("$.skip_goods").value(DEFAULT_SKIP_GOODS))
+            .andExpect(jsonPath("$.is_refundable").value(JSON_FALSE_STRING))
+            .andExpect(jsonPath("$.is_pre_sale").value(JSON_FALSE_STRING))
+            .andExpect(jsonPath("$.pre_sale_time").value(DEFAULT_PRE_SALE_TIME.toString()))
+            .andExpect(jsonPath("$.skip_goods").value(DEFAULT_SKIP_GOODS.toString()))
             .andExpect(jsonPath("$.share_desc").value(DEFAULT_SHARE_DESC))
-            .andExpect(jsonPath("$.cat_id_1").value(DEFAULT_CAT_ID_1))
-            .andExpect(jsonPath("$.cat_id_2").value(DEFAULT_CAT_ID_2))
-            .andExpect(jsonPath("$.cat_id_3").value(DEFAULT_CAT_ID_3));
+            .andExpect(jsonPath("$.cat_id_1").value(DEFAULT_CAT_ID_1.toString()))
+            .andExpect(jsonPath("$.cat_id_2").value(DEFAULT_CAT_ID_2.toString()))
+            .andExpect(jsonPath("$.cat_id_3").value(DEFAULT_CAT_ID_3.toString()));
     }
 
     @Test
@@ -455,6 +466,36 @@ public class GoodsResourceIntTest {
         // Validate the database is empty
         List<Goods> goods = goodsRepository.findAll();
         assertThat(goods).hasSize(databaseSizeBeforeDelete - 1);
+    }
+
+    @Test
+    public void getGoodsDTOs() throws Exception {
+        goodsRepository.save(goods);
+
+        restGoodsMockMvc.perform(get("/api/goods?sort=id,desc"))
+            .andExpect(status().isOk())
+            .andExpect(content().contentType(MediaType.APPLICATION_JSON))
+            .andExpect(jsonPath("$.goods_list.[*].goods_id").value(hasItem(goods.getId())))
+            .andExpect(jsonPath("$.goods_list.[*].mall_id").value(hasItem(DEFAULT_MALL_ID.toString())))
+            .andExpect(jsonPath("$.goods_list.[*].goods_name").value(hasItem(DEFAULT_GOODS_NAME)))
+            .andExpect(jsonPath("$.goods_list.[*].image_url").value(hasItem(DEFAULT_IMAGE_URL)))
+            .andExpect(jsonPath("$.goods_list.[*].market_price").value(hasItem(DEFAULT_MARKET_PRICE.toString())))
+            .andExpect(jsonPath("$.goods_list.[*].is_app").value(hasItem(JSON_FALSE_STRING)))
+            .andExpect(jsonPath("$.goods_list.[*].group.price").value(hasItem(DEFAULT_GROUP_PRICE.toString())))
+            .andExpect(jsonPath("$.goods_list.[*].group.customer_num").value(hasItem(DEFAULT_CUSTOMER_NUMBER.toString())));
+
+        restGoodsMockMvc.perform(get("/api/subject/{id}/goods", goods.getSubjectId()))
+            .andExpect(status().isOk())
+            .andExpect(content().contentType(MediaType.APPLICATION_JSON))
+            .andExpect(jsonPath("$.goods_list.[*].goods_id").value(hasItem(goods.getId())))
+            .andExpect(jsonPath("$.goods_list.[*].mall_id").value(hasItem(DEFAULT_MALL_ID.toString())))
+            .andExpect(jsonPath("$.goods_list.[*].goods_name").value(hasItem(DEFAULT_GOODS_NAME)))
+            .andExpect(jsonPath("$.goods_list.[*].image_url").value(hasItem(DEFAULT_IMAGE_URL)))
+            .andExpect(jsonPath("$.goods_list.[*].market_price").value(hasItem(DEFAULT_MARKET_PRICE.toString())))
+            .andExpect(jsonPath("$.goods_list.[*].is_app").value(hasItem(JSON_FALSE_STRING)))
+            .andExpect(jsonPath("$.goods_list.[*].group.price").value(hasItem(DEFAULT_GROUP_PRICE.toString())))
+            .andExpect(jsonPath("$.goods_list.[*].group.customer_num").value(hasItem(DEFAULT_CUSTOMER_NUMBER.toString())));
+
     }
 
     private static Sku createSku() {

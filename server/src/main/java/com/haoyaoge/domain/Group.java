@@ -1,14 +1,22 @@
 package com.haoyaoge.domain;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.haoyaoge.domain.util.NumericBooleanDeserializer;
+import com.haoyaoge.domain.util.NumericBooleanSerializer;
 import org.springframework.data.mongodb.core.mapping.Field;
+
+import javax.validation.constraints.NotNull;
 
 public class Group {
     @Field("id")
     private Integer id;
 
+    @NotNull
     @Field("price")
     private Integer price;
 
+    @NotNull
     @Field("customer_num")
     private Integer customerNum;
 
@@ -24,7 +32,10 @@ public class Group {
     @Field("order_limit")
     private Integer orderLimit;
 
+    @NotNull
     @Field("is_open")
+    @JsonSerialize(using=NumericBooleanSerializer.class)
+    @JsonDeserialize(using=NumericBooleanDeserializer.class)
     private Boolean isOpen;
 
     public Integer getId() {

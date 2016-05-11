@@ -28,6 +28,7 @@ spring:
       property-naming-strategy: SNAKE_CASE
       date-format: com.fasterxml.jackson.databind.util.ISO8601DateFormat
       generator.ESCAPE_NON_ASCII: true
+      generator.WRITE_NUMBERS_AS_STRINGS: true
 
 security:
     basic:

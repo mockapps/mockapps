@@ -1,6 +1,11 @@
 package com.haoyaoge.domain;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.haoyaoge.domain.util.NumericBooleanDeserializer;
+import com.haoyaoge.domain.util.NumericBooleanSerializer;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -21,11 +26,13 @@ public class Goods implements Serializable {
 
     @NotNull
     @Field("subject_id")
-    private Integer subjectId;
+    @Indexed
+    private String subjectId;
 
     @Field("cat_id")
     private Integer catId;
 
+    @NotNull
     @Field("mall_id")
     private Integer mallId;
 
@@ -34,6 +41,8 @@ public class Goods implements Serializable {
     private String goodsName;
 
     @Field("is_app")
+    @JsonSerialize(using=NumericBooleanSerializer.class)
+    @JsonDeserialize(using=NumericBooleanDeserializer.class)
     private Boolean isApp;
 
     @Field("event_type")
@@ -43,10 +52,13 @@ public class Goods implements Serializable {
     @Field("goods_desc")
     private String goodsDesc;
 
+    @NotNull
     @Field("market_price")
     private Integer marketPrice;
 
     @Field("is_onsale")
+    @JsonSerialize(using=NumericBooleanSerializer.class)
+    @JsonDeserialize(using=NumericBooleanDeserializer.class)
     private Boolean isOnsale;
 
     @NotNull
@@ -69,9 +81,13 @@ public class Goods implements Serializable {
     private String imageUrl;
 
     @Field("is_refundable")
+    @JsonSerialize(using=NumericBooleanSerializer.class)
+    @JsonDeserialize(using=NumericBooleanDeserializer.class)
     private Boolean isRefundable;
 
     @Field("is_pre_sale")
+    @JsonSerialize(using=NumericBooleanSerializer.class)
+    @JsonDeserialize(using=NumericBooleanDeserializer.class)
     private Boolean isPreSale;
 
     @Field("pre_sale_time")
@@ -98,6 +114,7 @@ public class Goods implements Serializable {
     @Field("gallery")
     private List<Gallery> galleries = new ArrayList<>();
 
+    @NotNull
     @Field("group")
     private List<Group> groups = new ArrayList<>();
 
@@ -109,11 +126,11 @@ public class Goods implements Serializable {
         this.id = id;
     }
 
-    public Integer getSubjectId() {
+    public String getSubjectId() {
         return subjectId;
     }
 
-    public void setSubjectId(Integer subjectId) {
+    public void setSubjectId(String subjectId) {
         this.subjectId = subjectId;
     }
 

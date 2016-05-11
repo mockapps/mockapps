@@ -5,9 +5,9 @@
         .module('haoyaogeApp')
         .controller('SubjectController', SubjectController);
 
-    SubjectController.$inject = ['$scope', '$state', 'Subject'];
+    SubjectController.$inject = ['$scope', '$state', 'Subject', 'ParseLinks', 'AlertService'];
 
-    function SubjectController ($scope, $state, Subject) {
+    function SubjectController ($scope, $state, Subject, ParseLinks, AlertService) {
         var vm = this;
         vm.subjects = [];
         vm.loadAll = function() {

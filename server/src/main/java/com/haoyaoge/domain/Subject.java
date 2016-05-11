@@ -6,6 +6,8 @@ import org.springframework.data.mongodb.core.mapping.Field;
 
 import javax.validation.constraints.*;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 /**
@@ -25,7 +27,7 @@ public class Subject implements Serializable {
     private String subject;
 
     @Field("second_name")
-    private String second_name;
+    private String secondName;
 
     @Field("desc")
     private String desc;
@@ -33,7 +35,7 @@ public class Subject implements Serializable {
     @NotNull
     @Pattern(regexp = "^(https?|ftp|file)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]")
     @Field("home_banner")
-    private String home_banner;
+    private String homeBanner;
 
     @NotNull
     @Field("type")
@@ -43,7 +45,7 @@ public class Subject implements Serializable {
     private Integer position;
 
     @Field("share_image")
-    private String share_image;
+    private String shareImage;
 
     public String getId() {
         return id;
@@ -61,12 +63,12 @@ public class Subject implements Serializable {
         this.subject = subject;
     }
 
-    public String getSecond_name() {
-        return second_name;
+    public String getSecondName() {
+        return secondName;
     }
 
-    public void setSecond_name(String second_name) {
-        this.second_name = second_name;
+    public void setSecondName(String second_name) {
+        this.secondName = second_name;
     }
 
     public String getDesc() {
@@ -77,12 +79,12 @@ public class Subject implements Serializable {
         this.desc = desc;
     }
 
-    public String getHome_banner() {
-        return home_banner;
+    public String getHomeBanner() {
+        return homeBanner;
     }
 
-    public void setHome_banner(String home_banner) {
-        this.home_banner = home_banner;
+    public void setHomeBanner(String home_banner) {
+        this.homeBanner = home_banner;
     }
 
     public String getType() {
@@ -101,12 +103,12 @@ public class Subject implements Serializable {
         this.position = position;
     }
 
-    public String getShare_image() {
-        return share_image;
+    public String getShareImage() {
+        return shareImage;
     }
 
-    public void setShare_image(String share_image) {
-        this.share_image = share_image;
+    public void setShareImage(String share_image) {
+        this.shareImage = share_image;
     }
 
     @Override
@@ -134,12 +136,12 @@ public class Subject implements Serializable {
         return "Subject{" +
             "id=" + id +
             ", subject='" + subject + "'" +
-            ", second_name='" + second_name + "'" +
+            ", second_name='" + secondName + "'" +
             ", desc='" + desc + "'" +
-            ", home_banner='" + home_banner + "'" +
+            ", home_banner='" + homeBanner + "'" +
             ", type='" + type + "'" +
             ", position='" + position + "'" +
-            ", share_image='" + share_image + "'" +
+            ", share_image='" + shareImage + "'" +
             '}';
     }
 }
