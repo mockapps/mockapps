@@ -1,17 +1,10 @@
 package com.haoyaoge.web.rest;
 
-import com.fasterxml.jackson.core.JsonGenerator;
-import com.haoyaoge.service.UserService;
-import com.haoyaoge.web.rest.dto.UserLoginDTO;
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.HashMap;
-import java.util.Map;
 
 @RestController
 @RequestMapping("/mock")

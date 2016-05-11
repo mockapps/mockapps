@@ -1,6 +1,6 @@
 package com.haoyaoge.web.rest.dto;
 
-public class UserLoginDTO {
+public class SmsLoginDTO {
     private String mobile;
     private String code;
     private String appId;

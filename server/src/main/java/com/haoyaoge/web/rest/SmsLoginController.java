@@ -9,8 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.haoyaoge.service.UserService;
-import com.haoyaoge.domain.AccessToken;
-import com.haoyaoge.web.rest.dto.UserLoginDTO;
+import com.haoyaoge.web.rest.dto.SmsLoginDTO;
 
 @RestController
 @RequestMapping("/mock")
@@ -18,7 +17,7 @@ public class SmsLoginController {
     @Autowired
     private UserService userService;
     @RequestMapping(value = "/login", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<AccessToken> login(@RequestBody UserLoginDTO user) {
+    public ResponseEntity<?> login(@RequestBody SmsLoginDTO user) {
         return ResponseEntity.ok(userService.login(user.getMobile(),user.getCode()));
     }
 
