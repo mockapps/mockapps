@@ -39,16 +39,25 @@ public class User extends AbstractAuditingEntity implements Serializable {
 
     @JsonIgnore
     @NotNull
-    @Size(min = 60, max = 60) 
+    @Size(min = 60, max = 60)
     private String password;
 
     @Size(max = 50)
-    @Field("first_name")
-    private String firstName;
+    @Field("nick_name")
+    private String nickName;
 
     @Size(max = 50)
-    @Field("last_name")
-    private String lastName;
+    @Field("id_card_name")
+    private String idCardName;
+
+    @Size(max = 50)
+    @Field("id_card_no")
+    private String idCardNo;
+
+    @NotNull
+    @Size(max = 50)
+    @Field("type")
+    private String type;
 
     @Email
     @Size(max = 100)
@@ -100,21 +109,6 @@ public class User extends AbstractAuditingEntity implements Serializable {
         this.password = password;
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
 
     public String getEmail() {
         return email;
@@ -172,6 +166,38 @@ public class User extends AbstractAuditingEntity implements Serializable {
         this.authorities = authorities;
     }
 
+    public String getNickName() {
+        return nickName;
+    }
+
+    public void setNickName(String nickName) {
+        this.nickName = nickName;
+    }
+
+    public String getIdCardName() {
+        return idCardName;
+    }
+
+    public void setIdCardName(String idCardName) {
+        this.idCardName = idCardName;
+    }
+
+    public String getIdCardNo() {
+        return idCardNo;
+    }
+
+    public void setIdCardNo(String idCardNo) {
+        this.idCardNo = idCardNo;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -199,8 +225,10 @@ public class User extends AbstractAuditingEntity implements Serializable {
     public String toString() {
         return "User{" +
             "login='" + login + '\'' +
-            ", firstName='" + firstName + '\'' +
-            ", lastName='" + lastName + '\'' +
+            ", nickName='" + nickName + '\'' +
+            ", idCardName='" + idCardName + '\'' +
+            ", idCardNo='" + idCardNo + '\'' +
+            ", type='" + type + '\'' +
             ", email='" + email + '\'' +
             ", activated='" + activated + '\'' +
             ", langKey='" + langKey + '\'' +

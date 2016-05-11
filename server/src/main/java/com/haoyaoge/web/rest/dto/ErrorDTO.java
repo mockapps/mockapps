@@ -4,14 +4,18 @@ package com.haoyaoge.web.rest.dto;
  * Created by chouxinxin on 16-5-10.
  */
 public class ErrorDTO {
-    private String errorCode;
+    private int errorCode;
     private String errorMsg;
-
-    public String getErrorCode() {
+    public ErrorDTO(){}
+    public ErrorDTO(int code,String message){
+        errorCode=code;
+        errorMsg=message;
+    }
+    public int getErrorCode() {
         return errorCode;
     }
 
-    public void setErrorCode(String errorCode) {
+    public void setErrorCode(int errorCode) {
         this.errorCode = errorCode;
     }
 

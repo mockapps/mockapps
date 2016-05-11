@@ -79,8 +79,8 @@ public class UserService {
             });
     }
 
-    public User createUserInformation(String login, String password, String firstName, String lastName, String email,
-        String langKey) {
+    public User createUserInformation(String login, String password ,String nickName, String idCardName,String idCardNo, String email,
+        String langKey,String type) {
 
         User newUser = new User();
         Authority authority = authorityRepository.findOne("ROLE_USER");
@@ -89,10 +89,12 @@ public class UserService {
         newUser.setLogin(login);
         // new user gets initially a generated password
         newUser.setPassword(encryptedPassword);
-        newUser.setFirstName(firstName);
-        newUser.setLastName(lastName);
+        newUser.setNickName(nickName);
+        newUser.setIdCardName(idCardName);
+        newUser.setIdCardNo(idCardNo);
         newUser.setEmail(email);
         newUser.setLangKey(langKey);
+        newUser.setType(type);
         // new user is not active
         newUser.setActivated(false);
         // new user gets registration key
@@ -107,8 +109,9 @@ public class UserService {
     public User createUser(ManagedUserDTO managedUserDTO) {
         User user = new User();
         user.setLogin(managedUserDTO.getLogin());
-        user.setFirstName(managedUserDTO.getFirstName());
-        user.setLastName(managedUserDTO.getLastName());
+        user.setNickName(managedUserDTO.getNickName());
+        user.setIdCardName(managedUserDTO.getIdCardName());
+        user.setIdCardNo(managedUserDTO.getIdCardNo());
         user.setEmail(managedUserDTO.getEmail());
         if (managedUserDTO.getLangKey() == null) {
             user.setLangKey("zh-cn"); // default language
@@ -132,10 +135,11 @@ public class UserService {
         return user;
     }
 
-    public void updateUserInformation(String firstName, String lastName, String email, String langKey) {
+    public void updateUserInformation(String nickName, String idCardName,String idCardNo, String email, String langKey) {
         userRepository.findOneByLogin(SecurityUtils.getCurrentUserLogin()).ifPresent(u -> {
-            u.setFirstName(firstName);
-            u.setLastName(lastName);
+            u.setNickName(nickName);
+            u.setIdCardName(idCardName);
+            u.setIdCardNo(idCardNo);
             u.setEmail(email);
             u.setLangKey(langKey);
             userRepository.save(u);
@@ -194,8 +198,4 @@ public class UserService {
         }
     }
 
-    public Optional<AccessToken> login(String mobile, String code){
-
-        return Optional.of(AccessToken.class).empty();
-    }
 }

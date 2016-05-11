@@ -40,9 +40,9 @@ public class ManagedUserDTO extends UserDTO {
         this.password = null;
     }
 
-    public ManagedUserDTO(String id, String login, String password, String firstName, String lastName,
-                          String email, boolean activated, String langKey, Set<String> authorities , ZonedDateTime createdDate, String lastModifiedBy, ZonedDateTime lastModifiedDate ) {
-        super(login, firstName, lastName, email, activated, langKey, authorities);
+    public ManagedUserDTO(String id, String login, String password, String nickName, String idCardName,String idCardNo,
+                          String email, boolean activated, String langKey, String type,Set<String> authorities , ZonedDateTime createdDate, String lastModifiedBy, ZonedDateTime lastModifiedDate ) {
+        super(login, nickName, idCardName,idCardNo, email, activated, langKey,type ,authorities);
         this.id = id;
         this.createdDate = createdDate;
         this.lastModifiedBy = lastModifiedBy;
