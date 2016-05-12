@@ -1,15 +1,15 @@
 package com.haoyaoge.config.dbmigrations;
 
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+
 import com.github.mongobee.changeset.ChangeLog;
 import com.github.mongobee.changeset.ChangeSet;
 import com.mongodb.BasicDBObject;
 import com.mongodb.BasicDBObjectBuilder;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
-
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Creates the initial database setup
@@ -105,7 +105,7 @@ public class InitialSetupMigration {
 
     @ChangeSet(order = "03", author = "initiator", id = "03-addSmsCodeValidation")
     public void addSmsCodeValidation(DB db) {
-        DBCollection codeCollection = db.getCollection("jhi_sms_code_validation");
-        codeCollection.createIndex(new BasicDBObject("last_modified", 1), new BasicDBObject("expireAfterSeconds", 3600));
+        DBCollection codeCollection = db.getCollection("sms_code_validation");
+        codeCollection.createIndex(new BasicDBObject("created_date", 1), new BasicDBObject("expireAfterSeconds", 86400));
     }
 }

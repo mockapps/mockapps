@@ -4,6 +4,7 @@ public class SmsLoginDTO {
     private String mobile;
     private String code;
     private String appId;
+    private String shopId;
     public String getMobile() {
         return mobile;
     }
@@ -28,4 +29,11 @@ public class SmsLoginDTO {
         this.appId = appId;
     }
 
+    public String getShopId() {
+        return shopId;
+    }
+
+    public void setShopId(String shopId) {
+        this.shopId = shopId;
+    }
 }
