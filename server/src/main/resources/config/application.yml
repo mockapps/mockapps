@@ -66,3 +66,12 @@ jhipster:
     ribbon:
         # comma seperated list of profiles to show a ribbon on the GUI
         displayOnActiveProfiles: dev
+app:
+    request_limit: 10
+    failed_limit: 10
+    code_ttl_limit: 3000
+    sms_app_key: app_key
+    sms_app_secret: secret
+    sms_api_url: url
+    sms_template_code:
+    product_name: 昊幺哥

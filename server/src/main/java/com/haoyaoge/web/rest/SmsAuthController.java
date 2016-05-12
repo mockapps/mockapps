@@ -24,11 +24,9 @@ public class SmsAuthController {
     @RequestMapping(value = "/login", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<?> login(@RequestBody SmsLoginDTO user) {
         String token = smsAuthService.authentication(user.getMobile(), user.getCode());
-        if (null != token) {
-            return ResponseEntity.ok(new AccessToken(token));
-        } else {
-            return ResponseEntity.status(HttpStatus.FORBIDDEN).body(new ErrorDTO(40006, "手机登录验证码错误"));
-        }
+        return null != token ? ResponseEntity.ok(new AccessToken(token)) :
+            ResponseEntity.status(HttpStatus.FORBIDDEN).body(new ErrorDTO(40006, "手机登录验证码错误"));
+
     }
 
     @RequestMapping(value = "/mobile/code/request", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
